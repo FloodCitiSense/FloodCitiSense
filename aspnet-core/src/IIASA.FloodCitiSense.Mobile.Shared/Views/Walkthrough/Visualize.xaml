@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentView
+    x:Class="IIASA.FloodCitiSense.Views.Walkthrough.Visualize"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:markupExtensions="clr-namespace:IIASA.FloodCitiSense.Mobile.Core.Extensions.MarkupExtensions;assembly=IIASA.FloodCitiSense.Mobile.Core">
+    <StackLayout
+        Margin="20"
+        HorizontalOptions="CenterAndExpand"
+        VerticalOptions="CenterAndExpand">
+        <Label
+            HorizontalTextAlignment="Center"
+            Style="{StaticResource PrimaryLabel}"
+            Text="{markupExtensions:Translate VisualizeText}"
+            VerticalTextAlignment="Center" />
+        <StackLayout
+            Margin="20"
+            HorizontalOptions="CenterAndExpand"
+            Orientation="Horizontal"
+            VerticalOptions="CenterAndExpand">
+            <Image Source="{markupExtensions:ImageSource 'map2.png'}" Style="{StaticResource IncidentImageStyle}" />
+        </StackLayout>
+    </StackLayout>
+</ContentView>

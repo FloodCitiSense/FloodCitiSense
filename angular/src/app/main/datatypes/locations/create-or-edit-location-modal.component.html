@@ -1,0 +1,48 @@
+<div bsModal #createOrEditModal="bs-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="createOrEditModal" aria-hidden="true" [config]="{backdrop: 'static'}">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <form *ngIf="active" #locationForm="ngForm" novalidate (ngSubmit)="save()" autocomplete="off">
+                <div class="modal-header">
+                    <h4 class="modal-title">
+                        <span *ngIf="location.id">{{l("EditLocation")}}</span>
+                        <span *ngIf="!location.id">{{l("CreateNewLocation")}}</span>
+                    </h4>
+                    <button type="button" class="close" (click)="close()" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                 
+
+
+								<div class="form-group">
+								<label>{{l("Latitude")}}</label>
+								<input type="number"  class="form-control" [(ngModel)]="location.latitude" name="Latitude"  />
+								</div>
+					
+								<div class="form-group">
+								<label>{{l("Longitude")}}</label>
+								<input type="number"  class="form-control" [(ngModel)]="location.longitude" name="Longitude"  />
+								</div>
+					
+								<div class="form-group">
+								<label>{{l("Accuracy")}}</label>
+								<input type="number"  class="form-control" [(ngModel)]="location.accuracy" name="Accuracy"  />
+								</div>
+					
+								<div class="form-group">
+								<label>{{l("TenantID")}}</label>
+								<input type="number"  class="form-control" [(ngModel)]="location.tenantID" name="TenantID"  />
+								</div>
+					
+
+                </div>
+                <div class="modal-footer">
+                    <button [disabled]="saving" type="button" class="btn btn-default" (click)="close()">{{l("Cancel")}}</button>
+                    <button type="submit" class="btn btn-primary blue" [disabled]="!locationForm.form.valid" [buttonBusy]="saving" [busyText]="l('SavingWithThreeDot')"><i class="fa fa-save"></i> <span>{{l("Save")}}</span></button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</div>

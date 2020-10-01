@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<linker>
+  <assembly fullname="mscorlib">
+    <type fullname="System.Runtime.Loader" preserve="All" />
+  </assembly>
+</linker>

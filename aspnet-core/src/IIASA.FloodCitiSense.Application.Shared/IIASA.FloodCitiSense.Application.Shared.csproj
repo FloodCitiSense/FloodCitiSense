@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFrameworks>netstandard2.0</TargetFrameworks>
+    <RootNamespace>IIASA.FloodCitiSense</RootNamespace>
+    <AutoGenerateBindingRedirects>True</AutoGenerateBindingRedirects>
+    <AssemblyVersion>2020.4.2.364</AssemblyVersion>
+    <FileVersion>2020.4.2.364</FileVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Abp.Web.Common" Version="4.9.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\IIASA.FloodCitiSense.Core.Shared\IIASA.FloodCitiSense.Core.Shared.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Datatypes\Entity\" />
+  </ItemGroup>
+</Project>

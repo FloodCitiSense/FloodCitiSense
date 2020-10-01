@@ -1,0 +1,57 @@
+version: '3.4'
+
+services:
+  api:
+    image: iiasa.azurecr.io/floodcitisense-api
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Production
+    deploy:
+      placement:
+          constraints:
+            -  node.labels.os == linux         
+      labels:
+        - traefik.port=80
+        - traefik.frontend.rule=Host:api.dev.floodcitisense.eu
+    networks:
+      - swarm-network
+
+  admin-app:
+    image: iiasa.azurecr.io/floodcitisense-admin-app
+     deploy:
+      placement:
+          constraints:
+            -  node.labels.os == linux         
+      labels:
+        - traefik.port=80
+        - traefik.frontend.rule=Host:admin.dev.floodcitisense.eu
+    networks:
+      - swarm-network
+
+  api-proxy:
+    image: iiasa.azurecr.io/floodcitisense-api-proxy
+    deploy:
+      labels:
+        - traefik.port=4000
+        - traefik.frontend.priority=20
+        - traefik.frontend.rule=Host:app.dev.floodcitisense.eu;Path:/graphql
+    networks:
+      - swarm-network
+
+  web-app:
+    image: iiasa.azurecr.io/floodcitisense-app
+    deploy:
+      labels:
+          - traefik.port=3000
+          - traefik.frontend.priority=10
+          - traefik.frontend.rule=HostRegexp:{subdomain:(app|brussels|birmingham|rotterdam)}.floodcitisense.eu
+          - traefik.frontend.redirect.regex=(brussels|birmingham|rotterdam).floodcitisense.eu(.*)
+          - traefik.frontend.redirect.replacement=app.floodcitisense.eu$${2}?t=$${1}
+    environment:
+      - API_URL=https://app.dev.floodcitisense.eu/graphql
+    networks:
+      - swarm-network
+
+networks:
+  swarm-network:
+    driver: overlay
+    external: true

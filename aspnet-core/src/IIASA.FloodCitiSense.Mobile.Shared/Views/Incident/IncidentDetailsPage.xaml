@@ -1,0 +1,224 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="IIASA.FloodCitiSense.Views.Incident.IncidentDetailsPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:base="clr-namespace:IIASA.FloodCitiSense.Mobile.Core.Base;assembly=IIASA.FloodCitiSense.Mobile.Core"
+    xmlns:behaviors="clr-namespace:IIASA.FloodCitiSense.Mobile.Core.Behaviors;assembly=IIASA.FloodCitiSense.Mobile.Core"
+    xmlns:controls1="clr-namespace:IIASA.FloodCitiSense.Mobile.Core.Controls;assembly=IIASA.FloodCitiSense.Mobile.Core"
+    xmlns:forms="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
+    xmlns:markupExtensions="clr-namespace:IIASA.FloodCitiSense.Mobile.Core.Extensions.MarkupExtensions;assembly=IIASA.FloodCitiSense.Mobile.Core"
+    xmlns:renderedViews="clr-namespace:Sharpnado.Presentation.Forms.RenderedViews;assembly=Sharpnado.Presentation.Forms"
+    Title="{markupExtensions:Translate FloodReport}"
+    base:ViewManager.AutoWireViewModel="true">
+    <ContentPage.Content>
+        <ScrollView Orientation="Vertical">
+            <Grid Margin="10">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <StackLayout Grid.Row="0" Orientation="Horizontal">
+                    <Label
+                        HorizontalOptions="StartAndExpand"
+                        Style="{StaticResource IncidentDetailsinfoHeaderStyle}"
+                        Text="{markupExtensions:Translate Username}" />
+                    <Label
+                        HorizontalOptions="EndAndExpand"
+                        Style="{StaticResource MainPageLabelStyle}"
+                        Text="{Binding Username}" />
+                </StackLayout>
+                <StackLayout Grid.Row="1" Orientation="Horizontal">
+                    <Label
+                        HorizontalOptions="StartAndExpand"
+                        Style="{StaticResource IncidentDetailsinfoHeaderStyle}"
+                        Text="{markupExtensions:Translate Created}" />
+                    <Label
+                        HorizontalOptions="EndAndExpand"
+                        Style="{StaticResource MainPageLabelStyle}"
+                        Text="{Binding CreatedTime, StringFormat='\{0:dd/MM/yyyy hh:mm}'}" />
+                </StackLayout>
+                <controls1:Divider Grid.Row="2" />
+                <StackLayout
+                    Grid.Row="3"
+                    HorizontalOptions="FillAndExpand"
+                    Orientation="Horizontal">
+                    <Label
+                        HorizontalOptions="StartAndExpand"
+                        Style="{StaticResource IncidentDetailsinfoHeaderStyle}"
+                        Text="{Binding RainType}" />
+                </StackLayout>
+                <StackLayout Grid.Row="4" Orientation="Vertical">
+                    <Label
+                        HorizontalOptions="Start"
+                        Style="{StaticResource IncidentDetailsinfoHeaderStyle}"
+                        Text="{markupExtensions:Translate TypeOfFlooding}" />
+                    <renderedViews:HorizontalListView
+                        Margin="-16,8"
+                        CollectionPadding="0,8"
+                        HeightRequest="120"
+                        ItemHeight="120"
+                        ItemSpacing="8"
+                        ItemWidth="144"
+                        ItemsSource="{Binding TypeOfFlooding}"
+                        SnapStyle="Center">
+                        <renderedViews:HorizontalListView.ItemTemplate>
+                            <DataTemplate>
+                                <ViewCell>
+                                    <Grid ColumnSpacing="0" RowSpacing="0">
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="2*" />
+                                            <RowDefinition Height="Auto" />
+                                        </Grid.RowDefinitions>
+                                        <forms:CachedImage
+                                            Grid.Row="0"
+                                            Margin="5"
+                                            DownsampleToViewSize="True"
+                                            HeightRequest="50"
+                                            Source="{Binding ImageSource}"
+                                            WidthRequest="50" />
+                                        <Label
+                                            Grid.Row="1"
+                                            HorizontalOptions="Center"
+                                            Style="{StaticResource MainPageLabelStyle}"
+                                            Text="{Binding Tooltip}" />
+                                    </Grid>
+                                </ViewCell>
+                            </DataTemplate>
+                        </renderedViews:HorizontalListView.ItemTemplate>
+                    </renderedViews:HorizontalListView>
+                </StackLayout>
+                <StackLayout Grid.Row="5" Orientation="Vertical">
+                    <StackLayout Orientation="Horizontal">
+                        <StackLayout.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding ShowPhotographsCommand}" />
+                        </StackLayout.GestureRecognizers>
+                        <Label
+                            Style="{StaticResource IncidentDetailsinfoHeaderStyle}"
+                            Text="{Binding ShowPhotographsIcon}"
+                            TextColor="{StaticResource PrimaryText}" />
+                        <Label
+                            Style="{StaticResource IncidentDetailsinfoHeaderStyle}"
+                            Text="{markupExtensions:Translate ShowPhotographs}"
+                            TextColor="{StaticResource PrimaryText}" />
+                    </StackLayout>
+                    <renderedViews:HorizontalListView
+                        x:Name="PhotosView"
+                        Margin="-16,8"
+                        CollectionPadding="0,8"
+                        HeightRequest="150"
+                        IsVisible="{Binding ShowPhotographsSection}"
+                        ItemHeight="120"
+                        ItemSpacing="8"
+                        ItemWidth="144"
+                        ItemsSource="{Binding ListImages}"
+                        SnapStyle="Center">
+                        <renderedViews:HorizontalListView.ItemTemplate>
+                            <DataTemplate>
+                                <ViewCell>
+                                    <forms:CachedImage
+                                        Margin="5"
+                                        DownsampleToViewSize="True"
+                                        HeightRequest="150"
+                                        Source="{Binding ImageSource}"
+                                        WidthRequest="150" />
+                                </ViewCell>
+                            </DataTemplate>
+                        </renderedViews:HorizontalListView.ItemTemplate>
+                    </renderedViews:HorizontalListView>
+                </StackLayout>
+                <StackLayout Grid.Row="6" Orientation="Vertical">
+                    <StackLayout Orientation="Horizontal">
+                        <StackLayout.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding ShowAdvancedOptionsCommand}" />
+                        </StackLayout.GestureRecognizers>
+                        <Label
+                            Style="{StaticResource IncidentDetailsinfoHeaderStyle}"
+                            Text="{Binding ShowAdvancedOptionsIcon}"
+                            TextColor="{StaticResource PrimaryText}" />
+                        <Label
+                            Style="{StaticResource IncidentDetailsinfoHeaderStyle}"
+                            Text="{markupExtensions:Translate ShowAdvancedInfo}"
+                            TextColor="{StaticResource PrimaryText}" />
+                    </StackLayout>
+
+                    <Grid IsVisible="{Binding ShowAdvancedSection}">
+                        <Grid.RowDefinitions>
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                        </Grid.RowDefinitions>
+                        <Frame Grid.Row="0">
+                            <StackLayout HorizontalOptions="FillAndExpand" Orientation="Horizontal">
+                                <Label Style="{StaticResource IncidentDetailsinfoHeaderStyle}" Text="{markupExtensions:Translate AnySignOfDamage}" />
+                                <Label Style="{StaticResource IncidentDetailsinfoStyle}" Text="{Binding AnySignOfDamage}" />
+                            </StackLayout>
+                        </Frame>
+                        <Frame Grid.Row="1">
+                            <StackLayout HorizontalOptions="FillAndExpand" Orientation="Horizontal">
+                                <Label Style="{StaticResource IncidentDetailsinfoHeaderStyle}" Text="{markupExtensions:Translate SignOfObstruction}" />
+                                <Label Style="{StaticResource IncidentDetailsinfoStyle}" Text="{Binding AnySignOfObstruction}" />
+
+                            </StackLayout>
+                        </Frame>
+                        <Frame Grid.Row="2">
+                            <StackLayout>
+                                <Label Style="{StaticResource IncidentDetailsinfoHeaderStyle}" Text="{markupExtensions:Translate TypeOfSpaceFlooded}" />
+                                <Label Style="{StaticResource IncidentDetailsinfoStyle}" Text="{Binding TypesOfSpaceFlooded}" />
+                            </StackLayout>
+                        </Frame>
+                        <Frame Grid.Row="3">
+                            <StackLayout>
+                                <Label Style="{StaticResource IncidentDetailsinfoHeaderStyle}" Text="{markupExtensions:Translate FloodExtent}" />
+                                <Label Style="{StaticResource IncidentDetailsinfoStyle}" Text="{Binding FloodExtent}" />
+                            </StackLayout>
+                        </Frame>
+                        <Frame Grid.Row="4">
+                            <StackLayout>
+                                <Label Style="{StaticResource IncidentDetailsinfoHeaderStyle}" Text="{markupExtensions:Translate FloodDepth}" />
+                                <Label Style="{StaticResource IncidentDetailsinfoStyle}" Text="{Binding FloodDepth}" />
+                            </StackLayout>
+                        </Frame>
+                        <Frame Grid.Row="5">
+                            <StackLayout>
+                                <Label Style="{StaticResource IncidentDetailsinfoHeaderStyle}" Text="{markupExtensions:Translate FloodFrequency}" />
+                                <Label Style="{StaticResource IncidentDetailsinfoStyle}" Text="{Binding FrequencyOfFlood}" />
+                            </StackLayout>
+                        </Frame>
+                        <Frame Grid.Row="6">
+                            <StackLayout>
+                                <Label Style="{StaticResource IncidentDetailsinfoHeaderStyle}" Text="{markupExtensions:Translate WaterClarity}" />
+                                <Label Style="{StaticResource IncidentDetailsinfoStyle}" Text="{Binding WaterClarity}" />
+                            </StackLayout>
+                        </Frame>
+                        <Frame Grid.Row="7">
+                            <StackLayout HorizontalOptions="FillAndExpand" Orientation="Horizontal">
+                                <Label Style="{StaticResource IncidentDetailsinfoHeaderStyle}" Text="{markupExtensions:Translate AreYouImpacted}" />
+                                <Label Style="{StaticResource IncidentDetailsinfoStyle}" Text="{Binding AreYouImpacted}" />
+
+                            </StackLayout>
+                        </Frame>
+                    </Grid>
+                </StackLayout>
+            </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+
+    <ContentPage.Behaviors>
+        <behaviors:EventHandlerBehavior EventName="Appearing">
+            <behaviors:ActionCollection>
+                <behaviors:InvokeCommandAction Command="{Binding PageAppearingCommand}" />
+            </behaviors:ActionCollection>
+        </behaviors:EventHandlerBehavior>
+    </ContentPage.Behaviors>
+</ContentPage>

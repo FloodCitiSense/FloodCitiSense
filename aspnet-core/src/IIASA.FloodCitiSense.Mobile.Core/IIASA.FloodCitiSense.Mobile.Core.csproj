@@ -1,0 +1,366 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup Label="MultilingualAppToolkit">
+    <MultilingualAppToolkitVersion>4.0</MultilingualAppToolkitVersion>
+    <MultilingualFallbackLanguage>en-US</MultilingualFallbackLanguage>
+    <TranslationReport Condition="'$(Configuration)' == 'Release'">true</TranslationReport>
+    <SuppressPseudoWarning Condition="'$(Configuration)' == 'Debug'">true</SuppressPseudoWarning>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <NeutralLanguage>en-US</NeutralLanguage>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SolutionDir>..\</SolutionDir>
+    <AssemblyVersion>2020.4.2.63</AssemblyVersion>
+    <FileVersion>2020.4.2.63</FileVersion>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\Multilingual App Toolkit\Microsoft.Multilingual.ResxResources.targets" Label="MultilingualAppToolkit" Condition="Exists('$(MSBuildExtensionsPath)\Microsoft\Multilingual App Toolkit\v$(MultilingualAppToolkitVersion)\Microsoft.Multilingual.ResxResources.targets')" />
+  <Target Name="MATPrerequisite" BeforeTargets="PrepareForBuild" Condition="!Exists('$(MSBuildExtensionsPath)\Microsoft\Multilingual App Toolkit\Microsoft.Multilingual.ResxResources.targets')" Label="MultilingualAppToolkit">
+    <Warning Text="$(MSBuildProjectFile) is Multilingual build enabled, but the Multilingual App Toolkit is unavailable during the build. If building with Visual Studio, please check to ensure that toolkit is properly installed." />
+  </Target>
+  <ItemGroup>
+    <None Remove="Data\element.json" />
+    <None Remove="Data\prepare.json" />
+    <None Remove="Data\Respond.json" />
+    <None Remove="UI\Assets\Files\PrivacyText-en.txt" />
+    <None Remove="UI\Assets\Images\alarm.png" />
+    <None Remove="UI\Assets\Images\alert.png" />
+    <None Remove="UI\Assets\Images\AppLogo.png" />
+    <None Remove="UI\Assets\Images\bag.png" />
+    <None Remove="UI\Assets\Images\birmingham_logo.png" />
+    <None Remove="UI\Assets\Images\black-envelope.png" />
+    <None Remove="UI\Assets\Images\blue-location.png" />
+    <None Remove="UI\Assets\Images\broken-house.png" />
+    <None Remove="UI\Assets\Images\calendar.png" />
+    <None Remove="UI\Assets\Images\camera.png" />
+    <None Remove="UI\Assets\Images\car.png" />
+    <None Remove="UI\Assets\Images\cart-empty.png" />
+    <None Remove="UI\Assets\Images\ChangeLanguage.png" />
+    <None Remove="UI\Assets\Images\ChangePassword.png" />
+    <None Remove="UI\Assets\Images\charger.png" />
+    <None Remove="UI\Assets\Images\checked.png" />
+    <None Remove="UI\Assets\Images\chemical-weapon.png" />
+    <None Remove="UI\Assets\Images\chip.png" />
+    <None Remove="UI\Assets\Images\city-recomm.png" />
+    <None Remove="UI\Assets\Images\city.png" />
+    <None Remove="UI\Assets\Images\cloud.png" />
+    <None Remove="UI\Assets\Images\contact.png" />
+    <None Remove="UI\Assets\Images\crime-scene.png" />
+    <None Remove="UI\Assets\Images\current-reports.png" />
+    <None Remove="UI\Assets\Images\current.png" />
+    <None Remove="UI\Assets\Images\default_map.png" />
+    <None Remove="UI\Assets\Images\delete.png" />
+    <None Remove="UI\Assets\Images\device-connected.png" />
+    <None Remove="UI\Assets\Images\doormat.png" />
+    <None Remove="UI\Assets\Images\Drizzle.png" />
+    <None Remove="UI\Assets\Images\education.png" />
+    <None Remove="UI\Assets\Images\emergency-call.png" />
+    <None Remove="UI\Assets\Images\error.png" />
+    <None Remove="UI\Assets\Images\facebook.png" />
+    <None Remove="UI\Assets\Images\faq.png" />
+    <None Remove="UI\Assets\Images\fcs.png" />
+    <None Remove="UI\Assets\Images\film.png" />
+    <None Remove="UI\Assets\Images\filter.png" />
+    <None Remove="UI\Assets\Images\filter_updated.png" />
+    <None Remove="UI\Assets\Images\flashlight.png" />
+    <None Remove="UI\Assets\Images\flood.png" />
+    <None Remove="UI\Assets\Images\FloodCitiSense_200x90_web.jpg" />
+    <None Remove="UI\Assets\Images\FloodCitiSense_featuregraphic_app.jpg" />
+    <None Remove="UI\Assets\Images\flooded-house_1.png" />
+    <None Remove="UI\Assets\Images\flooded-house_2.png" />
+    <None Remove="UI\Assets\Images\forecast.png" />
+    <None Remove="UI\Assets\Images\GardenFlooding.png" />
+    <None Remove="UI\Assets\Images\gas-station.png" />
+    <None Remove="UI\Assets\Images\general-recomm.png" />
+    <None Remove="UI\Assets\Images\HeaderBackground.jpg" />
+    <None Remove="UI\Assets\Images\HeavyRainFall.png" />
+    <None Remove="UI\Assets\Images\help.png" />
+    <None Remove="UI\Assets\Images\home.png" />
+    <None Remove="UI\Assets\Images\hotspots.png" />
+    <None Remove="UI\Assets\Images\HouseFlooding.png" />
+    <None Remove="UI\Assets\Images\houses.png" />
+    <None Remove="UI\Assets\Images\icon.png" />
+    <None Remove="UI\Assets\Images\ic_account_circle_blue_grey_500_48dp.png" />
+    <None Remove="UI\Assets\Images\ic_flag_blue_grey_500_48dp.png" />
+    <None Remove="UI\Assets\Images\ic_info_blue_grey_500_48dp.png" />
+    <None Remove="UI\Assets\Images\info.png" />
+    <None Remove="UI\Assets\Images\info2.png" />
+    <None Remove="UI\Assets\Images\insurance.png" />
+    <None Remove="UI\Assets\Images\ItemsForEmergencySupplyKit.jpg" />
+    <None Remove="UI\Assets\Images\layers.png" />
+    <None Remove="UI\Assets\Images\legend.png" />
+    <None Remove="UI\Assets\Images\list.png" />
+    <None Remove="UI\Assets\Images\login.png" />
+    <None Remove="UI\Assets\Images\Logout.png" />
+    <None Remove="UI\Assets\Images\mail.png" />
+    <None Remove="UI\Assets\Images\map.png" />
+    <None Remove="UI\Assets\Images\map2.png" />
+    <None Remove="UI\Assets\Images\MediumIntensity.png" />
+    <None Remove="UI\Assets\Images\missions.png" />
+    <None Remove="UI\Assets\Images\money.png" />
+    <None Remove="UI\Assets\Images\mosquito.png" />
+    <None Remove="UI\Assets\Images\networking.png" />
+    <None Remove="UI\Assets\Images\NoFlooding.png" />
+    <None Remove="UI\Assets\Images\None.png" />
+    <None Remove="UI\Assets\Images\opportunity.png" />
+    <None Remove="UI\Assets\Images\ParksFlooding.png" />
+    <None Remove="UI\Assets\Images\pencil-edit.png" />
+    <None Remove="UI\Assets\Images\Person.png" />
+    <None Remove="UI\Assets\Images\photo-camera.png" />
+    <None Remove="UI\Assets\Images\prepardness.png" />
+    <None Remove="UI\Assets\Images\prepardness2.png" />
+    <None Remove="UI\Assets\Images\radio.png" />
+    <None Remove="UI\Assets\Images\rain.jpeg" />
+    <None Remove="UI\Assets\Images\rain.png" />
+    <None Remove="UI\Assets\Images\red-location.png" />
+    <None Remove="UI\Assets\Images\register.png" />
+    <None Remove="UI\Assets\Images\report_create.png" />
+    <None Remove="UI\Assets\Images\report_info.png" />
+    <None Remove="UI\Assets\Images\report_status.png" />
+    <None Remove="UI\Assets\Images\report_validate.png" />
+    <None Remove="UI\Assets\Images\response.png" />
+    <None Remove="UI\Assets\Images\RiverFlooding.png" />
+    <None Remove="UI\Assets\Images\RiverLevelRising.png" />
+    <None Remove="UI\Assets\Images\rubbish-bin.png" />
+    <None Remove="UI\Assets\Images\sad.png" />
+    <None Remove="UI\Assets\Images\satellite_imagery.png" />
+    <None Remove="UI\Assets\Images\search.png" />
+    <None Remove="UI\Assets\Images\sensor_black.png" />
+    <None Remove="UI\Assets\Images\sensor_color.png" />
+    <None Remove="UI\Assets\Images\sensor_primary.png" />
+    <None Remove="UI\Assets\Images\sensor_second_color.png" />
+    <None Remove="UI\Assets\Images\settings-gears.png" />
+    <None Remove="UI\Assets\Images\Settings.png" />
+    <None Remove="UI\Assets\Images\sewage.png" />
+    <None Remove="UI\Assets\Images\SewerBlocked.png" />
+    <None Remove="UI\Assets\Images\statement.png" />
+    <None Remove="UI\Assets\Images\StreetFlooding.png" />
+    <None Remove="UI\Assets\Images\sun.png" />
+    <None Remove="UI\Assets\Images\Tenants.png" />
+    <None Remove="UI\Assets\Images\Torrential.png" />
+    <None Remove="UI\Assets\Images\twitter.png" />
+    <None Remove="UI\Assets\Images\upload.png" />
+    <None Remove="UI\Assets\Images\uploaded-report.png" />
+    <None Remove="UI\Assets\Images\uploaded-report2.png" />
+    <None Remove="UI\Assets\Images\uploaded.png" />
+    <None Remove="UI\Assets\Images\user-list.png" />
+    <None Remove="UI\Assets\Images\UserList.png" />
+    <None Remove="UI\Assets\Images\user_info.png" />
+    <None Remove="UI\Assets\Images\user_profile.png" />
+    <None Remove="UI\Assets\Images\user_reports.png" />
+    <None Remove="UI\Assets\Images\view.png" />
+    <None Remove="UI\Assets\Images\wate.png" />
+    <None Remove="UI\Assets\Images\water.png" />
+    <None Remove="UI\Assets\Images\welcomepage.jpg" />
+    <None Remove="UI\Assets\Images\yellow-location.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Data\element.json" />
+    <EmbeddedResource Include="Data\prepare.json" />
+    <EmbeddedResource Include="Data\Respond.json" />
+    <EmbeddedResource Include="UI\Assets\Files\PrivacyText-en.txt" />
+    <EmbeddedResource Include="UI\Assets\Images\alarm.png" />
+    <EmbeddedResource Include="UI\Assets\Images\alert.png" />
+    <EmbeddedResource Include="UI\Assets\Images\AppLogo.png" />
+    <EmbeddedResource Include="UI\Assets\Images\bag.png" />
+    <EmbeddedResource Include="UI\Assets\Images\birmingham_logo.png" />
+    <EmbeddedResource Include="UI\Assets\Images\black-envelope.png" />
+    <EmbeddedResource Include="UI\Assets\Images\blue-location.png" />
+    <EmbeddedResource Include="UI\Assets\Images\broken-house.png" />
+    <EmbeddedResource Include="UI\Assets\Images\calendar.png" />
+    <EmbeddedResource Include="UI\Assets\Images\camera.png" />
+    <EmbeddedResource Include="UI\Assets\Images\car.png" />
+    <EmbeddedResource Include="UI\Assets\Images\cart-empty.png" />
+    <EmbeddedResource Include="UI\Assets\Images\ChangeLanguage.png" />
+    <EmbeddedResource Include="UI\Assets\Images\ChangePassword.png" />
+    <EmbeddedResource Include="UI\Assets\Images\charger.png" />
+    <EmbeddedResource Include="UI\Assets\Images\checked.png" />
+    <EmbeddedResource Include="UI\Assets\Images\chemical-weapon.png" />
+    <EmbeddedResource Include="UI\Assets\Images\chip.png" />
+    <EmbeddedResource Include="UI\Assets\Images\city-recomm.png" />
+    <EmbeddedResource Include="UI\Assets\Images\city.png" />
+    <EmbeddedResource Include="UI\Assets\Images\cloud.png" />
+    <EmbeddedResource Include="UI\Assets\Images\contact.png" />
+    <EmbeddedResource Include="UI\Assets\Images\crime-scene.png" />
+    <EmbeddedResource Include="UI\Assets\Images\current-reports.png" />
+    <EmbeddedResource Include="UI\Assets\Images\current.png" />
+    <EmbeddedResource Include="UI\Assets\Images\default_map.png" />
+    <EmbeddedResource Include="UI\Assets\Images\delete.png" />
+    <EmbeddedResource Include="UI\Assets\Images\device-connected.png" />
+    <EmbeddedResource Include="UI\Assets\Images\doormat.png" />
+    <EmbeddedResource Include="UI\Assets\Images\education.png" />
+    <EmbeddedResource Include="UI\Assets\Images\emergency-call.png" />
+    <EmbeddedResource Include="UI\Assets\Images\error.png" />
+    <EmbeddedResource Include="UI\Assets\Images\facebook.png" />
+    <EmbeddedResource Include="UI\Assets\Images\faq.png" />
+    <EmbeddedResource Include="UI\Assets\Images\fcs.png" />
+    <EmbeddedResource Include="UI\Assets\Images\film.png" />
+    <EmbeddedResource Include="UI\Assets\Images\filter.png" />
+    <EmbeddedResource Include="UI\Assets\Images\filter_updated.png" />
+    <EmbeddedResource Include="UI\Assets\Images\flashlight.png" />
+    <EmbeddedResource Include="UI\Assets\Images\flood.png" />
+    <EmbeddedResource Include="UI\Assets\Images\FloodCitiSense_200x90_web.jpg" />
+    <EmbeddedResource Include="UI\Assets\Images\FloodCitiSense_featuregraphic_app.jpg" />
+    <EmbeddedResource Include="UI\Assets\Images\flooded-house_1.png" />
+    <EmbeddedResource Include="UI\Assets\Images\flooded-house_2.png" />
+    <EmbeddedResource Include="UI\Assets\Images\GardenFlooding.png" />
+    <EmbeddedResource Include="UI\Assets\Images\HouseFlooding.png" />
+    <EmbeddedResource Include="UI\Assets\Images\legend.png" />
+    <EmbeddedResource Include="UI\Assets\Images\NoFlooding.png" />
+    <EmbeddedResource Include="UI\Assets\Images\ParksFlooding.png" />
+    <EmbeddedResource Include="UI\Assets\Images\rain.jpeg" />
+    <EmbeddedResource Include="UI\Assets\Images\RiverLevelRising.png" />
+    <EmbeddedResource Include="UI\Assets\Images\sensor_black.png" />
+    <EmbeddedResource Include="UI\Assets\Images\sensor_color.png" />
+    <EmbeddedResource Include="UI\Assets\Images\sensor_primary.png" />
+    <EmbeddedResource Include="UI\Assets\Images\sensor_second_color.png" />
+    <EmbeddedResource Include="UI\Assets\Images\StreetFlooding.png" />
+    <EmbeddedResource Include="UI\Assets\Images\forecast.png" />
+    <EmbeddedResource Include="UI\Assets\Images\gas-station.png" />
+    <EmbeddedResource Include="UI\Assets\Images\general-recomm.png" />
+    <EmbeddedResource Include="UI\Assets\Images\HeaderBackground.jpg" />
+    <EmbeddedResource Include="UI\Assets\Images\help.png" />
+    <EmbeddedResource Include="UI\Assets\Images\home.png" />
+    <EmbeddedResource Include="UI\Assets\Images\hotspots.png" />
+    <EmbeddedResource Include="UI\Assets\Images\houses.png" />
+    <EmbeddedResource Include="UI\Assets\Images\icon.png" />
+    <EmbeddedResource Include="UI\Assets\Images\ic_account_circle_blue_grey_500_48dp.png" />
+    <EmbeddedResource Include="UI\Assets\Images\ic_flag_blue_grey_500_48dp.png" />
+    <EmbeddedResource Include="UI\Assets\Images\ic_info_blue_grey_500_48dp.png" />
+    <EmbeddedResource Include="UI\Assets\Images\info.png" />
+    <EmbeddedResource Include="UI\Assets\Images\info2.png" />
+    <EmbeddedResource Include="UI\Assets\Images\insurance.png" />
+    <EmbeddedResource Include="UI\Assets\Images\ItemsForEmergencySupplyKit.jpg" />
+    <EmbeddedResource Include="UI\Assets\Images\layers.png" />
+    <EmbeddedResource Include="UI\Assets\Images\list.png" />
+    <EmbeddedResource Include="UI\Assets\Images\login.png" />
+    <EmbeddedResource Include="UI\Assets\Images\Logout.png" />
+    <EmbeddedResource Include="UI\Assets\Images\mail.png" />
+    <EmbeddedResource Include="UI\Assets\Images\map.png" />
+    <EmbeddedResource Include="UI\Assets\Images\map2.png" />
+    <EmbeddedResource Include="UI\Assets\Images\missions.png" />
+    <EmbeddedResource Include="UI\Assets\Images\money.png" />
+    <EmbeddedResource Include="UI\Assets\Images\mosquito.png" />
+    <EmbeddedResource Include="UI\Assets\Images\networking.png" />
+    <EmbeddedResource Include="UI\Assets\Images\opportunity.png" />
+    <EmbeddedResource Include="UI\Assets\Images\Person.png" />
+    <EmbeddedResource Include="UI\Assets\Images\photo-camera.png" />
+    <EmbeddedResource Include="UI\Assets\Images\prepardness.png" />
+    <EmbeddedResource Include="UI\Assets\Images\prepardness2.png" />
+    <EmbeddedResource Include="UI\Assets\Images\radio.png" />
+    <EmbeddedResource Include="UI\Assets\Images\Drizzle.png" />
+    <EmbeddedResource Include="UI\Assets\Images\HeavyRainFall.png" />
+    <EmbeddedResource Include="UI\Assets\Images\MediumIntensity.png" />
+    <EmbeddedResource Include="UI\Assets\Images\None.png" />
+    <EmbeddedResource Include="UI\Assets\Images\Torrential.png" />
+    <EmbeddedResource Include="UI\Assets\Images\rain.png" />
+    <EmbeddedResource Include="UI\Assets\Images\red-location.png" />
+    <EmbeddedResource Include="UI\Assets\Images\register.png" />
+    <EmbeddedResource Include="UI\Assets\Images\report_create.png" />
+    <EmbeddedResource Include="UI\Assets\Images\report_info.png" />
+    <EmbeddedResource Include="UI\Assets\Images\report_status.png" />
+    <EmbeddedResource Include="UI\Assets\Images\report_validate.png" />
+    <EmbeddedResource Include="UI\Assets\Images\response.png" />
+    <EmbeddedResource Include="UI\Assets\Images\RiverFlooding.png" />
+    <EmbeddedResource Include="UI\Assets\Images\rubbish-bin.png" />
+    <EmbeddedResource Include="UI\Assets\Images\sad.png" />
+    <EmbeddedResource Include="UI\Assets\Images\satellite_imagery.png" />
+    <EmbeddedResource Include="UI\Assets\Images\search.png" />
+    <EmbeddedResource Include="UI\Assets\Images\settings-gears.png" />
+    <EmbeddedResource Include="UI\Assets\Images\Settings.png" />
+    <EmbeddedResource Include="UI\Assets\Images\sewage.png" />
+    <EmbeddedResource Include="UI\Assets\Images\SewerBlocked.png" />
+    <EmbeddedResource Include="UI\Assets\Images\statement.png" />
+    <EmbeddedResource Include="UI\Assets\Images\sun.png" />
+    <EmbeddedResource Include="UI\Assets\Images\Tenants.png" />
+    <EmbeddedResource Include="UI\Assets\Images\twitter.png" />
+    <EmbeddedResource Include="UI\Assets\Images\upload.png" />
+    <EmbeddedResource Include="UI\Assets\Images\uploaded-report.png" />
+    <EmbeddedResource Include="UI\Assets\Images\uploaded-report2.png" />
+    <EmbeddedResource Include="UI\Assets\Images\uploaded.png" />
+    <EmbeddedResource Include="UI\Assets\Images\user-list.png" />
+    <EmbeddedResource Include="UI\Assets\Images\UserList.png" />
+    <EmbeddedResource Include="UI\Assets\Images\user_info.png" />
+    <EmbeddedResource Include="UI\Assets\Images\user_profile.png" />
+    <EmbeddedResource Include="UI\Assets\Images\user_reports.png" />
+    <EmbeddedResource Include="UI\Assets\Images\view.png" />
+    <EmbeddedResource Include="UI\Assets\Images\wate.png" />
+    <EmbeddedResource Include="UI\Assets\Images\water.png" />
+    <EmbeddedResource Include="UI\Assets\Images\welcomepage.jpg" />
+    <EmbeddedResource Include="UI\Assets\Images\yellow-location.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Abp" Version="4.9.0" />
+    <PackageReference Include="Abp.AutoMapper" Version="4.9.0" />
+    <PackageReference Include="Abp.Zero.Common" Version="4.9.0" />
+    <PackageReference Include="Acr.UserDialogs" Version="7.0.30" />
+    <PackageReference Include="Microsoft.AppCenter.Analytics" Version="2.6.4" />
+    <PackageReference Include="Microsoft.AppCenter.Crashes" Version="2.6.4" />
+    <PackageReference Include="MonkeyCache.LiteDB" Version="1.3.0" />
+    <PackageReference Include="NetTopologySuite.IO.GeoJSON" Version="2.0.0" />
+    <PackageReference Include="Plugin.FacebookClient" Version="2.1.14" />
+    <PackageReference Include="Plugin.Permissions" Version="3.0.0.12" />
+    <PackageReference Include="Refractored.MvvmHelpers" Version="1.3.0" />
+    <PackageReference Include="RestSharp" Version="106.6.10" />
+    <PackageReference Include="Sharpnado.Forms.HorizontalListView" Version="1.3.0" />
+    <PackageReference Include="Xam.Plugin.Geolocator" Version="4.5.0.6" />
+    <PackageReference Include="Xam.Plugin.Media" Version="4.0.1.5" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.3.1" />
+    <PackageReference Include="Xamarin.Forms" Version="4.5.0.495" />
+    <PackageReference Include="Xamarin.Forms.GoogleMaps" Version="3.3.0" />
+    <PackageReference Include="Xamarin.Forms.GoogleMaps.Bindings" Version="2.2.0" />
+    <PackageReference Include="Xamarin.Forms.InputKit" Version="3.0.13" />
+    <PackageReference Include="XF.Material" Version="1.5.8" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\IIASA.FloodCitiSense.Application.Client\IIASA.FloodCitiSense.Application.Client.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Plugin.InputKit">
+      <HintPath>..\..\packages\Xamarin.Forms.InputKit.2.2.2\lib\monoandroid80\Plugin.InputKit.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <XliffResource Include="MultilingualResources\IIASA.FloodCitiSense.Mobile.Core.de.xlf" />
+    <XliffResource Include="MultilingualResources\IIASA.FloodCitiSense.Mobile.Core.el.xlf" />
+    <XliffResource Include="MultilingualResources\IIASA.FloodCitiSense.Mobile.Core.en.xlf" />
+    <XliffResource Include="MultilingualResources\IIASA.FloodCitiSense.Mobile.Core.es.xlf" />
+    <XliffResource Include="MultilingualResources\IIASA.FloodCitiSense.Mobile.Core.fr.xlf" />
+    <XliffResource Include="MultilingualResources\IIASA.FloodCitiSense.Mobile.Core.nl.xlf" />
+    <EmbeddedResource Include="UI\Assets\Images\pencil-edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Controls\Divider.xaml.cs">
+      <DependentUpon>%(Filename)</DependentUpon>
+    </Compile>
+    <Compile Update="Controls\LabelSection.xaml.cs">
+      <DependentUpon>%(Filename)</DependentUpon>
+    </Compile>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Update="Controls\EmptyView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="Controls\Divider.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Controls\EmptyView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Controls\LabelSection.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+  </ItemGroup>
+</Project>

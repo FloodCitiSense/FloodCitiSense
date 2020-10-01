@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="IIASA.FloodCitiSense.Views.Common.ContactPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:base="clr-namespace:IIASA.FloodCitiSense.Mobile.Core.Base;assembly=IIASA.FloodCitiSense.Mobile.Core"
+    xmlns:markupExtensions="clr-namespace:IIASA.FloodCitiSense.Mobile.Core.Extensions.MarkupExtensions;assembly=IIASA.FloodCitiSense.Mobile.Core"
+    Title="{markupExtensions:Translate Contact}"
+    base:ViewManager.AutoWireViewModel="true">
+    <ContentPage.Content>
+        <StackLayout Margin="10">
+            <Frame>
+                <StackLayout Orientation="Horizontal">
+                    <Image
+                        Margin="0,0,20,0"
+                        HeightRequest="40"
+                        Source="{markupExtensions:ImageSource 'black-envelope.png'}"
+                        WidthRequest="40" />
+                    <Label
+                        HorizontalOptions="Center"
+                        Text="info@floodcitisense.eu"
+                        VerticalOptions="Center" />
+                    <StackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding EmailCommand}" />
+                    </StackLayout.GestureRecognizers>
+                </StackLayout>
+            </Frame>
+            <Frame>
+                <StackLayout Orientation="Horizontal">
+                    <Image
+                        Margin="0,0,20,0"
+                        HeightRequest="40"
+                        Source="{markupExtensions:ImageSource 'twitter.png'}"
+                        WidthRequest="40" />
+                    <Label
+                        HorizontalOptions="Center"
+                        Text="@FloodCitiSense"
+                        VerticalOptions="Center" />
+                    <StackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding TwitterCommand}" />
+                    </StackLayout.GestureRecognizers>
+                </StackLayout>
+            </Frame>
+            <Frame>
+                <StackLayout Orientation="Horizontal">
+                    <Image
+                        Margin="0,0,20,0"
+                        HeightRequest="40"
+                        Source="{markupExtensions:ImageSource 'facebook.png'}"
+                        WidthRequest="40" />
+
+                    <Label
+                        HorizontalOptions="Center"
+                        Text="www.facebook.com/FloodCitiSense"
+                        VerticalOptions="Center" />
+                    <StackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding FacebookCommand}" />
+                    </StackLayout.GestureRecognizers>
+                </StackLayout>
+            </Frame>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

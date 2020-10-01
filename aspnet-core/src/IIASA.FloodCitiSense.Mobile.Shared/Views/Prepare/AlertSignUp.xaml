@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="IIASA.FloodCitiSense.Views.Prepare.AlertSignUp"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:base="clr-namespace:IIASA.FloodCitiSense.Mobile.Core.Base;assembly=IIASA.FloodCitiSense.Mobile.Core"
+    xmlns:markupExtensions="clr-namespace:IIASA.FloodCitiSense.Mobile.Core.Extensions.MarkupExtensions;assembly=IIASA.FloodCitiSense.Mobile.Core"
+    Title="{markupExtensions:Translate Preparedness}"
+    base:ViewManager.AutoWireViewModel="true">
+    <ContentPage.Content>
+        <StackLayout
+            Margin="15"
+            HorizontalOptions="CenterAndExpand"
+            VerticalOptions="CenterAndExpand">
+            <Image
+                HeightRequest="100"
+                Source="{markupExtensions:ImageSource 'birmingham_logo.png'}"
+                WidthRequest="100" />
+            <Label Text="{markupExtensions:Translate SignUpAlertText}" />
+            <Button
+                Command="{Binding SignUpCommand}"
+                Style="{StaticResource ActionButton}"
+                Text="{markupExtensions:Translate SignUpHere}" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

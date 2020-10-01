@@ -1,0 +1,65 @@
+<div bsModal #createOrEditModal="bs-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="createOrEditModal"
+ aria-hidden="true" [config]="{backdrop: 'static'}">
+	<div class="modal-dialog modal-lg">
+		<div class="modal-content">
+			<form *ngIf="active" #incidentForm="ngForm" novalidate (ngSubmit)="save()" autocomplete="off">
+				<div class="modal-header">
+					<h4 class="modal-title">
+						<span *ngIf="incident.id">{{l("EditIncident")}}</span>
+						<span *ngIf="!incident.id">{{l("CreateNewIncident")}}</span>
+					</h4>
+					<button type="button" class="close" (click)="close()" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+
+					<div class="form-group">
+						<label>{{l("FloodingType")}}</label>
+						<input type="text" class="form-control" [(ngModel)]="incident.floodingType" name="FloodingType" />
+					</div>
+
+					<div class="form-group">
+						<label>{{l("Comment")}}</label>
+						<input type="text" class="form-control" [(ngModel)]="incident.comment" name="Comment" />
+					</div>
+
+					<div class="form-group">
+						<label>{{l("SelectedLocationID")}}</label>
+						<input type="number" class="form-control" [(ngModel)]="incident.selectedLocationID" name="SelectedLocationID" />
+					</div>
+
+					<div class="form-group">
+						<label>{{l("GPSLocationID")}}</label>
+						<input type="number" class="form-control" [(ngModel)]="incident.gPSLocationID" name="GPSLocationID" />
+					</div>
+
+					<div class="form-group">
+						<label>{{l("ReporterUserID")}}</label>
+						<input type="number" class="form-control" [(ngModel)]="incident.reporterUserID" name="ReporterUserID" />
+					</div>
+
+					<div class="form-group">
+						<label>{{l("PictureIDs")}}</label>
+						<input type="text" class="form-control" [(ngModel)]="incident.pictureIDs" name="PictureIDs" />
+					</div>
+
+					<div class="form-group m-form__group row">
+						<label for="Edit_Incident_TimeCreated" class="col-md-12">{{l("TimeCreated")}}</label>
+						<div class="col-lg-10 col-md-9 col-sm-8">
+							<input class="form-control m-input" type="datetime" datePicker [(selectedDate)]="incident.timeCreated" id="Edit_Incident_TimeCreated">
+						</div>
+					</div>
+
+
+				</div>
+				<div class="modal-footer">
+					<button [disabled]="saving" type="button" class="btn btn-default" (click)="close()">{{l("Cancel")}}</button>
+					<button type="submit" class="btn btn-primary blue" [disabled]="!incidentForm.form.valid" [buttonBusy]="saving"
+					 [busyText]="l('SavingWithThreeDot')"><i class="fa fa-save"></i> <span>{{l("Save")}}</span></button>
+				</div>
+			</form>
+		</div>
+	</div>
+
+</div>

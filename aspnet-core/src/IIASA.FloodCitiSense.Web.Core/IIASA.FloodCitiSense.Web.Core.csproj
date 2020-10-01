@@ -1,0 +1,36 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <AssetTargetFallback>$(AssetTargetFallback);portable-net45+win8+wp8+wpa81;</AssetTargetFallback>
+    <AssemblyName>IIASA.FloodCitiSense.Web.Core</AssemblyName>
+    <PackageId>IIASA.FloodCitiSense.Web.Core</PackageId>
+    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+    <RootNamespace>IIASA.FloodCitiSense.Web</RootNamespace>
+    <AssemblyVersion>2020.2.26.348</AssemblyVersion>
+    <FileVersion>2020.2.26.348</FileVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\IIASA.FloodCitiSense.Application\IIASA.FloodCitiSense.Application.csproj" />
+    <ProjectReference Include="..\IIASA.FloodCitiSense.EntityFrameworkCore\IIASA.FloodCitiSense.EntityFrameworkCore.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Abp.AspNetZeroCore.Web" Version="1.2.4" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.Facebook" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.Google" Version="2.2.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.MicrosoftAccount" Version="2.2.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="4.0.1" />
+    <PackageReference Include="PaulMiami.AspNetCore.Mvc.Recaptcha" Version="1.2.1" />
+    <PackageReference Include="System.ValueTuple" Version="4.5.0" />
+    <PackageReference Include="System.Net.Http" Version="4.3.4" />
+    <PackageReference Include="IdentityServer4.AccessTokenValidation" Version="2.7.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Abp.ZeroCore.IdentityServer4" Version="4.8.1" />
+    <PackageReference Include="Abp.AspNetCore" Version="4.8.1" />
+    <PackageReference Include="Abp.HangFire.AspNetCore" Version="4.8.1" />
+    <PackageReference Include="Abp.RedisCache" Version="4.8.1" />
+  </ItemGroup>
+</Project>

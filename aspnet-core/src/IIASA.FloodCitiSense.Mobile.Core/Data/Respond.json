@@ -1,0 +1,35 @@
+{
+    "title": "Task",
+    "sections": [
+        {
+           "header": "Nested view!",
+           "elements": [
+             {
+               "type": "boolean",
+               "caption": "Just a boolean",
+               "id": "first-boolean",
+               "value": false
+             },
+             {
+               "type": "string",
+               "caption": "Welcome to the nested controller"
+             }
+           ]
+        },
+        {
+          "elements": [
+              {
+                "id": "task-description",
+                "type": "entry",
+                "placeholder": "Enter task description"
+              },
+              {
+                "id": "task-duedate",
+                "type": "date",
+                "caption": "Due Date",
+                "value": "00:00"
+              }
+          ]
+        }
+    ]
+}

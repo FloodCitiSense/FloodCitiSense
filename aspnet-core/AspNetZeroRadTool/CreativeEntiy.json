@@ -1,0 +1,91 @@
+{
+  "MenuPosition": "main",
+  "RelativeNamespace": "Playground",
+  "EntityName": "CreativeEntiy",
+  "EntityNamePlural": "CreativeEntiies",
+  "TableName": "creative_entity",
+  "PrimaryKeyType": "int",
+  "BaseClass": "AuditedEntity",
+  "AutoMigration": true,
+  "UpdateDatabase": true,
+  "CreateUserInterface": true,
+  "PagePermission": {
+    "Host": true,
+    "Tenant": true
+  },
+  "Properties": [
+    {
+      "Name": "name",
+      "Type": "string",
+      "MaxLength": -1,
+      "MinLength": -1,
+      "Range": {
+        "IsRangeSet": false,
+        "MinimumValue": 0,
+        "MaximumValue": 0
+      },
+      "Required": false,
+      "Nullable": false,
+      "Regex": "",
+      "UserInterface": {
+        "List": true,
+        "CreateOrUpdate": true
+      }
+    },
+    {
+      "Name": "comment",
+      "Type": "string",
+      "MaxLength": -1,
+      "MinLength": -1,
+      "Range": {
+        "IsRangeSet": false,
+        "MinimumValue": 0,
+        "MaximumValue": 0
+      },
+      "Required": false,
+      "Nullable": false,
+      "Regex": "",
+      "UserInterface": {
+        "List": true,
+        "CreateOrUpdate": true
+      }
+    },
+    {
+      "Name": "lat",
+      "Type": "double",
+      "MaxLength": 0,
+      "MinLength": 0,
+      "Range": {
+        "IsRangeSet": false,
+        "MinimumValue": 0,
+        "MaximumValue": 0
+      },
+      "Required": false,
+      "Nullable": false,
+      "Regex": "",
+      "UserInterface": {
+        "List": true,
+        "CreateOrUpdate": true
+      }
+    },
+    {
+      "Name": "lon",
+      "Type": "double",
+      "MaxLength": -1,
+      "MinLength": -1,
+      "Range": {
+        "IsRangeSet": false,
+        "MinimumValue": 0,
+        "MaximumValue": 0
+      },
+      "Required": false,
+      "Nullable": false,
+      "Regex": "",
+      "UserInterface": {
+        "List": true,
+        "CreateOrUpdate": true
+      }
+    }
+  ],
+  "EnumDefinitions": []
+}

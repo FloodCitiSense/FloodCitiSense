@@ -1,0 +1,20 @@
+#production
+
+GET  https://api.floodcitisense.eu/.well-known/openid-configuration
+
+
+
+
+#   DEV
+
+@hostname = http://localhost
+@port = 54447
+@host = {{hostname}}:{{port}}
+@contentType = application/json
+
+# Get configuration
+
+GET  http://localhost:54447/.well-known/openid-configuration
+
+# Login
+

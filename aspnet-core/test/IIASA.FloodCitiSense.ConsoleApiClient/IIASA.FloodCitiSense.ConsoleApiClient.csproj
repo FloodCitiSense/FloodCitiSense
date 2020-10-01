@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <AssemblyVersion>2020.2.26.331</AssemblyVersion>
+    <FileVersion>2020.2.26.331</FileVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="IdentityModel" Version="3.10.10" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Abp.Web.Common" Version="4.9.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\IIASA.FloodCitiSense.Application.Shared\IIASA.FloodCitiSense.Application.Shared.csproj" />
+  </ItemGroup>
+</Project>

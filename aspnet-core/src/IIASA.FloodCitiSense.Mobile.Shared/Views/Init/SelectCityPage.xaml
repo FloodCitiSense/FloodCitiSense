@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="IIASA.FloodCitiSense.Views.Init.SelectCityPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:base="clr-namespace:IIASA.FloodCitiSense.Mobile.Core.Base;assembly=IIASA.FloodCitiSense.Mobile.Core"
+    xmlns:behaviors="clr-namespace:IIASA.FloodCitiSense.Mobile.Core.Behaviors;assembly=IIASA.FloodCitiSense.Mobile.Core"
+    xmlns:markupExtensions="clr-namespace:IIASA.FloodCitiSense.Mobile.Core.Extensions.MarkupExtensions;assembly=IIASA.FloodCitiSense.Mobile.Core"
+    Title="{markupExtensions:Translate SelectCity}"
+    base:ViewManager.AutoWireViewModel="true">
+    <ContentPage.Content>
+        <StackLayout
+            Margin="10"
+            HorizontalOptions="FillAndExpand"
+            VerticalOptions="CenterAndExpand">
+            <Frame Margin="10">
+                <StackLayout>
+                    <Label
+                        FontSize="Medium"
+                        HorizontalOptions="Start"
+                        Text="{markupExtensions:Translate SelectCity}"
+                        TextColor="{StaticResource PrimaryText}"
+                        VerticalOptions="Center" />
+                    <Picker
+                        HorizontalOptions="FillAndExpand"
+                        ItemDisplayBinding="{Binding Name}"
+                        ItemsSource="{Binding AllTenants}"
+                        SelectedItem="{Binding SelectedTenant}"
+                        VerticalOptions="Center" />
+                </StackLayout>
+            </Frame>
+            <Button
+                Command="{Binding SubmitCommand}"
+                Style="{StaticResource ActionButton}"
+                Text="{markupExtensions:Translate Submit}" />
+        </StackLayout>
+    </ContentPage.Content>
+
+    <ContentPage.Behaviors>
+        <behaviors:EventHandlerBehavior EventName="Appearing">
+            <behaviors:ActionCollection>
+                <behaviors:InvokeCommandAction Command="{Binding PageAppearingCommand}" />
+            </behaviors:ActionCollection>
+        </behaviors:EventHandlerBehavior>
+    </ContentPage.Behaviors>
+</ContentPage>

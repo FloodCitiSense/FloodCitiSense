@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="hello">Hello World, Click Me!</string>
+  <string name="app_name">FloodCitiSense</string>
+  <string name="facebook_app_id">2286542391658872</string>
+  <string name="fb_login_protocol_scheme">fb2286542391658872</string>
+</resources>

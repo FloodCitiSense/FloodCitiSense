@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <AssetTargetFallback>$(AssetTargetFallback);portable-net45+win8+wp8+wpa81;</AssetTargetFallback>
+    <AssemblyName>IIASA.FloodCitiSense.Application</AssemblyName>
+    <PackageId>IIASA.FloodCitiSense.Application</PackageId>
+    <GenerateAssemblyTitleAttribute>false</GenerateAssemblyTitleAttribute>
+    <GenerateAssemblyDescriptionAttribute>false</GenerateAssemblyDescriptionAttribute>
+    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+    <RootNamespace>IIASA.FloodCitiSense</RootNamespace>
+    <AssemblyVersion>2020.2.26.348</AssemblyVersion>
+    <FileVersion>2020.2.26.348</FileVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="EPPlus.Core" Version="1.5.4" />
+    <PackageReference Include="ValueInjecter" Version="3.1.3" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\IIASA.FloodCitiSense.Application.Shared\IIASA.FloodCitiSense.Application.Shared.csproj" />
+    <ProjectReference Include="..\IIASA.FloodCitiSense.Core\IIASA.FloodCitiSense.Core.csproj" />
+    <ProjectReference Include="..\IIASA.FloodCitiSense.EntityFrameworkCore\IIASA.FloodCitiSense.EntityFrameworkCore.csproj" />
+    <ProjectReference Include="..\IIASA.FloodCitiSense.MobilePushNotification\IIASA.FloodCitiSense.MobilePushNotification.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Transactions" />
+  </ItemGroup>
+</Project>

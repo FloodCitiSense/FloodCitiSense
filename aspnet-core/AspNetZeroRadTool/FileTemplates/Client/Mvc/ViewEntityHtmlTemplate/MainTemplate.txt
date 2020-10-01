@@ -1,0 +1,20 @@
+﻿
+@using {{Namespace_Here}}.Web.Areas.{{App_Area_Name_Here}}.Models.Common.Modals
+@using {{Namespace_Here}}.Web.Areas.{{App_Area_Name_Here}}.Models.{{Entity_Name_Plural_Here}}
+@model {{Entity_Name_Here}}ViewModel
+
+@Html.Partial("~/Areas/{{App_Area_Name_Here}}/Views/Common/Modals/_ModalHeader.cshtml", new ModalHeaderViewModel(""))
+
+<div class="modal-body">
+    <div id="{{Entity_Name_Here}}InformationsTab">
+        
+        <div class="m-stack m-stack--hor m-stack--general m-stack--demo">
+{{Property_Looped_Template_Here}}
+{{NP_Looped_Template_Here}}
+        </div>
+
+    </div>
+</div>
+
+@Html.Partial("~/Areas/{{App_Area_Name_Here}}/Views/Common/Modals/_ModalFooterWithClose.cshtml")
+

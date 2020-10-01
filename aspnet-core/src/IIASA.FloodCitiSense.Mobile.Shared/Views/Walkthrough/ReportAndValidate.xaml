@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentView
+    x:Class="IIASA.FloodCitiSense.Views.Walkthrough.ReportAndValidate"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:markupExtensions="clr-namespace:IIASA.FloodCitiSense.Mobile.Core.Extensions.MarkupExtensions;assembly=IIASA.FloodCitiSense.Mobile.Core">
+    <StackLayout
+        Margin="20"
+        HorizontalOptions="CenterAndExpand"
+        VerticalOptions="CenterAndExpand">
+        <Label
+            HorizontalTextAlignment="Center"
+            Style="{StaticResource PrimaryLabel}"
+            Text="{markupExtensions:Translate ReportAndValidateText}"
+            VerticalTextAlignment="Center" />
+        <StackLayout
+            Margin="20"
+            HorizontalOptions="CenterAndExpand"
+            Orientation="Horizontal"
+            VerticalOptions="CenterAndExpand">
+            <Image Source="{markupExtensions:ImageSource 'report_info.png'}" Style="{StaticResource IncidentImageStyle}" />
+            <Image Source="{markupExtensions:ImageSource 'report_status.png'}" Style="{StaticResource IncidentImageStyle}" />
+        </StackLayout>
+    </StackLayout>
+</ContentView>

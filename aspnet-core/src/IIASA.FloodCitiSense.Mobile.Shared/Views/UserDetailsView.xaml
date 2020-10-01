@@ -1,0 +1,347 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="IIASA.FloodCitiSense.Views.UserDetailsView"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:base="clr-namespace:IIASA.FloodCitiSense.Mobile.Core.Base;assembly=IIASA.FloodCitiSense.Mobile.Core"
+    xmlns:behaviors="clr-namespace:IIASA.FloodCitiSense.Mobile.Core.Behaviors;assembly=IIASA.FloodCitiSense.Mobile.Core"
+    xmlns:controls="clr-namespace:IIASA.FloodCitiSense.Mobile.Core.Controls;assembly=IIASA.FloodCitiSense.Mobile.Core"
+    xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+    xmlns:markupExtensions="clr-namespace:IIASA.FloodCitiSense.Mobile.Core.Extensions.MarkupExtensions;assembly=IIASA.FloodCitiSense.Mobile.Core"
+    xmlns:permission="clr-namespace:IIASA.FloodCitiSense.Mobile.Core.Services.Permission;assembly=IIASA.FloodCitiSense.Mobile.Core"
+    xmlns:abstractions="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin"
+    Title="{Binding PageTitle}"
+    base:ViewManager.AutoWireViewModel="true"
+    ios:Page.UseSafeArea="true">
+    <ContentPage.Content>
+
+        <ScrollView>
+            <Grid
+                ColumnSpacing="0"
+                IsEnabled="{markupExtensions:HasPermission Text={x:Static permission:PermissionKey.UserEdit}}"
+                RowSpacing="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="AUTO" />
+                    <RowDefinition Height="AUTO" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="AUTO" />
+                    <RowDefinition Height="AUTO" />
+                    <RowDefinition Height="AUTO" />
+                </Grid.RowDefinitions>
+
+                <Image
+                    Aspect="AspectFill"
+                    BackgroundColor="Transparent"
+                    HeightRequest="50"
+                    Source="{markupExtensions:ImageSource 'IIASA.FloodCitiSense.UI.Assets.Images.HeaderBackground.jpg'}" />
+
+                <abstractions:CircleImage
+                    Aspect="AspectFit"
+                    BorderColor="White"
+                    BorderThickness="5"
+                    FillColor="White"
+                    HeightRequest="150"
+                    HorizontalOptions="Center"
+                    Source="{Binding Model.Photo}"
+                    TranslationY="50"
+                    VerticalOptions="End"
+                    WidthRequest="150" />
+
+                <!--  FULL NAME  -->
+                <StackLayout
+                    Grid.Row="1"
+                    Padding="0,50,0,00"
+                    HorizontalOptions="Center">
+                    <Label Style="{StaticResource ProfileNameLabel}" Text="{Binding Model.FullName}" />
+                    <Label
+                        Margin="0,-5"
+                        Style="{StaticResource ProfileEmailAddressLabel}"
+                        Text="{Binding Model.User.EmailAddress}" />
+                </StackLayout>
+
+                <StackLayout
+                    Grid.Row="2"
+                    Padding="{DynamicResource CardPadding}"
+                    Spacing="{DynamicResource CardSpacing}">
+
+                    <controls:CardView>
+                        <StackLayout Margin="0,10" Padding="20">
+
+                            <Label Text="{markupExtensions:Translate UserNameOrEmail}" />
+                            <Entry IsEnabled="{markupExtensions:HasPermission Text={x:Static permission:PermissionKey.UserEdit}}" Text="{Binding Model.User.UserName, Mode=TwoWay}" />
+
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="0.50*" />
+                                    <ColumnDefinition Width="0.50*" />
+                                </Grid.ColumnDefinitions>
+
+                                <!--  NAME  -->
+                                <StackLayout Grid.Column="0">
+                                    <Label Text="{markupExtensions:Translate Name}" />
+                                    <Entry IsEnabled="{markupExtensions:HasPermission Text={x:Static permission:PermissionKey.UserEdit}}" Text="{Binding Model.User.Name, Mode=TwoWay}" />
+                                </StackLayout>
+
+                                <!--  SURNAME  -->
+                                <StackLayout Grid.Column="1">
+                                    <Label Text="{markupExtensions:Translate Surname}" />
+                                    <Entry IsEnabled="{markupExtensions:HasPermission Text={x:Static permission:PermissionKey.UserEdit}}" Text="{Binding Model.User.Surname, Mode=TwoWay}" />
+                                </StackLayout>
+                            </Grid>
+
+                            <!--  EMAIL  -->
+                            <Label Text="{markupExtensions:Translate Email}" />
+                            <Entry IsEnabled="{markupExtensions:HasPermission Text={x:Static permission:PermissionKey.UserEdit}}" Text="{Binding Model.User.EmailAddress, Mode=TwoWay}" />
+
+                            <!--  PHONE NUMBER  -->
+                            <Label Text="{markupExtensions:Translate PhoneNumber}" />
+                            <Entry IsEnabled="{markupExtensions:HasPermission Text={x:Static permission:PermissionKey.UserEdit}}" Text="{Binding Model.User.PhoneNumber, Mode=TwoWay}" />
+
+                        </StackLayout>
+
+                    </controls:CardView>
+
+                    <controls:CardView>
+                        <StackLayout Margin="0,10" Padding="20">
+                            <!--  SET RANDOM PASSWORD  -->
+                            <StackLayout Orientation="Horizontal">
+                                <Label Style="{StaticResource ActiveLabel}" Text="{markupExtensions:Translate SetRandomPassword}" />
+                                <Switch
+                                    HorizontalOptions="EndAndExpand"
+                                    IsEnabled="{markupExtensions:HasPermission Text={x:Static permission:PermissionKey.UserEdit}}"
+                                    IsToggled="{Binding SetRandomPassword}" />
+                            </StackLayout>
+
+                            <StackLayout IsVisible="{Binding SetRandomPassword, Converter={StaticResource InverseBooleanConverter}}">
+                                <!--  NEW PASSWORD  -->
+                                <StackLayout>
+                                    <Label Text="{markupExtensions:Translate NewPassword}" />
+                                    <Entry
+                                        IsEnabled="{markupExtensions:HasPermission Text={x:Static permission:PermissionKey.UserEdit}}"
+                                        IsPassword="True"
+                                        Text="{Binding Model.User.Password, Mode=TwoWay}" />
+                                </StackLayout>
+
+                                <!--  NEW PASSWORD REPEAT  -->
+                                <StackLayout>
+                                    <Label Text="{markupExtensions:Translate NewPasswordRepeat}" />
+                                    <Entry
+                                        IsEnabled="{markupExtensions:HasPermission Text={x:Static permission:PermissionKey.UserEdit}}"
+                                        IsPassword="True"
+                                        Text="{Binding Model.User.Password, Mode=TwoWay}" />
+                                </StackLayout>
+                            </StackLayout>
+
+                            <!--  SHOULD CHANGE PASSWORD ON NEXT LOGIN  -->
+                            <StackLayout Orientation="Horizontal">
+                                <Label Style="{StaticResource ActiveLabel}" Text="{markupExtensions:Translate ShouldChangePasswordOnNextLogin}" />
+                                <Switch
+                                    HorizontalOptions="EndAndExpand"
+                                    IsEnabled="{markupExtensions:HasPermission Text={x:Static permission:PermissionKey.UserEdit}}"
+                                    IsToggled="{Binding Model.User.ShouldChangePasswordOnNextLogin}" />
+                            </StackLayout>
+
+                            <!--  SEND ACTIVATION EMAIL  -->
+                            <StackLayout Orientation="Horizontal">
+                                <Label Style="{StaticResource ActiveLabel}" Text="{markupExtensions:Translate SendActivationEmail}" />
+                                <Switch
+                                    HorizontalOptions="EndAndExpand"
+                                    IsEnabled="{markupExtensions:HasPermission Text={x:Static permission:PermissionKey.UserEdit}}"
+                                    IsToggled="{Binding UserInput.SendActivationEmail}" />
+                            </StackLayout>
+
+                            <!--  IS LOCKOUT ENABLED  -->
+                            <StackLayout Orientation="Horizontal">
+                                <Label Style="{StaticResource ActiveLabel}" Text="{markupExtensions:Translate IsLockoutEnabled}" />
+                                <Switch
+                                    HorizontalOptions="EndAndExpand"
+                                    IsEnabled="{markupExtensions:HasPermission Text={x:Static permission:PermissionKey.UserEdit}}"
+                                    IsToggled="{Binding Model.User.IsActive}" />
+                            </StackLayout>
+
+                            <!--  ACTIVE  -->
+                            <StackLayout Orientation="Horizontal">
+                                <Label Style="{StaticResource ActiveLabel}" Text="{markupExtensions:Translate Active}" />
+                                <Switch
+                                    HorizontalOptions="EndAndExpand"
+                                    IsEnabled="{markupExtensions:HasPermission Text={x:Static permission:PermissionKey.UserEdit}}"
+                                    IsToggled="{Binding Model.User.IsActive}" />
+                            </StackLayout>
+
+                        </StackLayout>
+                    </controls:CardView>
+
+                    <!--  ROLES  -->
+                    <controls:CardView IsVisible="{Binding ShowRoles}">
+                        <StackLayout Spacing="0">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="34" />
+                                </Grid.ColumnDefinitions>
+                                <controls:LabelSection Text="{markupExtensions:Translate Roles}" />
+                            </Grid>
+
+                            <controls:Divider Margin="0,0,0,5" />
+
+                            <ListView
+                                Margin="15,0,15,0"
+                                HasUnevenRows="True"
+                                HeightRequest="{Binding RoleListViewHeight}"
+                                ItemsSource="{Binding Model.Roles}"
+                                SeparatorVisibility="None">
+                                <ListView.ItemTemplate>
+                                    <DataTemplate>
+                                        <ViewCell>
+                                            <Grid>
+                                                <Grid.ColumnDefinitions>
+                                                    <ColumnDefinition Width="*" />
+                                                    <ColumnDefinition Width="Auto" />
+                                                </Grid.ColumnDefinitions>
+
+                                                <Label Style="{StaticResource ActiveLabel}" Text="{Binding RoleDisplayName}" />
+                                                <Switch Grid.Column="1" IsToggled="{Binding IsAssigned}" />
+                                            </Grid>
+                                        </ViewCell>
+                                    </DataTemplate>
+                                </ListView.ItemTemplate>
+                            </ListView>
+
+                        </StackLayout>
+                    </controls:CardView>
+
+                    <!--  ORGANIZATION UNITS  -->
+                    <controls:CardView IsVisible="{Binding ShowOrganizationUnits}">
+                        <StackLayout Spacing="0">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="34" />
+                                </Grid.ColumnDefinitions>
+                                <controls:LabelSection Text="{markupExtensions:Translate OrganizationUnits}" />
+                            </Grid>
+
+                            <controls:Divider Margin="0,0,0,5" />
+
+                            <ListView
+                                Margin="15,0,15,0"
+                                HasUnevenRows="True"
+                                HeightRequest="{Binding OrganizationUnitListViewHeight}"
+                                ItemsSource="{Binding Model.OrganizationUnits}"
+                                SeparatorVisibility="None">
+                                <ListView.ItemTemplate>
+                                    <DataTemplate>
+                                        <ViewCell>
+                                            <Grid ColumnSpacing="0">
+                                                <Grid.ColumnDefinitions>
+                                                    <ColumnDefinition Width="Auto" />
+                                                    <ColumnDefinition Width="*" />
+                                                    <ColumnDefinition Width="Auto" />
+                                                </Grid.ColumnDefinitions>
+
+                                                <Label
+                                                    Margin="0"
+                                                    FontAttributes="Bold"
+                                                    Text="{Binding Code, Converter={StaticResource IndentConverter}, ConverterParameter=··}"
+                                                    TextColor="LightGray"
+                                                    VerticalOptions="Start"
+                                                    VerticalTextAlignment="Start" />
+
+                                                <Label
+                                                    Grid.Column="1"
+                                                    Style="{StaticResource ActiveLabel}"
+                                                    Text="{Binding DisplayName}" />
+
+                                                <Switch Grid.Column="2" IsToggled="{Binding IsAssigned}" />
+                                            </Grid>
+                                        </ViewCell>
+                                    </DataTemplate>
+                                </ListView.ItemTemplate>
+                            </ListView>
+
+                        </StackLayout>
+                    </controls:CardView>
+
+
+                    <controls:CardView IsVisible="{Binding IsNewUser, Converter={StaticResource InverseBooleanConverter}}">
+                        <StackLayout Margin="0,10" Padding="20">
+
+                            <!--  IS EMAIL CONFIRMED  -->
+                            <StackLayout Orientation="Horizontal">
+                                <Label Style="{StaticResource ActiveLabel}" Text="{markupExtensions:Translate EmailConfirm}" />
+                                <Label
+                                    HorizontalOptions="EndAndExpand"
+                                    HorizontalTextAlignment="End"
+                                    Style="{StaticResource ActiveLabel}"
+                                    Text="{Binding Model.IsEmailConfirmed, Converter={StaticResource BoolToYesNoConverter}, ConverterParameter=g}" />
+                            </StackLayout>
+                            <controls:Divider Margin="0,0,0,5" />
+
+                            <!--  LAST LOGIN TIME  -->
+                            <StackLayout Orientation="Horizontal">
+                                <Label Style="{StaticResource ActiveLabel}" Text="{markupExtensions:Translate LastLoginTime}" />
+                                <Label
+                                    HorizontalOptions="EndAndExpand"
+                                    HorizontalTextAlignment="End"
+                                    Style="{StaticResource ActiveLabel}"
+                                    Text="{Binding Model.LastLoginTime, Converter={StaticResource DatetimeConverter}, ConverterParameter=g}" />
+                            </StackLayout>
+                            <controls:Divider Margin="0,0,0,5" />
+
+                            <!--  CREATION TIME  -->
+                            <StackLayout Orientation="Horizontal">
+                                <Label Style="{StaticResource ActiveLabel}" Text="{markupExtensions:Translate CreationTime}" />
+                                <Label
+                                    HorizontalOptions="EndAndExpand"
+                                    HorizontalTextAlignment="End"
+                                    Style="{StaticResource ActiveLabel}"
+                                    Text="{Binding Model.CreationTime, Converter={StaticResource DatetimeConverter}, ConverterParameter=g}" />
+                            </StackLayout>
+
+                        </StackLayout>
+
+                    </controls:CardView>
+
+                </StackLayout>
+
+                <!--  UNLOCK USER BUTTON  -->
+                <Button
+                    Grid.Row="3"
+                    Margin="20,20,20,10"
+                    Command="{Binding UnlockUserCommand}"
+                    IsVisible="{Binding IsUnlockButtonVisible}"
+                    Style="{StaticResource WarnButton}"
+                    Text="{markupExtensions:Translate Unlock}" />
+
+                <!--  DELETE USER BUTTON  -->
+                <Button
+                    Grid.Row="4"
+                    Margin="{StaticResource ActionButtonMargin}"
+                    Command="{Binding DeleteUserCommand}"
+                    IsVisible="{Binding IsDeleteButtonVisible}"
+                    Style="{StaticResource DangerButton}"
+                    Text="{markupExtensions:Translate Delete}" />
+
+                <!--  SAVE BUTTON  -->
+                <Button
+                    Grid.Row="5"
+                    Margin="{StaticResource ActionButtonMargin}"
+                    Command="{Binding SaveUserCommand}"
+                    IsVisible="{markupExtensions:HasPermission Text={x:Static permission:PermissionKey.UserEdit}}"
+                    Style="{StaticResource ActionButton}"
+                    Text="{markupExtensions:Translate Save}" />
+
+            </Grid>
+        </ScrollView>
+
+    </ContentPage.Content>
+
+    <ContentPage.Behaviors>
+        <behaviors:EventHandlerBehavior EventName="Appearing">
+            <behaviors:ActionCollection>
+                <behaviors:InvokeCommandAction Command="{Binding PageAppearingCommand}" />
+            </behaviors:ActionCollection>
+        </behaviors:EventHandlerBehavior>
+    </ContentPage.Behaviors>
+
+</ContentPage>

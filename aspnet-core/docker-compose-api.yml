@@ -1,0 +1,9 @@
+version: '3.4'
+
+services:
+  iiasa.floodcitisense.web.host:
+    image: ${DOCKER_REGISTRY}iiasafloodcitisensewebhost
+    build:
+      context: .
+      dockerfile: src/IIASA.FloodCitiSense.Web.Host/Dockerfile
+

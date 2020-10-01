@@ -1,0 +1,79 @@
+{
+  "project_info": {
+    "project_number": "526829940303",
+    "firebase_url": "https://floodcitisense.firebaseio.com",
+    "project_id": "floodcitisense",
+    "storage_bucket": "floodcitisense.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:526829940303:android:b552e5f2539e7cd5",
+        "android_client_info": {
+          "package_name": "at.ac.iiasa.floodcitisense"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "526829940303-ukiggumrhc1734anrpsi4mpdrumul5si.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "at.ac.iiasa.floodcitisense",
+            "certificate_hash": "bdfad6c9b9e9db28bf57c438f059a59aaff74ad3"
+          }
+        },
+        {
+          "client_id": "526829940303-mbpp1ehfajeuapi0chqsrfoo5gp640qr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "at.ac.iiasa.floodcitisense",
+            "certificate_hash": "2e69293d5de62bd77d51a8b27f9c4c6dd150e2ae"
+          }
+        },
+        {
+          "client_id": "526829940303-ps7vsjbiepa0674re1pc0qtj5bfg5iol.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "at.ac.iiasa.floodcitisense",
+            "certificate_hash": "8a87a0deb5207e30e42df099a35bafd4e6826c39"
+          }
+        },
+        {
+          "client_id": "526829940303-74phq3s09gfktklsde4jmkkv2j0hlnhf.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "526829940303-4p7sa6kh8j5ojcb8gjnf6i3t4sind0sr.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "526829940303-dt22ebrh75afg1es0vo698vt8evnaku7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBhxGZ1rC7rq5b87Q8EaTdGmfRFKEhxpZ0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "526829940303-74phq3s09gfktklsde4jmkkv2j0hlnhf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

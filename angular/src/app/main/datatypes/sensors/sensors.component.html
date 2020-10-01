@@ -1,0 +1,137 @@
+<div [@routerTransition]>
+    <div class="m-subheader">
+        <div class="d-flex align-items-center">
+            <div class="mr-auto col-md-6">
+                <h3 class="m-subheader__title m-subheader__title--separator">
+                    <span>{{l("Sensors")}}</span>
+                </h3>
+                <span class="m-section__sub">
+                    {{l("SensorsHeaderInfo")}}
+                </span>
+            </div>
+            <div class="col-md-6 text-right">
+				<button (click)="exportToExcel()" class="btn btn-outline-success"><i class="fa fa-file-excel-o"></i> {{l("ExportToExcel")}}</button>
+                <button *ngIf="isGranted('Pages.Sensors.Create')" (click)="createSensor()" 
+			class="btn btn-primary blue"><i class="fa fa-plus"></i> {{l("CreateNewSensor")}}</button>
+            </div>
+        </div>
+    </div>
+    <div class="m-content">
+        <div class="m-portlet m-portlet--mobile">
+            <div class="m-portlet__body">
+
+				<form class="horizontal-form" autocomplete="off">
+                    <div class="m-form m-form--label-align-right">
+                        <div class="row align-items-center m--margin-bottom-10">
+                            <div class="col-xl-12">
+                                <div class="form-group m-form__group align-items-center">
+                                    <div class="input-group">
+                                        <input [(ngModel)]="filterText" name="filterText" autoFocus class="form-control m-input" [placeholder]="l('SearchWithThreeDot')" type="text">
+                                        <span class="input-group-btn">
+                                            <button (click)="getSensors()" class="btn btn-primary" type="submit"><i class="flaticon-search-1"></i></button>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+						 <div class="row m--margin-bottom-10" [hidden]="!advancedFiltersAreShown">
+						 	<div class="col-md-12">
+						         <div class="m-separator m-separator--dashed"></div>
+						     </div>
+
+
+							<div class="col-md-3">
+								<div class="form-group">
+									<label for="NameFilter">{{l("Name")}}</label>
+									<input type="text" id="NameFilter" class="form-control" name="nameFilter" [(ngModel)]="nameFilter">
+								</div>
+                            </div>
+
+                        </div>
+                        <div class="row margin-bottom-10">
+                            <div class="col-sm-12">
+                                <span class="clickable-item text-muted" *ngIf="!advancedFiltersAreShown" (click)="advancedFiltersAreShown=!advancedFiltersAreShown"><i class="fa fa-angle-down"></i> {{l("ShowAdvancedFilters")}}</span>
+                                <span class="clickable-item text-muted" *ngIf="advancedFiltersAreShown" (click)="advancedFiltersAreShown=!advancedFiltersAreShown"><i class="fa fa-angle-up"></i> {{l("HideAdvancedFilters")}}</span>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+
+                <div class="row align-items-center">
+                    <!--<Primeng-Datatable-Start>-->
+                    <div class="primeng-datatable-container"
+                         [busyIf]="primengDatatableHelper.isLoading">
+                        <p-dataTable #dataTable
+                                     (onLazyLoad)="getSensors($event)"
+                                     [value]="primengDatatableHelper.records"
+                                     rows="{{primengDatatableHelper.defaultRecordsCountPerPage}}"
+                                     [paginator]="false"
+                                     [lazy]="true"
+                                     emptyMessage="{{l('NoData')}}"
+                                     scrollable="true"
+                                     ScrollWidth="100%"
+                                     responsive="primengDatatableHelper.isResponsive"
+                                     resizableColumns="primengDatatableHelper.resizableColumns">
+
+                            <p-column field=""
+                                      header="{{l('Actions')}}"
+                                      [sortable]="false"
+                                      [style]="{'width':'130px','text-align':'center'}"
+									  [hidden]="!isGrantedAny('Pages.Sensors.Edit', 'Pages.Sensors.Delete')">
+                                <ng-template let-record="rowData" pTemplate="body">
+                                    <div class="btn-group dropdown" normalizePosition>
+                                        <button class="dropdown-toggle btn btn-sm btn-primary"
+                                                data-toggle="dropdown"
+                                                aria-haspopup="true"
+                                                aria-expanded="false">
+                                            <i class="fa fa-cog"></i><span class="caret"></span> {{l("Actions")}}
+                                        </button>
+                                        <ul class="dropdown-menu">
+										    <li>
+                                                <a 
+                                                   (click)="viewSensorModal.show(record)">{{l('View')}}</a>
+                                            </li>
+                                            <li>
+                                                <a *ngIf="permission.isGranted('Pages.Sensors.Edit')"
+                                                   (click)="createOrEditSensorModal.show(record.sensor.id)">{{l('Edit')}}</a>
+                                            </li>
+                                            <li>
+                                                <a *ngIf="permission.isGranted('Pages.Sensors.Delete')"
+                                                   (click)="deleteSensor(record.sensor)">{{l('Delete')}}</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </ng-template>
+                            </p-column>
+
+
+
+
+					<p-column field="sensor.name" header="{{l('Name')}}" [sortable]="true"></p-column> 
+
+
+
+                        </p-dataTable>
+
+
+                        <div class="primeng-paging-container">
+                            <p-paginator rows="{{primengDatatableHelper.defaultRecordsCountPerPage}}"
+                                         #paginator
+                                         (onPageChange)="getSensors($event)"
+                                         [totalRecords]="primengDatatableHelper.totalRecordsCount"
+                                         [rowsPerPageOptions]="primengDatatableHelper.predefinedRecordsCountPerPage">
+                            </p-paginator>
+                            <span class="total-records-count">
+                                {{l('TotalRecordsCount', primengDatatableHelper.totalRecordsCount)}}
+                            </span>
+                        </div>
+                    </div>
+                    <!--<Primeng-Datatable-End>-->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <createOrEditSensorModal #createOrEditSensorModal (modalSave)="getSensors()"></createOrEditSensorModal>
+    <viewSensorModal #viewSensorModal></viewSensorModal>
+</div>

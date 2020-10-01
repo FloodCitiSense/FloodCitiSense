@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFrameworks>netstandard2.0</TargetFrameworks>
+    <RootNamespace>IIASA.FloodCitiSense</RootNamespace>
+    <AssemblyVersion>2020.4.2.340</AssemblyVersion>
+    <FileVersion>2020.4.2.340</FileVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Abp" Version="4.9.0" />
+    <PackageReference Include="Abp.Web.Common" Version="4.9.0" />
+    <PackageReference Include="Abp.Zero.Common" Version="4.9.0" />
+    <PackageReference Include="Abp.ZeroCore" Version="4.9.0" />
+  </ItemGroup>
+</Project>

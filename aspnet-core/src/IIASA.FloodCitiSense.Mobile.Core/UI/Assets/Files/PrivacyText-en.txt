@@ -1,0 +1,795 @@
+﻿<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=unicode">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<title>Privacy Policy for FloodCitiSense</title>
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:"Segoe UI";
+	panose-1:2 11 5 2 4 2 4 2 2 3;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;}
+h1
+	{mso-style-link:"Heading 1 Char";
+	margin-right:0in;
+	margin-left:0in;
+	font-size:24.0pt;
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+h2
+	{mso-style-link:"Heading 2 Char";
+	margin-right:0in;
+	margin-left:0in;
+	font-size:18.0pt;
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+h3
+	{mso-style-link:"Heading 3 Char";
+	margin-top:2.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	page-break-after:avoid;
+	font-size:12.0pt;
+	font-family:"Calibri Light",sans-serif;
+	color:#1F4D78;
+	font-weight:normal;}
+h5
+	{mso-style-link:"Heading 5 Char";
+	margin-right:0in;
+	margin-left:0in;
+	font-size:10.0pt;
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+p.MsoCommentText, li.MsoCommentText, div.MsoCommentText
+	{mso-style-link:"Comment Text Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman",serif;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;}
+p
+	{margin-right:0in;
+	margin-left:0in;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;}
+p.MsoCommentSubject, li.MsoCommentSubject, div.MsoCommentSubject
+	{mso-style-link:"Comment Subject Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{mso-style-link:"Balloon Text Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:9.0pt;
+	font-family:"Segoe UI",sans-serif;}
+p.MsoRMPane, li.MsoRMPane, div.MsoRMPane
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:8.0pt;
+	margin-left:.5in;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoListParagraphCxSpFirst, li.MsoListParagraphCxSpFirst, div.MsoListParagraphCxSpFirst
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoListParagraphCxSpMiddle, li.MsoListParagraphCxSpMiddle, div.MsoListParagraphCxSpMiddle
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoListParagraphCxSpLast, li.MsoListParagraphCxSpLast, div.MsoListParagraphCxSpLast
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:8.0pt;
+	margin-left:.5in;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.msonormal0, li.msonormal0, div.msonormal0
+	{mso-style-name:msonormal;
+	margin-right:0in;
+	margin-left:0in;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;}
+span.Heading5Char
+	{mso-style-name:"Heading 5 Char";
+	mso-style-link:"Heading 5";
+	font-family:"Calibri Light",sans-serif;
+	color:#2E74B5;}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-link:"Heading 1";
+	font-family:"Calibri Light",sans-serif;
+	color:#2E74B5;}
+p.lead, li.lead, div.lead
+	{mso-style-name:lead;
+	margin-right:0in;
+	margin-left:0in;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;}
+span.Heading2Char
+	{mso-style-name:"Heading 2 Char";
+	mso-style-link:"Heading 2";
+	font-family:"Calibri Light",sans-serif;
+	color:#2E74B5;}
+p.text-muted, li.text-muted, div.text-muted
+	{mso-style-name:text-muted;
+	margin-right:0in;
+	margin-left:0in;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;}
+span.BalloonTextChar
+	{mso-style-name:"Balloon Text Char";
+	mso-style-link:"Balloon Text";
+	font-family:"Segoe UI",sans-serif;}
+span.CommentTextChar
+	{mso-style-name:"Comment Text Char";
+	mso-style-link:"Comment Text";
+	font-family:"Times New Roman",serif;}
+span.CommentSubjectChar
+	{mso-style-name:"Comment Subject Char";
+	mso-style-link:"Comment Subject";
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+span.Heading3Char
+	{mso-style-name:"Heading 3 Char";
+	mso-style-link:"Heading 3";
+	font-family:"Calibri Light",sans-serif;
+	color:#1F4D78;}
+.MsoChpDefault
+	{font-size:10.0pt;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-US link=blue vlink=purple>
+
+<div class=WordSection1>
+
+<div>
+
+<h1 align=center style='text-align:center'><span lang=EN style='font-family:
+"Calibri",sans-serif'>FloodCitiSense 2020 </span></h1>
+
+<h1 align=center style='text-align:center'><span lang=EN style='font-family:
+"Calibri",sans-serif'>Privacy Policy</span></h1>
+
+<p class=MsoNormal align=center style='text-align:center'><span lang=EN
+style='font-family:"Calibri",sans-serif'>Version 0.2</span></p>
+
+</div>
+
+<p class=lead style='text-align:justify'><span lang=EN style='font-size:11.0pt;
+font-family:"Calibri",sans-serif'>Thank you for your willingness to contribute
+to FloodCitiSense. This document aims to provide you with adequate information
+on the data we receive from you, how we process it, and what we make available
+to the public in order to comply with the requirements of the EU General Data Protection
+Regulation (GDPR).</span></p>
+
+<h1><span lang=EN style='font-size:16.0pt;font-family:"Calibri",sans-serif'>Our
+platform</span></h1>
+
+<p class=lead style='text-align:justify'><span lang=EN style='font-size:11.0pt;
+font-family:"Calibri",sans-serif'>The app you are using has been developed by
+the International Institute for Applied Systems Analysis (IIASA), Schlossplatz
+1, 2361 Laxenburg, Austria as part of the ENSUF/FFG-funded FloodCitiSense
+project (No. 860918). </span></p>
+
+<h1><span lang=EN style='font-size:16.0pt;font-family:"Calibri",sans-serif'>What
+is “personal data”?</span></h1>
+
+<h1 style='text-align:justify'><span lang=EN style='font-size:11.0pt;
+font-family:"Calibri",sans-serif;font-weight:normal'>“Personal data” means any
+information relating to an identified or identifiable natural person, such as
+their name, contact information, their location at a certain time or IP
+address. </span></h1>
+
+<h1><span lang=EN style='font-size:16.0pt;font-family:"Calibri",sans-serif'>Data
+processed by us</span></h1>
+
+<p class=lead style='text-align:justify'><span lang=EN style='font-size:11.0pt;
+font-family:"Calibri",sans-serif'>We are a scientific institute and process
+personal data for scientific purposes including environmental monitoring. We
+process personal data:</span></p>
+
+<p class=lead style='margin-left:39.0pt;text-align:justify;text-indent:-.25in'><span
+lang=EN style='font-size:11.0pt;font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN style='font-size:11.0pt;font-family:"Calibri",sans-serif'>for
+which you have given us consent for a specific purpose (Art. 6 para 1 lit a
+GDPR), namely for the conduction of this scientific study; </span></p>
+
+<p class=lead style='margin-left:39.0pt;text-align:justify;text-indent:-.25in'><span
+lang=EN style='font-size:11.0pt;font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN style='font-size:11.0pt;font-family:"Calibri",sans-serif'>that
+is </span><span style='font-size:11.0pt;font-family:"Calibri",sans-serif'>necessary
+for the performance of a task carried out in the public interest (Art. 6 para 1
+lit e GDPR), namely </span><span lang=EN style='font-size:11.0pt;font-family:
+"Calibri",sans-serif'>for the conduction of this scientific study; </span><span
+style='font-size:11.0pt;font-family:"Calibri",sans-serif;color:black;
+background:white'>that is necessary for the purpose of the legitimate interests
+pursued by us or by a third party </span><span style='font-size:11.0pt;
+font-family:"Calibri",sans-serif'>(Art. 6 para 1 lit f GDPR)<span
+style='color:black;background:white'>, e.g. avoiding legal disputes about
+rights in the contributions</span></span><span lang=EN style='font-size:11.0pt;
+font-family:"Calibri",sans-serif'>. If possible, we seek the explicit consent
+to the processing of data, in particular the disclosure to third parties (Art.
+6 para. 1 lit. a GDPR). Below is a list of types of data the app collects.
+Please note that a copy of the data might be briefly stored in the server's
+memory for a short period. These data are temporarily stored apart from the
+database, managed and deleted automatically by the server's operating system
+and will not be accessed by us for processing, archiving, or any other reason.
+It is also possible through logging errors or general requests that submitted
+data be stored in one of the server's log files. These files are not publicly
+accessible and are not used for any processing, storage or data publication
+other than for resolving a possible software problem. These are technical
+necessities over which we have no control. </span></p>
+
+<b><span lang=EN style='font-size:24.0pt;font-family:"Calibri",sans-serif'><br
+clear=all style='page-break-before:always'>
+</span></b>
+
+<h1><span lang=EN style='font-size:16.0pt;font-family:"Calibri",sans-serif'>Registration/Login/Profile
+update</span></h1>
+
+<p style='text-align:justify'><span lang=EN style='font-size:11.0pt;font-family:
+"Calibri",sans-serif'>We process the following data for registration, login and
+profile updates for a given user, all of which is stored in the FloodCitiSense
+database:</span></p>
+
+<p class=MsoListParagraphCxSpFirst style='text-indent:-13.5pt'><span lang=DE
+style='font-family:"Times New Roman",serif'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=DE style='color:black'>User identifier</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-13.5pt'><span lang=DE
+style='font-family:"Times New Roman",serif'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=DE style='color:black'>First name</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-13.5pt'><span lang=DE
+style='font-family:"Times New Roman",serif'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=DE style='color:black'>Last name</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-13.5pt'><span lang=DE
+style='font-family:"Times New Roman",serif'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=DE style='color:black'>Username</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-13.5pt'><span lang=DE
+style='font-family:"Times New Roman",serif'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=DE style='color:black'>Password (encrypted)</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-13.5pt'><span lang=DE
+style='font-family:"Times New Roman",serif'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=DE style='color:black'>Email address</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-13.5pt'><span lang=DE
+style='font-family:"Times New Roman",serif'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=DE style='color:black'>Telephone number</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-13.5pt'><span
+style='font-family:"Times New Roman",serif'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='color:black'>Status of the user (active/deactivated)</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-13.5pt'><span
+style='font-family:"Times New Roman",serif'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='color:black'>Whether the email address has been
+confirmed</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-13.5pt'><span
+style='font-family:"Times New Roman",serif'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='color:black'>Last time the user logged in</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-13.5pt'><span lang=DE
+style='font-family:"Times New Roman",serif'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=DE style='color:black'>Profile picture</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-13.5pt'><span lang=DE
+style='font-family:"Times New Roman",serif'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=DE style='color:black'>Session ID</span></p>
+
+<p class=MsoListParagraphCxSpLast style='text-indent:-13.5pt'><span
+style='font-family:"Times New Roman",serif'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Number of times the incorrect password has been entered, reset
+each time the correct password is entered.</p>
+
+<p style='text-align:justify'><span lang=EN style='font-size:11.0pt;font-family:
+"Calibri",sans-serif'>None of this information will be part of any publication
+(e.g. data products, scientific publications, etc). </span></p>
+
+<h2><span lang=EN style='font-size:16.0pt;font-family:"Calibri",sans-serif'>Log
+data</span></h2>
+
+<p class=lead style='text-align:justify'><span lang=EN style='font-size:11.0pt;
+font-family:"Calibri",sans-serif'>Whenever you use our service, we collect Log
+Data, or data and information (also through third party products) on your phone
+to identify errors in the app. Log Data may include information such as your
+device Internet Protocol (“IP”) address, device name, operating system version,
+the configuration of the app when utilizing our Service, the time and date of
+your use of the service, and other statistics. This data is used for
+identifying problems with our software and will not be published as part of the
+resulting data product.</span></p>
+
+<h2><span lang=EN style='font-size:16.0pt;font-family:"Calibri",sans-serif'>Cookies</span></h2>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:11.0pt;
+font-family:"Calibri",sans-serif'>We use first party cookies to provide
+essential site functionality. Cookies are small text files that are saved by
+your browser and temporarily stored on your device.</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:11.0pt;
+font-family:"Calibri",sans-serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:11.0pt;
+font-family:"Calibri",sans-serif'>Provided that you have consented to the use
+of cookies, our website uses Google Analytics, a web analysis service of Google
+LLC. (“Google”). Google Analytics uses cookies to help understand how the website
+is being used. In order to do so, information about your visit, including parts
+of your IP Address, may be transmitted, stored and processed on a Google server
+in the USA or another non-EU state.</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:11.0pt;
+font-family:"Calibri",sans-serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:11.0pt;
+font-family:"Calibri",sans-serif'>You can also prevent the placement of cookies
+through the settings of your browser or by downloading and installing the
+browser plug-in available at the following link:</span></p>
+
+<p class=MsoNormal style='text-align:justify'><a
+href="http://tools.google.com/dlpage/gaoptout?hl=de"><span style='font-size:
+11.0pt;font-family:"Calibri",sans-serif'>http://tools.google.com/dlpage/gaoptout?hl=de</span></a><span
+style='font-size:11.0pt;font-family:"Calibri",sans-serif'>.</span></p>
+
+<h2><span lang=EN style='font-size:16.0pt;font-family:"Calibri",sans-serif'>Submitting
+your incident reports</span></h2>
+
+<p style='text-align:justify'><span lang=EN style='font-size:11.0pt;font-family:
+"Calibri",sans-serif'>When you submit your incident report, the app accesses
+and processes the data you collected, and some additional information we use
+for assessing the quality of your contribution and for reproducing technical
+problems in case of an error. The following data are sent to the server and
+stored: </span></p>
+
+<p class=MsoNormal style='margin-left:.5in;text-align:justify;text-indent:-13.5pt'><span
+lang=EN style='font-size:10.0pt;font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN style='font-size:11.0pt;font-family:"Calibri",sans-serif'>User
+ID</span></p>
+
+<p class=MsoNormal style='margin-left:.5in;text-align:justify;text-indent:-13.5pt'><span
+lang=EN style='font-size:10.0pt;font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN style='font-size:11.0pt;font-family:"Calibri",sans-serif'>User
+display name</span></p>
+
+<p class=MsoNormal style='margin-left:.5in;text-align:justify;text-indent:-13.5pt'><span
+lang=EN style='font-size:10.0pt;font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN style='font-size:11.0pt;font-family:"Calibri",sans-serif'>User
+email address</span></p>
+
+<p class=MsoNormal style='margin-left:.5in;text-align:justify;text-indent:-13.5pt'><span
+lang=EN style='font-size:10.0pt;font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN style='font-size:11.0pt;font-family:"Calibri",sans-serif'>User
+position (Latitude/Longitude as well as accuracy)</span></p>
+
+<p class=MsoNormal style='margin-left:.5in;text-align:justify;text-indent:-13.5pt'><span
+lang=EN style='font-size:10.0pt;font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN style='font-size:11.0pt;font-family:"Calibri",sans-serif'>Device
+and app information: </span></p>
+
+<p class=MsoNormal style='margin-left:63.0pt;text-align:justify;text-indent:
+-.25in'><span lang=EN style='font-size:10.0pt;font-family:"Courier New"'>o<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><span lang=EN
+style='font-size:11.0pt;font-family:"Calibri",sans-serif'>Version of FloodCitiSense
+app</span></p>
+
+<p class=MsoNormal style='margin-left:63.0pt;text-align:justify;text-indent:
+-.25in'><span lang=EN style='font-size:10.0pt;font-family:"Courier New"'>o<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><span lang=EN
+style='font-size:11.0pt;font-family:"Calibri",sans-serif'>Smartphone operating
+system and version</span></p>
+
+<p class=MsoNormal style='margin-left:63.0pt;text-align:justify;text-indent:
+-.25in'><span lang=EN style='font-size:10.0pt;font-family:"Courier New"'>o<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><span lang=EN
+style='font-size:11.0pt;font-family:"Calibri",sans-serif'>Device name (brand
+and model)</span></p>
+
+<p class=MsoNormal style='margin-left:63.0pt;text-align:justify;text-indent:
+-.25in'><span lang=EN style='font-size:10.0pt;font-family:"Courier New"'>o<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><span lang=EN
+style='font-size:11.0pt;font-family:"Calibri",sans-serif'>Device serial number</span></p>
+
+<p class=MsoNormal style='margin-left:63.0pt;text-align:justify;text-indent:
+-.25in'><span lang=EN style='font-size:10.0pt;font-family:"Courier New"'>o<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><span lang=EN
+style='font-size:11.0pt;font-family:"Calibri",sans-serif'>Language setting of
+the device</span></p>
+
+<p class=MsoNormal style='margin-left:.5in;text-align:justify;text-indent:-13.5pt'><span
+lang=EN style='font-size:10.0pt;font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN style='font-size:11.0pt;font-family:"Calibri",sans-serif'>Information
+on the incident: </span></p>
+
+<p class=MsoNormal style='margin-left:63.0pt;text-align:justify;text-indent:
+-.25in'><span lang=EN style='font-size:10.0pt;font-family:"Courier New"'>o<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><span lang=EN
+style='font-size:11.0pt;font-family:"Calibri",sans-serif'>Incident ID</span></p>
+
+<p class=MsoNormal style='margin-left:63.0pt;text-align:justify;text-indent:
+-.25in'><span lang=EN style='font-size:10.0pt;font-family:"Courier New"'>o<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><span lang=EN
+style='font-size:11.0pt;font-family:"Calibri",sans-serif'>Type of rain</span></p>
+
+<p class=MsoNormal style='margin-left:63.0pt;text-align:justify;text-indent:
+-.25in'><span lang=EN style='font-size:10.0pt;font-family:"Courier New"'>o<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><span lang=EN
+style='font-size:11.0pt;font-family:"Calibri",sans-serif'>Type of flooding</span></p>
+
+<p class=MsoNormal style='margin-left:63.0pt;text-align:justify;text-indent:
+-.25in'><span lang=EN style='font-size:10.0pt;font-family:"Courier New"'>o<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><span lang=EN
+style='font-size:11.0pt;font-family:"Calibri",sans-serif'>Sign of damage</span></p>
+
+<p class=MsoNormal style='margin-left:63.0pt;text-align:justify;text-indent:
+-.25in'><span lang=EN style='font-size:10.0pt;font-family:"Courier New"'>o<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><span lang=EN
+style='font-size:11.0pt;font-family:"Calibri",sans-serif'>Sign of obstruction</span></p>
+
+<p class=MsoNormal style='margin-left:63.0pt;text-align:justify;text-indent:
+-.25in'><span lang=EN style='font-size:10.0pt;font-family:"Courier New"'>o<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><span lang=EN
+style='font-size:11.0pt;font-family:"Calibri",sans-serif'>Types of space
+flooded</span></p>
+
+<p class=MsoNormal style='margin-left:63.0pt;text-align:justify;text-indent:
+-.25in'><span lang=EN style='font-size:10.0pt;font-family:"Courier New"'>o<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><span lang=EN
+style='font-size:11.0pt;font-family:"Calibri",sans-serif'>Flood extent</span></p>
+
+<p class=MsoNormal style='margin-left:63.0pt;text-align:justify;text-indent:
+-.25in'><span lang=EN style='font-size:10.0pt;font-family:"Courier New"'>o<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><span lang=EN
+style='font-size:11.0pt;font-family:"Calibri",sans-serif'>Flood depth</span></p>
+
+<p class=MsoNormal style='margin-left:63.0pt;text-align:justify;text-indent:
+-.25in'><span lang=EN style='font-size:10.0pt;font-family:"Courier New"'>o<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><span lang=EN
+style='font-size:11.0pt;font-family:"Calibri",sans-serif'>Frequency of flood</span></p>
+
+<p class=MsoNormal style='margin-left:63.0pt;text-align:justify;text-indent:
+-.25in'><span lang=EN style='font-size:10.0pt;font-family:"Courier New"'>o<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><span lang=EN
+style='font-size:11.0pt;font-family:"Calibri",sans-serif'>Water clarity</span></p>
+
+<p class=MsoNormal style='margin-left:63.0pt;text-align:justify;text-indent:
+-.25in'><span lang=EN style='font-size:10.0pt;font-family:"Courier New"'>o<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><span lang=EN
+style='font-size:11.0pt;font-family:"Calibri",sans-serif'>Are you impacted</span></p>
+
+<p class=MsoNormal style='margin-left:63.0pt;text-align:justify;text-indent:
+-.25in'><span lang=EN style='font-size:10.0pt;font-family:"Courier New"'>o<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><span lang=EN
+style='font-size:11.0pt;font-family:"Calibri",sans-serif'>Date and time the
+report was made</span></p>
+
+<p class=MsoNormal style='margin-left:63.0pt;text-align:justify;text-indent:
+-.25in'><span lang=EN style='font-size:10.0pt;font-family:"Courier New"'>o<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><span lang=EN
+style='font-size:11.0pt;font-family:"Calibri",sans-serif'>Date and time the
+report was uploaded</span></p>
+
+<p class=MsoNormal style='margin-left:63.0pt;text-align:justify;text-indent:
+-.25in'><span lang=EN style='font-size:10.0pt;font-family:"Courier New"'>o<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><span lang=EN
+style='font-size:11.0pt;font-family:"Calibri",sans-serif'>Position
+(Latitude/Longitude as well as accuracy)&nbsp;&nbsp;&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:45.0pt;text-align:justify;text-indent:
+-22.5pt'><span lang=EN style='font-size:10.0pt;font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+lang=EN style='font-size:11.0pt;font-family:"Calibri",sans-serif'>Information
+per photo submitted: </span></p>
+
+<p class=MsoNormal style='margin-left:63.0pt;text-align:justify;text-indent:
+-.25in'><span lang=EN style='font-size:10.0pt;font-family:"Courier New"'>o<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><span lang=EN
+style='font-size:11.0pt;font-family:"Calibri",sans-serif'>The submitted media
+file (photo)</span></p>
+
+<p class=MsoNormal style='margin-left:63.0pt;text-align:justify;text-indent:
+-.25in'><span lang=EN style='font-size:10.0pt;font-family:"Courier New"'>o<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><span lang=EN
+style='font-size:11.0pt;font-family:"Calibri",sans-serif'>Time and date when
+the photo was taken</span></p>
+
+<p class=MsoNormal style='margin-left:63.0pt;text-align:justify;text-indent:
+-.25in'><span lang=EN style='font-size:10.0pt;font-family:"Courier New"'>o<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><span lang=EN
+style='font-size:11.0pt;font-family:"Calibri",sans-serif'>Compass direction of
+the photo</span></p>
+
+<p class=MsoNormal style='margin-left:63.0pt;text-align:justify;text-indent:
+-.25in'><span lang=EN style='font-size:10.0pt;font-family:"Courier New"'>o<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><span lang=EN
+style='font-size:11.0pt;font-family:"Calibri",sans-serif'>Tilt angle of the
+photo</span></p>
+
+<p class=MsoNormal style='margin-left:63.0pt;text-align:justify;text-indent:
+-.25in'><span lang=EN style='font-size:10.0pt;font-family:"Courier New"'>o<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><span lang=EN
+style='font-size:11.0pt;font-family:"Calibri",sans-serif'>Position
+(Latitude/Longitude as well as accuracy)</span></p>
+
+<p class=MsoNormal style='margin-left:45.0pt;text-align:justify;text-indent:
+-22.5pt'><span lang=EN style='font-size:10.0pt;font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+lang=EN style='font-size:11.0pt;font-family:"Calibri",sans-serif'>Information
+per video submitted: </span></p>
+
+<p class=MsoListParagraphCxSpFirst style='margin-left:1.0in;text-indent:-27.0pt'><span
+lang=EN-GB style='font-size:10.0pt;line-height:107%;font-family:"Courier New"'>o<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><span
+lang=EN-GB>The submitted media file (video)</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:1.0in;text-indent:-27.0pt'><span
+lang=EN-GB style='font-size:10.0pt;line-height:107%;font-family:"Courier New"'>o<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><span
+lang=EN-GB>Time and date when the video&nbsp;was taken</span></p>
+
+<p class=MsoListParagraphCxSpLast style='margin-left:1.0in;text-indent:-27.0pt'><span
+lang=EN-GB style='font-size:10.0pt;line-height:107%;font-family:"Courier New"'>o<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><span
+lang=EN-GB>Position (Latitude/Longitude as well as accuracy)</span></p>
+
+<p class=MsoNormal style='margin-left:.5in;text-align:justify'><span lang=EN
+style='font-size:11.0pt;font-family:"Calibri",sans-serif'>&nbsp;</span></p>
+
+<p class=MsoNormal><b><span lang=EN style='font-size:16.0pt;font-family:"Calibri",sans-serif'>Information
+on contributions</span></b></p>
+
+<p style='text-align:justify'><span lang=EN style='font-size:11.0pt;font-family:
+"Calibri",sans-serif'>On the map screen, we process information on submitted
+reports that are within the currently displayed map view. Since this usually
+shows your current location, it implicitly uses your current location (latitude
+and longitude). This information is processed even when you are neither logged
+in nor registered as a user. For this purpose, we access the following data: </span></p>
+
+<ul type=disc>
+ <li class=MsoNormal><span lang=EN style='font-size:11.0pt;font-family:"Calibri",sans-serif'>User
+     ID </span></li>
+ <li class=MsoNormal><span lang=EN style='font-size:11.0pt;font-family:"Calibri",sans-serif'>Location
+     (Latitude, Longitude) </span></li>
+ <li class=MsoNormal><span lang=EN style='font-size:11.0pt;font-family:"Calibri",sans-serif'>Bounding
+     coordinates for the part of the map currently shown in the app</span></li>
+</ul>
+
+<p style='text-align:justify'><span lang=EN style='font-size:11.0pt;font-family:
+"Calibri",sans-serif'>However, we do not permanently store this information.</span></p>
+
+<h1><span lang=EN style='font-size:16.0pt;font-family:"Calibri",sans-serif'>Data
+storage</span></h1>
+
+<p style='text-align:justify'><span lang=EN style='font-size:11.0pt;font-family:
+"Calibri",sans-serif'>The data from the FloodCitiSense application are stored
+and maintained on state-of-the-art web service environments hosted on rented
+servers at </span><a href="https://www.hetzner.com/?country=at"><span lang=EN
+style='font-size:11.0pt;font-family:"Calibri",sans-serif'>Hetzner Online GmbH</span></a><span
+class=MsoCommentReference><span style='font-size:11.0pt;font-family:"Calibri",sans-serif'>,
+Industriestrasse 25, 91710 Gunzenhausen, Germany. </span></span><span lang=EN
+style='font-size:11.0pt;font-family:"Calibri",sans-serif'>We do not provide any
+means to access data for the hosting company other than the ways intended for
+every user. The environment is set up such that we restrict access to the
+database strictly to our trusted network and through APIs that let us choose
+exactly which data is accessible to which users. </span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:11.0pt;
+font-family:"Calibri",sans-serif'>Regarding the use of cookies, please see
+above. Information about your visit, including parts of your IP Address, may be
+transmitted, stored and processed on a Google server in the USA or another non-EU
+state.</span></p>
+
+<p style='text-align:justify'><span lang=EN style='font-size:11.0pt;font-family:
+"Calibri",sans-serif'>After completion of the scientific project, all personal
+data are permanently anonymized so that traceability to individual users will
+not be possible unless users have explicitly asked us to safe and publish their
+personal data. </span></p>
+
+<h1><span lang=EN style='font-size:16.0pt;font-family:"Calibri",sans-serif'>Data
+contributions</span></h1>
+
+<p class=lead style='text-align:justify'><span lang=EN style='font-size:11.0pt;
+font-family:"Calibri",sans-serif'>Please be aware that we rely on you to
+contribute data, which does not infringe on the rights of others. Make sure you
+follow the instructions for the campaign/project to which you contribute, and
+do not submit data that could violate especially personal rights, copyright or
+other legislation. </span></p>
+
+<p style='text-align:justify'><span lang=EN style='font-size:11.0pt;font-family:
+"Calibri",sans-serif'>By contributing data, you provide us with the information
+requested in the app/website, but we usually also collect additional data that allows
+us to trace technical problems and verify the quality of the contribution.
+Please see the details above.</span></p>
+
+<p style='text-align:justify'><span lang=EN style='font-size:11.0pt;font-family:
+"Calibri",sans-serif'>By contributing data, you grant IIASA a license to use this
+data. Please see also our Terms and Conditions, which are available from the
+app. </span></p>
+
+<h2><span lang=EN style='font-size:16.0pt;font-family:"Calibri",sans-serif'>Third
+parties</span></h2>
+
+<p><span lang=EN style='font-size:11.0pt;font-family:"Calibri",sans-serif'>Please
+note that we may employ the following third-party companies to facilitate our
+service: </span></p>
+
+<p style='margin-left:.5in;text-indent:-.25in'><span lang=EN style='font-size:
+11.0pt;font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN style='font-size:11.0pt;font-family:"Calibri",sans-serif'>Google
+LLC;</span></p>
+
+<p style='margin-left:.5in;text-indent:-.25in'><span lang=EN style='font-size:
+11.0pt;font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN style='font-size:11.0pt;font-family:"Calibri",sans-serif'>Hetzner
+Online GmbH.</span></p>
+
+<p style='text-align:justify'><span lang=EN style='font-size:11.0pt;font-family:
+"Calibri",sans-serif'>These companies will have access to your data in order to
+perform the tasks we assign to them, as described above. However, they are obliged
+to not disclose or use the information for any other purpose.</span></p>
+
+<p style='text-align:justify'><span lang=EN style='font-size:11.0pt;font-family:
+"Calibri",sans-serif'>Should you consent to the use of your username in our
+social media platforms, it will be visible in connection with the photos you
+submitted:</span></p>
+
+<p style='margin-left:.5in;text-align:justify;text-indent:-.25in'><span
+lang=EN style='font-size:11.0pt;font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN style='font-size:11.0pt;font-family:"Calibri",sans-serif'>Facebook
+(</span><a href="http://www.facebook.com/"><span lang=EN style='font-size:11.0pt;
+font-family:"Calibri",sans-serif'>www.facebook.com/</span></a><span lang=EN
+style='font-size:11.0pt;font-family:"Calibri",sans-serif'>, operated by Facebook,
+Inc.,1601 Willow Road, Menlo Park, California 94025; and Facebook Ireland Ltd.,
+4 Grand Canal Square, Grand Canal Harbour, Dublin 2 Ireland)</span></p>
+
+<p style='margin-left:.5in;text-align:justify;text-indent:-.25in'><span
+lang=EN style='font-size:11.0pt;font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN style='font-size:11.0pt;font-family:"Calibri",sans-serif'>Twitter
+(</span><a href="http://www.twitter.com/"><span lang=EN style='font-size:11.0pt;
+font-family:"Calibri",sans-serif'>www.twitter.com/</span></a><span lang=EN
+style='font-size:11.0pt;font-family:"Calibri",sans-serif'>, operated by Twitter
+International Company, One Cumberland Place, Fenian Street Dublin 2, D02 AX07
+Ireland; and 1355 Market Street, Suite 900, San Francisco, CA 94103, United
+States</span><span style='font-size:11.0pt;font-family:"Calibri",sans-serif'>)</span></p>
+
+<p style='text-align:justify'><span style='font-size:11.0pt;font-family:"Calibri",sans-serif'>Google
+LLC, Facebook, Twitter have their seat in the US and comply with “Privacy
+Shield”. According to a decision by the European Commission this guarantees an
+adequate level of data protection.</span></p>
+
+<h1><span lang=EN style='font-size:16.0pt;font-family:"Calibri",sans-serif'>Rights
+of the user</span></h1>
+
+<h1 style='text-align:justify'><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Calibri",sans-serif;font-weight:normal'>At any time, you have the
+right: </span></h1>
+
+<p class=MsoListParagraphCxSpFirst style='text-align:justify;text-indent:-.25in'><span
+lang=EN-GB style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-GB>to request information as to which of your data
+we process (Art. 15 GDPR), </span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-align:justify;text-indent:-.25in'><span
+lang=EN-GB style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-GB>to request the rectification or erasure of your
+data (Art. 16 and Art. 17 GDPR),</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-align:justify;text-indent:-.25in'><span
+lang=EN-GB style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-GB>to restrict the processing of your data (Art. 18
+GDPR),</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-align:justify;text-indent:-.25in'><span
+lang=EN-GB style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-GB>to request the transmission of your data (Art.
+20 GDPR);</span></p>
+
+<p class=MsoListParagraphCxSpLast style='text-align:justify;text-indent:-.25in'><span
+lang=EN-GB style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-GB>to file a complaint with a supervisory
+authority, in particular the Austrian data protection authority (www.dsb.gv.at)
+or the data protection authority at your place of residence.</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-size:11.0pt;font-family:"Calibri",sans-serif'>You can instruct us
+to stop processing your data at any time using the contact data below. Even if
+you have agreed to the processing of data in the past, you can revoke such
+consent at any time (Art. 21 GDPR).</span></p>
+
+<h1 style='text-align:justify'><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Calibri",sans-serif;font-weight:normal'>Should you have questions
+concerning your personal data, please contact us using the contact information below.</span></h1>
+
+<h1><span lang=EN style='font-size:16.0pt;font-family:"Calibri",sans-serif'>Third
+party apps and websites</span></h1>
+
+<h1 style='text-align:justify'><span lang=EN style='font-size:11.0pt;
+font-family:"Calibri",sans-serif;font-weight:normal'>Our app and/or website may
+contain links to other websites. If you click on a third-party link, you will
+be directed to that site. Please note that these external sites are not
+operated by us and we do not have any control, nor assume any responsibility
+for their content, privacy policies or practices.</span></h1>
+
+<h1 style='text-align:justify'><span lang=EN style='font-size:11.0pt;
+font-family:"Calibri",sans-serif;font-weight:normal'>We therefore strongly
+advise you to review the Privacy Policy of those websites. </span></h1>
+
+<h1><span lang=EN style='font-size:16.0pt;font-family:"Calibri",sans-serif'>Contact
+us</span></h1>
+
+<p><span lang=EN style='font-size:11.0pt;font-family:"Calibri",sans-serif'>If
+you have any questions about our Privacy Policy, do not hesitate to </span><a
+href="mailto:info@floodcitisense.eu"><span lang=EN style='font-size:11.0pt;
+font-family:"Calibri",sans-serif'>contact us</span></a><span style='font-size:
+11.0pt;font-family:"Calibri",sans-serif'>.</span></p>
+
+<p class=lead><span style='font-size:11.0pt;font-family:"Calibri",sans-serif'>International
+Institute for Applied Systems Analysis (IIASA)<br>
+Schlossplatz 1, A-2361 Laxenburg, Austria Tel: + 43 2236 807 0<br>
+<br>
+</span></p>
+
+</div>
+
+</body>
+
+</html>

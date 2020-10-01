@@ -1,0 +1,45 @@
+<div bsModal #createOrEditModal="bs-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="createOrEditModal" aria-hidden="true" [config]="{backdrop: 'static'}">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <form *ngIf="active" #creativeEntiyForm="ngForm" novalidate (ngSubmit)="save()" autocomplete="off">
+                <div class="modal-header">
+                    <h4 class="modal-title">
+                        <span *ngIf="creativeEntiy.id">{{l("EditCreativeEntiy")}}</span>
+                        <span *ngIf="!creativeEntiy.id">{{l("CreateNewCreativeEntiy")}}</span>
+                    </h4>
+                    <button type="button" class="close" (click)="close()" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                 
+                 <div class="form-group">
+                    <label>{{l("name")}}</label>
+                    <input type="text" name="name" class="form-control" [(ngModel)]="creativeEntiy.name" >
+                </div>
+
+                 <div class="form-group">
+                    <label>{{l("comment")}}</label>
+                    <input type="text" name="comment" class="form-control" [(ngModel)]="creativeEntiy.comment" >
+                </div>
+
+                 <div class="form-group"> 
+                    <label>{{l("lat")}}</label>
+                    <input type="number" name="lat" class="form-control" [(ngModel)]="creativeEntiy.lat" > 
+                </div>
+
+                 <div class="form-group"> 
+                    <label>{{l("lon")}}</label>
+                    <input type="number" name="lon" class="form-control" [(ngModel)]="creativeEntiy.lon" > 
+                </div>
+
+
+                </div>
+                <div class="modal-footer">
+                    <button [disabled]="saving" type="button" class="btn btn-default" (click)="close()">{{l("Cancel")}}</button>
+                    <button type="submit" class="btn btn-primary blue" [disabled]="!creativeEntiyForm.form.valid" [buttonBusy]="saving" [busyText]="l('SavingWithThreeDot')"><i class="fa fa-save"></i> <span>{{l("Save")}}</span></button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

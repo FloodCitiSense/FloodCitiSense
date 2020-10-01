@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="IIASA.FloodCitiSense.Views.Init.WelcomePage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:base="clr-namespace:IIASA.FloodCitiSense.Mobile.Core.Base;assembly=IIASA.FloodCitiSense.Mobile.Core"
+    xmlns:behaviors="clr-namespace:IIASA.FloodCitiSense.Mobile.Core.Behaviors;assembly=IIASA.FloodCitiSense.Mobile.Core"
+    xmlns:forms="clr-namespace:Lottie.Forms;assembly=Lottie.Forms"
+    xmlns:markupExtensions="clr-namespace:IIASA.FloodCitiSense.Mobile.Core.Extensions.MarkupExtensions;assembly=IIASA.FloodCitiSense.Mobile.Core"
+    Title="{markupExtensions:Translate Welcome}"
+    base:ViewManager.AutoWireViewModel="true">
+    <ContentPage.Content>
+        <AbsoluteLayout>
+            <!--<Image
+                AbsoluteLayout.LayoutBounds="0,0,1,1"
+                AbsoluteLayout.LayoutFlags="All"
+                Aspect="AspectFill"
+                HorizontalOptions="FillAndExpand"
+                Source="{markupExtensions:ImageSource 'rain.jpeg'}"
+                VerticalOptions="FillAndExpand" />-->
+            <forms:AnimationView
+                x:Name="AnimationView"
+                AbsoluteLayout.LayoutBounds=".5,.2,1,250"
+                AbsoluteLayout.LayoutFlags="PositionProportional,WidthProportional"
+                Animation="rain.json"
+                AutoPlay="True"
+                HorizontalOptions="FillAndExpand"
+                Loop="true"
+                VerticalOptions="FillAndExpand" />
+
+            <Label
+                AbsoluteLayout.LayoutBounds=".5,.7,1,100"
+                AbsoluteLayout.LayoutFlags="PositionProportional,WidthProportional"
+                FontAttributes="Bold"
+                FontSize="Large"
+                HorizontalOptions="CenterAndExpand"
+                HorizontalTextAlignment="Center"
+                Text="{markupExtensions:Translate WelcomeText}"
+                TextColor="{StaticResource PrimaryLight}"
+                VerticalOptions="CenterAndExpand"
+                VerticalTextAlignment="Center" />
+
+            <Button
+                AbsoluteLayout.LayoutBounds="0,1,1,50"
+                AbsoluteLayout.LayoutFlags="PositionProportional,WidthProportional"
+                Command="{Binding NextCommand}"
+                Style="{StaticResource ActionButton}"
+                Text="{markupExtensions:Translate Next}" />
+        </AbsoluteLayout>
+    </ContentPage.Content>
+    <ContentPage.Behaviors>
+        <behaviors:EventHandlerBehavior EventName="Appearing">
+            <behaviors:ActionCollection>
+                <behaviors:InvokeCommandAction Command="{Binding PageAppearingCommand}" />
+            </behaviors:ActionCollection>
+        </behaviors:EventHandlerBehavior>
+    </ContentPage.Behaviors>
+</ContentPage>

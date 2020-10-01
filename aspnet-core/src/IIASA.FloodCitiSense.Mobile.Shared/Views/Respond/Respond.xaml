@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="IIASA.FloodCitiSense.Views.Respond.Respond"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:base="clr-namespace:IIASA.FloodCitiSense.Mobile.Core.Base;assembly=IIASA.FloodCitiSense.Mobile.Core"
+    xmlns:markupExtensions="clr-namespace:IIASA.FloodCitiSense.Mobile.Core.Extensions.MarkupExtensions;assembly=IIASA.FloodCitiSense.Mobile.Core"
+    Title="{markupExtensions:Translate Respond}"
+    base:ViewManager.AutoWireViewModel="true">
+    <ContentPage.Content>
+        <ScrollView Margin="10">
+            <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand">
+                    <StackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding GeneralAsyncCommand}" NumberOfTapsRequired="1" />
+                    </StackLayout.GestureRecognizers>
+                    <Image
+                        HeightRequest="100"
+                        Source="{markupExtensions:ImageSource 'flooded-house_1.png'}"
+                        WidthRequest="100" />
+                    <Label
+                        FontAttributes="Bold"
+                        FontSize="Large"
+                        Style="{StaticResource MainPageLabelStyle}"
+                        Text="{markupExtensions:Translate GeneralRecommendations}" />
+                </StackLayout>
+                <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand">
+                    <StackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding CityAsyncCommand}" NumberOfTapsRequired="1" />
+                    </StackLayout.GestureRecognizers>
+                    <Image
+                        HeightRequest="100"
+                        Source="{markupExtensions:ImageSource 'flooded-house_2.png'}"
+                        WidthRequest="100" />
+                    <Label
+                        FontAttributes="Bold"
+                        FontSize="Large"
+                        Style="{StaticResource MainPageLabelStyle}"
+                        Text="{markupExtensions:Translate CitySpecificRecommendations}" />
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

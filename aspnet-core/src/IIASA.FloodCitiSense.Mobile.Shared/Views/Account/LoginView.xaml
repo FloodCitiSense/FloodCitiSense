@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<ContentPage
+    x:Class="IIASA.FloodCitiSense.Views.Account.LoginView"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:base1="clr-namespace:IIASA.FloodCitiSense.Mobile.Core.Base;assembly=IIASA.FloodCitiSense.Mobile.Core"
+    xmlns:behaviors="clr-namespace:IIASA.FloodCitiSense.Mobile.Core.Behaviors;assembly=IIASA.FloodCitiSense.Mobile.Core"
+    xmlns:markupExtensions="clr-namespace:IIASA.FloodCitiSense.Mobile.Core.Extensions.MarkupExtensions;assembly=IIASA.FloodCitiSense.Mobile.Core"
+    Title="{markupExtensions:Translate LogIn}"
+    base1:ViewManager.AutoWireViewModel="true">
+
+    <Grid BackgroundColor="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="50" />
+            <RowDefinition Height="50" />
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0" Margin="20,0,20,0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="150" />
+                <RowDefinition Height="50" />
+                <RowDefinition Height="50" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <Image
+                HeightRequest="200"
+                HorizontalOptions="CenterAndExpand"
+                Source="{markupExtensions:ImageSource 'AppLogo.png'}"
+                VerticalOptions="End"
+                WidthRequest="200" />
+            <Entry
+                x:Name="UsernameEntry"
+                Grid.Row="1" 
+                AutomationId="UsernameEntry"
+                FontSize="16"
+                Keyboard="{StaticResource NoCapitalizationKeyboard}"
+                Placeholder="{markupExtensions:Translate EmailOrUsername}"
+                PlaceholderColor="#bababa"
+                Text="{Binding UserName, Mode=TwoWay}" />
+
+            <StackLayout Grid.Row="2"  Orientation="Horizontal" >
+                <Entry HorizontalOptions="FillAndExpand"  Margin="0,0,-35,0"
+                x:Name="PasswordEntry"
+                AutomationId="PasswordEntry"
+                FontSize="16"
+                IsPassword="{Binding IsPasswordHide}"
+                Keyboard="{StaticResource NoCapitalizationKeyboard}"
+                Placeholder="{markupExtensions:Translate Password}"
+                PlaceholderColor="#bababa"
+                Text="{Binding Password, Mode=TwoWay}" />
+                <Image HorizontalOptions="End"  HeightRequest="30" WidthRequest="30" Source="{Binding ShowHideIcon}" >
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding ShowHideTapCommand}" NumberOfTapsRequired="1" />
+                </Image.GestureRecognizers>
+            </Image>
+            </StackLayout>
+            <Button
+                x:Name="LoginButton"
+                Grid.Row="3"
+                Margin="0,15,0,0"
+                AutomationId="LoginButton"
+                Command="{Binding LoginUserCommand}"
+                HeightRequest="50"
+                IsEnabled="{Binding IsLoginEnabled}"
+                Style="{StaticResource ActionButton}"
+                Text="Log In"
+                VerticalOptions="Start" />
+        </Grid>
+        <StackLayout Grid.Row="1" BackgroundColor="#FFFFFF">
+            <Label BackgroundColor="#E3E3E3" HeightRequest="1" />
+            <Label
+                HorizontalTextAlignment="Center"
+                Text="Forgot Password" FontAttributes="Bold" FontSize="15"
+                TextColor="{StaticResource PrimaryText}"
+                VerticalOptions="FillAndExpand"
+                VerticalTextAlignment="Center" />
+            <StackLayout.GestureRecognizers>
+                <TapGestureRecognizer Command="{Binding ForgotPasswordCommand}" NumberOfTapsRequired="1" />
+            </StackLayout.GestureRecognizers>
+        </StackLayout>
+        <StackLayout Grid.Row="2" BackgroundColor="#FFFFFF">
+            <Label BackgroundColor="#E3E3E3" HeightRequest="2" />
+            <Label
+                HorizontalTextAlignment="Center"
+                Text="{markupExtensions:Translate DontHaveAccount}" FontAttributes="Bold" FontSize="16"
+                TextColor="{StaticResource PrimaryText}"
+                VerticalOptions="FillAndExpand"
+                VerticalTextAlignment="Center" />
+            <StackLayout.GestureRecognizers>
+                <TapGestureRecognizer Command="{Binding RegisterCommand}" NumberOfTapsRequired="1" />
+            </StackLayout.GestureRecognizers>
+        </StackLayout>
+    </Grid>
+
+    <ContentPage.Behaviors>
+        <behaviors:EventHandlerBehavior EventName="Appearing">
+            <behaviors:ActionCollection>
+                <behaviors:InvokeCommandAction Command="{Binding PageAppearingCommand}" />
+            </behaviors:ActionCollection>
+        </behaviors:EventHandlerBehavior>
+    </ContentPage.Behaviors>
+
+</ContentPage>

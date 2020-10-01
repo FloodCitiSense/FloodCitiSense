@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="IIASA.FloodCitiSense.Views.Init.TermsPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:base="clr-namespace:IIASA.FloodCitiSense.Mobile.Core.Base;assembly=IIASA.FloodCitiSense.Mobile.Core"
+    xmlns:markupExtensions="clr-namespace:IIASA.FloodCitiSense.Mobile.Core.Extensions.MarkupExtensions;assembly=IIASA.FloodCitiSense.Mobile.Core"
+    Title="{markupExtensions:Translate TermsAndConditions}"
+    base:ViewManager.AutoWireViewModel="true">
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <WebView x:Name="WebView" Grid.Row="0" />
+            <StackLayout Grid.Row="1" IsVisible="{Binding IsNotAccepted}">
+                <StackLayout
+                    Margin="10"
+                    HorizontalOptions="CenterAndExpand"
+                    Orientation="Horizontal"
+                    VerticalOptions="FillAndExpand">
+                    <Switch HorizontalOptions="Start" IsToggled="{Binding IsTermsAccepted}" />
+                    <Label
+                        FormattedText="{markupExtensions:Translate AcceptText}"
+                        HorizontalOptions="CenterAndExpand"
+                        LineBreakMode="WordWrap"
+                        VerticalOptions="CenterAndExpand" />
+                </StackLayout>
+                <Button
+                    Command="{Binding ProceedCommand}"
+                    HorizontalOptions="FillAndExpand"
+                    Style="{StaticResource ActionButton}"
+                    Text="{markupExtensions:Translate Proceed}"
+                    VerticalOptions="EndAndExpand" />
+            </StackLayout>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="IIASA.FloodCitiSense.Views.Prepare.PrepareGeneral"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:base="clr-namespace:IIASA.FloodCitiSense.Mobile.Core.Base;assembly=IIASA.FloodCitiSense.Mobile.Core"
+    xmlns:markupExtensions="clr-namespace:IIASA.FloodCitiSense.Mobile.Core.Extensions.MarkupExtensions;assembly=IIASA.FloodCitiSense.Mobile.Core"
+    Title="{markupExtensions:Translate Preparedness}"
+    base:ViewManager.AutoWireViewModel="true">
+    <ContentPage.Content>
+        <ScrollView Margin="15">
+            <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                <StackLayout Style="{StaticResource PrepareGrayLayoutStyle}">
+                    <Label Style="{StaticResource PrepareLabel}" Text="{markupExtensions:Translate Prepare2}" />
+                </StackLayout>
+                <StackLayout>
+                    <Image Source="{markupExtensions:ImageSource 'ItemsForEmergencySupplyKit.jpg'}" />
+                </StackLayout>
+                <StackLayout Style="{StaticResource PrepareLayoutStyle}">
+                    <Image Source="{markupExtensions:ImageSource 'list.png'}" Style="{StaticResource PrepareEndImageStyle}" />
+                    <Label Style="{StaticResource PrepareLabel}" Text="{markupExtensions:Translate Prepare1}" />
+                </StackLayout>
+                <StackLayout Style="{StaticResource PrepareLayoutStyle}">
+                    <Label Style="{StaticResource PrepareLabel}" Text="{markupExtensions:Translate Prepare3}" />
+                    <Image Source="{markupExtensions:ImageSource 'gas-station.png'}" Style="{StaticResource PrepareEndImageStyle}" />
+                </StackLayout>
+                <StackLayout Style="{StaticResource PrepareGrayLayoutStyle}">
+                    <Label Style="{StaticResource PrepareLabel}" Text="{markupExtensions:Translate Prepare4}" />
+                </StackLayout>
+                <StackLayout Style="{StaticResource PrepareLayoutStyle}">
+                    <Label Style="{StaticResource PrepareLabel}" Text="{markupExtensions:Translate Prepare5}" />
+                    <Image Source="{markupExtensions:ImageSource 'insurance.png'}" Style="{StaticResource PrepareEndImageStyle}" />
+                </StackLayout>
+                <StackLayout Style="{StaticResource PrepareLayoutStyle}">
+                    <Image Source="{markupExtensions:ImageSource 'networking.png'}" Style="{StaticResource PrepareStartImageStyle}" />
+                    <Label Style="{StaticResource PrepareLabel}" Text="{markupExtensions:Translate Prepare6}" />
+                </StackLayout>
+                <StackLayout Style="{StaticResource PrepareLayoutStyle}">
+                    <Label Style="{StaticResource PrepareLabel}" Text="{markupExtensions:Translate Prepare7}" />
+                    <Image Source="{markupExtensions:ImageSource 'houses.png'}" Style="{StaticResource PrepareEndImageStyle}" />
+                </StackLayout>
+                <StackLayout Style="{StaticResource PrepareGrayLayoutStyle}">
+                    <Image Source="{markupExtensions:ImageSource 'help.png'}" Style="{StaticResource PrepareStartImageStyle}" />
+                    <Label Style="{StaticResource PrepareLabel}" Text="{markupExtensions:Translate Prepare8}" />
+                </StackLayout>
+                <StackLayout Style="{StaticResource PrepareLayoutStyle}">
+                    <Label Style="{StaticResource PrepareLabel}" Text="{markupExtensions:Translate Prepare9}" />
+                    <Image Source="{markupExtensions:ImageSource 'bag.png'}" Style="{StaticResource PrepareEndImageStyle}" />
+                </StackLayout>
+                <StackLayout Style="{StaticResource PrepareLayoutStyle}">
+                    <Image Source="{markupExtensions:ImageSource 'money.png'}" Style="{StaticResource PrepareStartImageStyle}" />
+                    <Label Style="{StaticResource PrepareLabel}" Text="{markupExtensions:Translate Prepare10}" />
+                </StackLayout>
+                <StackLayout Style="{StaticResource PrepareLayoutStyle}">
+                    <Label Style="{StaticResource PrepareLabel}" Text="{markupExtensions:Translate Prepare11}" />
+                    <Image Source="{markupExtensions:ImageSource 'chemical-weapon.png'}" Style="{StaticResource PrepareEndImageStyle}" />
+                </StackLayout>
+                <StackLayout Style="{StaticResource PrepareGrayLayoutStyle}">
+                    <Label Style="{StaticResource PrepareLabel}" Text="{markupExtensions:Translate Prepare12}" />
+                </StackLayout>
+                <StackLayout Style="{StaticResource PrepareLayoutStyle}">
+                    <Label Style="{StaticResource PrepareLabel}" Text="{markupExtensions:Translate Prepare13}" />
+                    <Image Source="{markupExtensions:ImageSource 'radio.png'}" Style="{StaticResource PrepareEndImageStyle}" />
+                </StackLayout>
+                <StackLayout Style="{StaticResource PrepareLayoutStyle}">
+                    <Image Source="{markupExtensions:ImageSource 'photo-camera.png'}" Style="{StaticResource PrepareStartImageStyle}" />
+                    <Label Style="{StaticResource PrepareLabel}" Text="{markupExtensions:Translate Prepare14}" />
+                </StackLayout>
+                <StackLayout Style="{StaticResource PrepareGrayLayoutStyle}">
+                    <Label Style="{StaticResource PrepareLabel}" Text="{markupExtensions:Translate Prepare15}" />
+                </StackLayout>
+            </StackLayout>
+
+
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

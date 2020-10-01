@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="IIASA.FloodCitiSense.Views.Respond.RespondCity"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:base="clr-namespace:IIASA.FloodCitiSense.Mobile.Core.Base;assembly=IIASA.FloodCitiSense.Mobile.Core"
+    xmlns:markupExtensions="clr-namespace:IIASA.FloodCitiSense.Mobile.Core.Extensions.MarkupExtensions;assembly=IIASA.FloodCitiSense.Mobile.Core"
+    Title="{markupExtensions:Translate Respond}"
+    base:ViewManager.AutoWireViewModel="true">
+    <ContentPage.Content>
+        <ScrollView Margin="10">
+            <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand">
+                    <StackLayout.GestureRecognizers>
+                        <TapGestureRecognizer
+                            Command="{Binding NavigateAsyncCommand}"
+                            CommandParameter="Common.UnderConstruction"
+                            NumberOfTapsRequired="1" />
+                    </StackLayout.GestureRecognizers>
+                    <Image
+                        HeightRequest="100"
+                        Source="{markupExtensions:ImageSource 'cloud.png'}"
+                        WidthRequest="150" />
+                    <Label
+                        FontAttributes="Bold"
+                        FontSize="Large"
+                        Style="{StaticResource MainPageLabelStyle}"
+                        Text="{markupExtensions:Translate FAQ}" />
+                </StackLayout>
+                <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand">
+                    <StackLayout.GestureRecognizers>
+                        <TapGestureRecognizer
+                            Command="{Binding NavigateAsyncCommand}"
+                            CommandParameter="Common.UnderConstruction"
+                            NumberOfTapsRequired="1" />
+                    </StackLayout.GestureRecognizers>
+                    <Image
+                        HeightRequest="100"
+                        Source="{markupExtensions:ImageSource 'emergency-call.png'}"
+                        WidthRequest="150" />
+                    <Label
+                        FontAttributes="Bold"
+                        FontSize="Large"
+                        Style="{StaticResource MainPageLabelStyle}"
+                        Text="{markupExtensions:Translate ContactInfo}" />
+                </StackLayout>
+            </StackLayout>
+
+
+        </ScrollView>
+
+    </ContentPage.Content>
+</ContentPage>

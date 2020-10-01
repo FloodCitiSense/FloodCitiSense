@@ -1,0 +1,1023 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="About" xml:space="preserve">
+    <value>Über</value>
+  </data>
+  <data name="AboutText1" xml:space="preserve">
+    <value>FloodCitiSense ist eine frühe Warndienst für Pluviale Überschwemmungen, die für, sondern auch von den Bürgern und Stadtverwaltung, und baut auf sensing Technologien</value>
+  </data>
+  <data name="AboutText2" xml:space="preserve">
+    <value>Mithilfe dieser app können Sie einen wertvollen Beitrag zu diesem Dienst werden, indem Sie zu melden von regenfluten Überschwemmungen. Obwohl noch in der Testphase, werden zukünftige Versionen Benachrichtigungen aus dem frühen Warnung Dienst derzeit im Rahmen des Projekts FloodCitiSense gebaut enthalten.</value>
+  </data>
+  <data name="AcceptText" xml:space="preserve">
+    <value>Ich habe gelesen und akzeptiere die allgemeinen Geschäftsbedingungen</value>
+  </data>
+  <data name="Active" xml:space="preserve">
+    <value>Aktiv</value>
+  </data>
+  <data name="AddAdvanceInfo" xml:space="preserve">
+    <value>Erweiterte Info hinzufügen</value>
+  </data>
+  <data name="AdditionalInformation" xml:space="preserve">
+    <value>Weitere Informationen</value>
+  </data>
+  <data name="AddPicturesText" xml:space="preserve">
+    <value>Wenn möglich eine Bild und/oder zusätzliche Informationen hinzufügen und einreichen!</value>
+  </data>
+  <data name="Advance" xml:space="preserve">
+    <value>Erweiterte</value>
+  </data>
+  <data name="AlreadyCreated" xml:space="preserve">
+    <value>Du hast bereits Uploded diesen Vorfall!</value>
+  </data>
+  <data name="AnySignOfDamage" xml:space="preserve">
+    <value>Anzeichen von Schäden?</value>
+  </data>
+  <data name="AreYouImpacted" xml:space="preserve">
+    <value>Sind Sie von der Flut betroffen?</value>
+  </data>
+  <data name="AreYouSure" xml:space="preserve">
+    <value>Bist du sicher?</value>
+  </data>
+  <data name="ASmallPart" xml:space="preserve">
+    <value>Ein kleiner Teil</value>
+  </data>
+  <data name="Authenticating" xml:space="preserve">
+    <value>Authentifizierung...</value>
+  </data>
+  <data name="AuthFailed" xml:space="preserve">
+    <value>Authentifizierung fehlgeschlagen</value>
+  </data>
+  <data name="Both" xml:space="preserve">
+    <value>Beide</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Abbrechen</value>
+  </data>
+  <data name="ChangePassword" xml:space="preserve">
+    <value>Passwort ändern</value>
+  </data>
+  <data name="ChangeProfilePicture" xml:space="preserve">
+    <value>Profilbild ändern</value>
+  </data>
+  <data name="Citys" xml:space="preserve">
+    <value>Citys</value>
+  </data>
+  <data name="CitySpecificRecommendations" xml:space="preserve">
+    <value>Stadt-spezifische Empfehlungen</value>
+  </data>
+  <data name="Clear" xml:space="preserve">
+    <value>Klar</value>
+  </data>
+  <data name="ClickHere" xml:space="preserve">
+    <value>Klicken Sie auf</value>
+  </data>
+  <data name="CompletelyFlooded" xml:space="preserve">
+    <value>Komplett überflutet</value>
+  </data>
+  <data name="Contact" xml:space="preserve">
+    <value>Kontakt</value>
+  </data>
+  <data name="ContactInfo" xml:space="preserve">
+    <value>Kontaktdaten</value>
+  </data>
+  <data name="ContactInformation" xml:space="preserve">
+    <value>Kontaktdaten</value>
+  </data>
+  <data name="CreateNewUser" xml:space="preserve">
+    <value>Neuen Benutzer erstellen</value>
+  </data>
+  <data name="CreatSuccess" xml:space="preserve">
+    <value>Sie haben erfolgreich hochgeladen</value>
+  </data>
+  <data name="CurrentPassword" xml:space="preserve">
+    <value>Aktuelles Kennwort</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>Löschen</value>
+  </data>
+  <data name="DeletingUser" xml:space="preserve">
+    <value>DeletingUser</value>
+  </data>
+  <data name="DontHaveAccount" xml:space="preserve">
+    <value>Sie haben noch kein Benutzerkonto? Anmelden.</value>
+  </data>
+  <data name="Drizzle" xml:space="preserve">
+    <value>Nieselregen</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>E-Mail</value>
+  </data>
+  <data name="EmailAddress" xml:space="preserve">
+    <value>E-Mail-Adresse</value>
+  </data>
+  <data name="EnterLater" xml:space="preserve">
+    <value>Später eingeben</value>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>Fehler</value>
+  </data>
+  <data name="FAQ" xml:space="preserve">
+    <value>Häufig gestellte Fragen</value>
+  </data>
+  <data name="FirstTimeFlood" xml:space="preserve">
+    <value>Ersten Mal Überschwemmung</value>
+  </data>
+  <data name="FloodCitiSense" xml:space="preserve">
+    <value>FloodCitiSense</value>
+  </data>
+  <data name="FloodDamage" xml:space="preserve">
+    <value>Hochwasserschäden</value>
+  </data>
+  <data name="FloodDepth" xml:space="preserve">
+    <value>Flut-Tiefe</value>
+  </data>
+  <data name="FloodExtent" xml:space="preserve">
+    <value>Flut-Umfang</value>
+  </data>
+  <data name="FloodFrequency" xml:space="preserve">
+    <value>Häufigkeit der Flut</value>
+  </data>
+  <data name="FloodOccurrence" xml:space="preserve">
+    <value>Hochwasser auftreten</value>
+  </data>
+  <data name="FloodsOccasionally" xml:space="preserve">
+    <value>Hochwasser gelegentlich</value>
+  </data>
+  <data name="FloodsRegularly" xml:space="preserve">
+    <value>Überschwemmungen regelmäßig</value>
+  </data>
+  <data name="ForgotLogin" xml:space="preserve">
+    <value>Haben Sie vergessen Ihre Login-Daten? Hilfe zur Anmeldung.</value>
+  </data>
+  <data name="GardenFlooded" xml:space="preserve">
+    <value>Garten, Überschwemmungen</value>
+  </data>
+  <data name="GeneralRecommendations" xml:space="preserve">
+    <value>Allgemeine Empfehlungen</value>
+  </data>
+  <data name="GetStarted" xml:space="preserve">
+    <value>Erste Schritte</value>
+  </data>
+  <data name="GoodAfternoon" xml:space="preserve">
+    <value>Guten Tag</value>
+  </data>
+  <data name="GoodEvening" xml:space="preserve">
+    <value>Guten Abend</value>
+  </data>
+  <data name="GoodMorning" xml:space="preserve">
+    <value>Guten Morgen</value>
+  </data>
+  <data name="HalfFlooded" xml:space="preserve">
+    <value>Die Hälfte überflutet</value>
+  </data>
+  <data name="HaveAAccount" xml:space="preserve">
+    <value>Haben Sie ein Konto?</value>
+  </data>
+  <data name="HeavyRainFall" xml:space="preserve">
+    <value>Heftige Regenfälle</value>
+  </data>
+  <data name="HigherThan50" xml:space="preserve">
+    <value>Höher als 50 cm</value>
+  </data>
+  <data name="Home" xml:space="preserve">
+    <value>Startseite</value>
+  </data>
+  <data name="HouseFlooding" xml:space="preserve">
+    <value>Haus Überschwemmungen</value>
+  </data>
+  <data name="HttpException" xml:space="preserve">
+    <value>Kommunikation mit dem Server ist ein Problem aufgetreten. Bitte versuchen Sie es erneut.</value>
+  </data>
+  <data name="IDoNotKnow" xml:space="preserve">
+    <value>Ich weiß es nicht</value>
+  </data>
+  <data name="Incident" xml:space="preserve">
+    <value>Incident</value>
+  </data>
+  <data name="IncidentUploadError" xml:space="preserve">
+    <value>Vorfall-Upload fehlgeschlagen.</value>
+  </data>
+  <data name="Initializing" xml:space="preserve">
+    <value>Wird initialisiert...</value>
+  </data>
+  <data name="IntensityText" xml:space="preserve">
+    <value>Bericht der Intensität des Regens</value>
+  </data>
+  <data name="Legend" xml:space="preserve">
+    <value>Filtern</value>
+  </data>
+  <data name="LoadWithThreeDot" xml:space="preserve">
+    <value>Wird geladen...</value>
+  </data>
+  <data name="LogInFacebook" xml:space="preserve">
+    <value>Mit Facebook anmelden</value>
+  </data>
+  <data name="LogInGoogle" xml:space="preserve">
+    <value>Mit Google anmelden</value>
+  </data>
+  <data name="Map" xml:space="preserve">
+    <value>Karte</value>
+  </data>
+  <data name="MediumIntensity" xml:space="preserve">
+    <value>Mittlerer Intensität</value>
+  </data>
+  <data name="MessageTitle" xml:space="preserve">
+    <value>FloodCitiSense</value>
+  </data>
+  <data name="Muddy" xml:space="preserve">
+    <value>Schlammig</value>
+  </data>
+  <data name="MyFeedAreWet" xml:space="preserve">
+    <value>Meine Füße nass sind (&lt;2 cm)</value>
+  </data>
+  <data name="MySettings" xml:space="preserve">
+    <value>Meine Einstellungen</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="NewPassword" xml:space="preserve">
+    <value>Neues Passwort</value>
+  </data>
+  <data name="NewPasswordRepeat" xml:space="preserve">
+    <value>Wiederholen Sie Ihr Passwort</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>Weiter</value>
+  </data>
+  <data name="NoCamera" xml:space="preserve">
+    <value>Keine Kamera</value>
+  </data>
+  <data name="NoFlooding" xml:space="preserve">
+    <value>Keine Überschwemmungen</value>
+  </data>
+  <data name="NoInternet" xml:space="preserve">
+    <value>Keine Internet-Verbindung! Bitte aktivieren Sie Internet und versuchen Sie es erneut?</value>
+  </data>
+  <data name="Notifications" xml:space="preserve">
+    <value>Benachrichtigungen</value>
+  </data>
+  <data name="Ok" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="OperationFailedLogin" xml:space="preserve">
+    <value>Du musst dich anmelden. Der Vorgang ist fehlgeschlagen.</value>
+  </data>
+  <data name="ParksFlooded" xml:space="preserve">
+    <value>Park, Überschwemmungen</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>Kennwort</value>
+  </data>
+  <data name="Pending" xml:space="preserve">
+    <value>Ausstehend</value>
+  </data>
+  <data name="PickFromGallery" xml:space="preserve">
+    <value>Wählen Sie aus der Galerie</value>
+  </data>
+  <data name="Prepare1" xml:space="preserve">
+    <value>Entwicklung und Überprüfung eines Notfallplans</value>
+  </data>
+  <data name="Prepare10" xml:space="preserve">
+    <value>Halten Sie Bargeld zur hand für den Einsatz nach der Flut bei Bedarf</value>
+  </data>
+  <data name="Prepare11" xml:space="preserve">
+    <value>Ergreifen Sie alle Maßnahmen, die Freisetzung von gefährlichen Chemikalien zu verhindern, die möglicherweise auf Ihrem Grundstück gespeichert werden</value>
+  </data>
+  <data name="Prepare12" xml:space="preserve">
+    <value>Verwenden Sie Stecker um zu verhindern, dass Hochwasser in die Kanalisation Kanalisation sichern oder installieren Sie Flut Öffnungen oder überschwemmen Sie Beweis Barrieren</value>
+  </data>
+  <data name="Prepare13" xml:space="preserve">
+    <value>Bleiben Sie dran, lokale Medien und Community messaging</value>
+  </data>
+  <data name="Prepare14" xml:space="preserve">
+    <value>Machen Sie Fotos von Schlüsselbereichen und kritische Punkte. Bewahren Sie diese auf ein Cloud-backup</value>
+  </data>
+  <data name="Prepare15" xml:space="preserve">
+    <value>Schalten Sie das Gas und Strom vor dem Verlassen des Eigentums</value>
+  </data>
+  <data name="Prepare2" xml:space="preserve">
+    <value>Halten Sie aktualisierte überleben und Disaster Recovery-kits</value>
+  </data>
+  <data name="Prepare3" xml:space="preserve">
+    <value>Gasleitung und elektrische Absperrungen lokalisieren und alle Treibstofftanks zu verankern</value>
+  </data>
+  <data name="Prepare4" xml:space="preserve">
+    <value>Wenn es die Zeit erlaubt, montieren Sie und nutzen Sie Sandsäcke in Bereichen, die anfällig für Überflutungen</value>
+  </data>
+  <data name="Prepare5" xml:space="preserve">
+    <value>Wenden Sie sich an Ihren Versicherungsmakler um Politik, Abdeckung und Ansprüche Verfahren zu besprechen.</value>
+  </data>
+  <data name="Prepare6" xml:space="preserve">
+    <value>Verfahren Sie eine Kommunikation im Notfall (Telefon Baum, Benachrichtigungssystem usw.).</value>
+  </data>
+  <data name="Prepare7" xml:space="preserve">
+    <value>Identifizieren Sie einen Anhöhe Treffpunkt</value>
+  </data>
+  <data name="Prepare8" xml:space="preserve">
+    <value>Ausrüstung und wertvolle/verderbliche Gegenstände aus dem Boden zu heben</value>
+  </data>
+  <data name="Prepare9" xml:space="preserve">
+    <value>Speichern Sie alle Ihre wichtigen Dokumente in beschrifteten versiegelte Plastiktüten</value>
+  </data>
+  <data name="PrepareAndRespondText" xml:space="preserve">
+    <value>Bei Überschwemmungen reagieren und Überschwemmungen Ereignisse vorbereiten</value>
+  </data>
+  <data name="Preparedness" xml:space="preserve">
+    <value>Vorbereiten</value>
+  </data>
+  <data name="PrepareText" xml:space="preserve">
+    <value> &lt;div dir="ltr" style="text-align: left;" trbidi="on"&gt;  
+  &lt;div style="direction: ltr; margin-bottom: 0pt; margin-left: 0in; margin-top: 0pt; unicode-bidi: embed; word-break: normal;"&gt;  
+  &lt;span style="font-family: &amp;quot;calibri&amp;quot;; font-size: 18pt;"&gt; Die folgenden Richtlinien helfen Ihnen
+für eine Überschwemmung Ereignis vorbereitet werden: &lt;/span&gt;   &lt;/div&gt;  
+  &lt;div style="direction: ltr; margin-bottom: 0pt; margin-left: 0in; margin-top: 0pt; unicode-bidi: embed; word-break: normal;"&gt;  
+  &lt;/div&gt;  
+  &lt;div style="direction: ltr; language: en-US; margin-bottom: 0pt; margin-left: .31in; margin-top: 0pt; mso-line-break-override: none; punctuation-wrap: hanging; text-align: justify; text-indent: -.31in; text-justify: inter-ideograph; unicode-bidi: embed; word-break: normal;"&gt;  
+  &lt;span style="font-size: 18.0pt;"&gt;   &lt;span style="font-family: &amp;quot;arial&amp;quot;; mso-special-format: bullet;"&gt;  •&lt;/span&gt;&lt;/span&gt;&lt;span style="font-family: &amp;quot;calibri&amp;quot;; font-size: 18pt;"&gt;
+Zu entwickeln und Überprüfen eines Notfallplans. •  &lt;/span&gt;   &lt;/div&gt;  
+  &lt;div style="direction: ltr; language: en-US; margin-bottom: 0pt; margin-left: .31in; margin-top: 0pt; mso-line-break-override: none; punctuation-wrap: hanging; text-align: justify; text-indent: -.31in; text-justify: inter-ideograph; unicode-bidi: embed; word-break: normal;"&gt;  
+  &lt;span style="font-size: 18.0pt;"&gt;   &lt;span style="font-family: &amp;quot;arial&amp;quot;; mso-special-format: bullet;"&gt; &lt;/span&gt;&lt;/span&gt;&lt;span style="font-family: &amp;quot;calibri&amp;quot;; font-size: 18pt;"&gt;Halten
+aktualisiert überleben und Disaster Recovery Kits. • &lt;/span&gt;   &lt;/div&gt;  
+  &lt;div style="direction: ltr; language: en-US; margin-bottom: 0pt; margin-left: .31in; margin-top: 0pt; mso-line-break-override: none; punctuation-wrap: hanging; text-align: justify; text-indent: -.31in; text-justify: inter-ideograph; unicode-bidi: embed; word-break: normal;"&gt;  
+  &lt;span style="font-size: 18.0pt;"&gt;   &lt;span style="font-family: &amp;quot;arial&amp;quot;; mso-special-format: bullet;"&gt; &lt;/span&gt;&lt;/span&gt;&lt;span style="font-family: &amp;quot;calibri&amp;quot;; font-size: 18pt;"&gt;
+Gasleitung und elektrische Absperrungen lokalisieren und Verankern Sie alle Treibstofftanks. • &lt;/span&gt;   &lt;/div&gt;  
+  &lt;div style="direction: ltr; language: en-US; margin-bottom: 0pt; margin-left: .31in; margin-top: 0pt; mso-line-break-override: none; punctuation-wrap: hanging; text-align: justify; text-indent: -.31in; text-justify: inter-ideograph; unicode-bidi: embed; word-break: normal;"&gt;  
+  &lt;span style="font-size: 18.0pt;"&gt;   &lt;span style="font-family: &amp;quot;arial&amp;quot;; mso-special-format: bullet;"&gt; &lt;/span&gt;&lt;/span&gt;&lt;span style="font-family: &amp;quot;calibri&amp;quot;; font-size: 18pt;"&gt;, Wenn
+Zeit erlaubt, montieren und nutzen Sandsäcke in Bereichen, die anfällig für Überflutungen. • &lt;/span&gt;   &lt;/div&gt;  
+  &lt;div style="direction: ltr; language: en-US; margin-bottom: 0pt; margin-left: .31in; margin-top: 0pt; mso-line-break-override: none; punctuation-wrap: hanging; text-align: justify; text-indent: -.31in; text-justify: inter-ideograph; unicode-bidi: embed; word-break: normal;"&gt;  
+  &lt;span style="font-size: 18.0pt;"&gt;   &lt;span style="font-family: &amp;quot;arial&amp;quot;; mso-special-format: bullet;"&gt; &lt;/span&gt;&lt;/span&gt;&lt;span style="font-family: &amp;quot;calibri&amp;quot;; font-size: 18pt;"&gt;
+Wenden Sie sich an Ihren Versicherungsmakler, Politik, Abdeckung und Forderungen zu diskutieren Verfahren. •  &lt;/span&gt;   &lt;/div&gt;  
+  &lt;div style="direction: ltr; language: en-US; margin-bottom: 0pt; margin-left: .31in; margin-top: 0pt; mso-line-break-override: none; punctuation-wrap: hanging; text-align: justify; text-indent: -.31in; text-justify: inter-ideograph; unicode-bidi: embed; word-break: normal;"&gt;  
+  &lt;span style="font-size: 18.0pt;"&gt;   &lt;span style="font-family: &amp;quot;arial&amp;quot;; mso-special-format: bullet;"&gt; &lt;/span&gt;&lt;/span&gt;&lt;span style="font-family: &amp;quot;calibri&amp;quot;; font-size: 18pt;"&gt;Stellen
+ein Notfall Kommunikationsmethode (Meldesystem, Telefon-Baum, etc.). •  &lt;/span&gt;   &lt;/div&gt;  
+  &lt;div style="direction: ltr; language: en-US; margin-bottom: 0pt; margin-left: .31in; margin-top: 0pt; mso-line-break-override: none; punctuation-wrap: hanging; text-align: justify; text-indent: -.31in; text-justify: inter-ideograph; unicode-bidi: embed; word-break: normal;"&gt;  
+  &lt;span style="font-size: 18.0pt;"&gt;   &lt;span style="font-family: &amp;quot;arial&amp;quot;; mso-special-format: bullet;"&gt; &lt;/span&gt;&lt;/span&gt;&lt;span style="font-family: &amp;quot;calibri&amp;quot;; font-size: 18pt;"&gt;
+Einer Anhöhe treffen Ort. identifizieren • &lt;/span&gt;   &lt;/div&gt;  
+  &lt;div style="direction: ltr; language: en-US; margin-bottom: 0pt; margin-left: .31in; margin-top: 0pt; mso-line-break-override: none; punctuation-wrap: hanging; text-align: justify; text-indent: -.31in; text-justify: inter-ideograph; unicode-bidi: embed; word-break: normal;"&gt;  
+  &lt;span style="font-size: 18.0pt;"&gt;   &lt;span style="font-family: &amp;quot;arial&amp;quot;; mso-special-format: bullet;"&gt; &lt;/span&gt;&lt;/span&gt;&lt;span style="font-family: &amp;quot;calibri&amp;quot;; font-size: 18pt;"&gt;Elevate
+Ausrüstung und wertvolle/verderbliche Gegenstände aus dem Boden. •  &lt;/span&gt;   &lt;/div&gt;  
+  &lt;div style="direction: ltr; language: en-US; margin-bottom: 0pt; margin-left: .31in; margin-top: 0pt; mso-line-break-override: none; punctuation-wrap: hanging; text-align: justify; text-indent: -.31in; text-justify: inter-ideograph; unicode-bidi: embed; word-break: normal;"&gt;  
+  &lt;span style="font-size: 18.0pt;"&gt;   &lt;span style="font-family: &amp;quot;arial&amp;quot;; mso-special-format: bullet;"&gt; &lt;/span&gt;&lt;/span&gt;&lt;span style="font-family: &amp;quot;calibri&amp;quot;; font-size: 18pt;"&gt;
+Speichern alle Ihre wichtigen Dokumente in beschrifteten versiegelten Kunststoff Taschen. • &lt;/span&gt;   &lt;/div&gt;  
+  &lt;div style="direction: ltr; language: en-US; margin-bottom: 0pt; margin-left: .31in; margin-top: 0pt; mso-line-break-override: none; punctuation-wrap: hanging; text-align: justify; text-indent: -.31in; text-justify: inter-ideograph; unicode-bidi: embed; word-break: normal;"&gt;  
+  &lt;span style="font-size: 18.0pt;"&gt;   &lt;span style="font-family: &amp;quot;arial&amp;quot;; mso-special-format: bullet;"&gt; &lt;/span&gt;&lt;/span&gt;&lt;span style="font-family: &amp;quot;calibri&amp;quot;; font-size: 18pt;"&gt;
+Fotos von Schlüsselbereichen und kritische Punkte. Bewahren Sie diese auf ein Cloud-Backup. •  &lt;/span&gt;   &lt;/div&gt;  
+  &lt;div style="direction: ltr; language: en-US; margin-bottom: 0pt; margin-left: .31in; margin-top: 0pt; mso-line-break-override: none; punctuation-wrap: hanging; text-align: justify; text-indent: -.31in; text-justify: inter-ideograph; unicode-bidi: embed; word-break: normal;"&gt;  
+  &lt;span style="font-size: 18.0pt;"&gt;   &lt;span style="font-family: &amp;quot;arial&amp;quot;; mso-special-format: bullet;"&gt; &lt;/span&gt;&lt;/span&gt;&lt;span style="font-family: &amp;quot;calibri&amp;quot;; font-size: 18pt;"&gt;
+Halten ein Cloud-Backup Kopien von Ihrem wichtiger Dokumente. • &lt;/span&gt;   &lt;/div&gt;  
+  &lt;div style="direction: ltr; language: en-US; margin-bottom: 0pt; margin-left: .31in; margin-top: 0pt; mso-line-break-override: none; punctuation-wrap: hanging; text-align: justify; text-indent: -.31in; text-justify: inter-ideograph; unicode-bidi: embed; word-break: normal;"&gt;  
+  &lt;span style="font-size: 18.0pt;"&gt;   &lt;span style="font-family: &amp;quot;arial&amp;quot;; mso-special-format: bullet;"&gt; &lt;/span&gt;&lt;/span&gt;&lt;span style="font-family: &amp;quot;calibri&amp;quot;; font-size: 18pt;"&gt;Halten
+Kassenbestand für den Einsatz nach der Flut ggf.. • &lt;/span&gt;   &lt;/div&gt;  
+  &lt;div style="direction: ltr; language: en-US; margin-bottom: 0pt; margin-left: .31in; margin-top: 0pt; mso-line-break-override: none; punctuation-wrap: hanging; text-align: justify; text-indent: -.31in; text-justify: inter-ideograph; unicode-bidi: embed; word-break: normal;"&gt;  
+  &lt;span style="font-size: 18.0pt;"&gt;   &lt;span style="font-family: &amp;quot;arial&amp;quot;; mso-special-format: bullet;"&gt; &lt;/span&gt;&lt;/span&gt;&lt;span style="font-family: &amp;quot;calibri&amp;quot;; font-size: 18pt;"&gt;
+Alle Maßnahmen ergreifen, die Freisetzung von gefährlichen Chemikalien zu verhindern, dass 
+vielleicht auf Ihrem Eigentum. gespeichert werden • &lt;/span&gt;   &lt;/div&gt;  
+  &lt;div style="direction: ltr; language: en-US; margin-bottom: 0pt; margin-left: .31in; margin-top: 0pt; mso-line-break-override: none; punctuation-wrap: hanging; text-align: justify; text-indent: -.31in; text-justify: inter-ideograph; unicode-bidi: embed; word-break: normal;"&gt;  
+  &lt;span style="font-size: 18.0pt;"&gt;   &lt;span style="font-family: &amp;quot;arial&amp;quot;; mso-special-format: bullet;"&gt; &lt;/span&gt;&lt;/span&gt;&lt;span style="font-family: &amp;quot;calibri&amp;quot;; font-size: 18pt;"&gt;  &lt;/span&gt;   &lt;span style="font-family: &amp;quot;calibri&amp;quot;; font-size: 18pt;"&gt; Verwendung Stecker
+zur Vermeidung von Hochwasser aus Sicherung in Kanalisation Kanalisation oder Installation Flut Öffnungen
+oder Beweis Barrieren zu überfluten. &amp;Nbsp; •  &lt;/span&gt;   &lt;/div&gt;  
+  &lt;div style="direction: ltr; language: en-US; margin-bottom: 0pt; margin-left: .31in; margin-top: 0pt; mso-line-break-override: none; punctuation-wrap: hanging; text-align: justify; text-indent: -.31in; text-justify: inter-ideograph; unicode-bidi: embed; word-break: normal;"&gt;  
+  &lt;span style="font-size: 18.0pt;"&gt;   &lt;span style="font-family: &amp;quot;arial&amp;quot;; mso-special-format: bullet;"&gt; &lt;/span&gt;&lt;/span&gt;&lt;span style="font-family: &amp;quot;calibri&amp;quot;; font-size: 18pt;"&gt;  &lt;/span&gt;   &lt;span style="font-family: &amp;quot;calibri&amp;quot;; font-size: 18pt;"&gt; Aufenthalt abgestimmt
+an die lokalen Medien und Messaging-Gemeinschaft&lt;/span&gt;&lt;span style="font-family: &amp;quot;calibri&amp;quot;; font-size: 18pt;"&gt;. &lt;/span&gt;   &lt;/div&gt;  
+  &lt;br &gt;   &lt;/br&gt;  
+  &lt;div style="direction: ltr; language: en-US; margin-bottom: 0pt; margin-left: .31in; margin-top: 0pt; mso-line-break-override: none; punctuation-wrap: hanging; text-align: justify; text-indent: -.31in; text-justify: inter-ideograph; unicode-bidi: embed; word-break: normal;"&gt;  
+  &lt;span style="font-size: 18.0pt;"&gt;   &lt;span style="font-family: &amp;quot;arial&amp;quot;; mso-special-format: bullet;"&gt; •&lt;/span&gt;&lt;/span&gt;&lt;span style="font-family: &amp;quot;calibri&amp;quot;; font-size: 18pt;"&gt;Turn
+vom Gas und elektrische vor dem Verlassen des Eigentums.  &lt;/span&gt;   &lt;/div&gt;  
+  &lt;/div&gt; </value>
+  </data>
+  <data name="Private" xml:space="preserve">
+    <value>Private</value>
+  </data>
+  <data name="Proceed" xml:space="preserve">
+    <value>Gehen Sie</value>
+  </data>
+  <data name="Public" xml:space="preserve">
+    <value>Öffentlichkeit</value>
+  </data>
+  <data name="RandomFlood" xml:space="preserve">
+    <value>Zufällige Flut</value>
+  </data>
+  <data name="RegistrationError" xml:space="preserve">
+    <value>Registrierungsfehler!</value>
+  </data>
+  <data name="ReportAndValidateText" xml:space="preserve">
+    <value>Fluten einfach melden und Infos über weitere Überschwemmungen in Teilen Ihrer Stadt kennen</value>
+  </data>
+  <data name="ReportAnIncident" xml:space="preserve">
+    <value>Einen Vorfall melden</value>
+  </data>
+  <data name="RequestTimedOut" xml:space="preserve">
+    <value>Timeout bei der Anforderung.</value>
+  </data>
+  <data name="Respond" xml:space="preserve">
+    <value>Reagieren</value>
+  </data>
+  <data name="Respond1" xml:space="preserve">
+    <value>Persönliche Sicherheit ist oberstes Gebot. Bleiben Sie dran, um lokale Medien und bei Bedarf zu evakuieren</value>
+  </data>
+  <data name="Respond10" xml:space="preserve">
+    <value>Grundlagen für Risse und andere erhebliche Schäden, wobei besonderes Augenmerk auf Stützmauern zu inspizieren. Machen Sie Fotos von allen Schaden</value>
+  </data>
+  <data name="Respond11" xml:space="preserve">
+    <value>Beginnen Sie Aufräumarbeiten so bald wie möglich um weitere Schäden an der Unterkunft und Möglichkeiten für Mücken und andere Probleme von stehendem Wasser zu reduzieren</value>
+  </data>
+  <data name="Respond12" xml:space="preserve">
+    <value>Beschädigte Bereiche Sperren Sie ab, bis eine Bestimmung hinsichtlich der Sicherheit erfolgt</value>
+  </data>
+  <data name="Respond13" xml:space="preserve">
+    <value>Reinigen Sie und Desinfizieren Sie alles, was nass geworden ist. Schlamm vom Hochwasser kann Abwasser und Chemikalien enthalten.</value>
+  </data>
+  <data name="Respond14" xml:space="preserve">
+    <value>Kontakt Versicherungsmakler, mündlich Bericht beschädigt, so dass ein Einsteller an die Website gesendet werden kann</value>
+  </data>
+  <data name="Respond2" xml:space="preserve">
+    <value>Mitmenschen, Handys und Ladegeräte und Notfallkoffer mit ihnen zu nehmen, wenn sie evakuieren zu erinnern</value>
+  </data>
+  <data name="Respond3" xml:space="preserve">
+    <value>Hören Sie Medienberichte zu erfahren, ob die Gemeinde Wasserversorgung sicher zu trinken ist</value>
+  </data>
+  <data name="Respond4" xml:space="preserve">
+    <value>Vermeidung von Hochwasser; Wasser kann durch Öl, Benzin oder rohes Abwasser verunreinigt werden</value>
+  </data>
+  <data name="Respond5" xml:space="preserve">
+    <value>Sei vorsichtig! Wasser kann auch elektrisch aus unterirdischen oder abgeschossenen Stromleitungen</value>
+  </data>
+  <data name="Respond6" xml:space="preserve">
+    <value>Beachten Sie Gebiete, wo Hochwasser gerückt. Straßen können geschwächt haben und könnte zusammenbrechen, unter dem Gewicht eines Autos</value>
+  </data>
+  <data name="Respond7" xml:space="preserve">
+    <value>Schädigungsprozesse Bewertung implementieren. Um Sicherheit zu gewährleisten, sollte der Leistungsbewertung nur im Team ausgeführt werden</value>
+  </data>
+  <data name="Respond8" xml:space="preserve">
+    <value>Verwenden Sie Taschenlampen, um Wände, Böden, Türen und Fenster, um sicherzustellen, dass die Gebäude nicht einsturzgefährdet ist zu prüfen. Achten Sie auf undichte Gasleitungen</value>
+  </data>
+  <data name="Respond9" xml:space="preserve">
+    <value>Stellen Sie sicher, dass der Strom abgeschaltet ist vor dem Einleiten der Leistungsbewertung</value>
+  </data>
+  <data name="RespondText" xml:space="preserve">
+    <value>•  &lt;div dir="ltr" style="text-align: left;" trbidi="on"&gt;  
+  &lt;div style="direction: ltr; margin-bottom: 0pt; margin-left: 0in; margin-top: 0pt; unicode-bidi: embed; word-break: normal;"&gt;  
+  &lt;div style="direction: ltr; margin-bottom: 0pt; margin-left: 0.31in; margin-top: 0pt; text-indent: -0.31in; unicode-bidi: embed; word-break: normal;"&gt;  
+  &lt;span style="font-size: 18.0pt;"&gt;   &lt;span style="font-family: Arial; mso-special-format: bullet;"&gt; &lt;/span&gt;&lt;/span&gt;&lt;span style="font-family: Calibri; font-size: 18pt;"&gt;
+Personenschutz ist von größter Bedeutung. Bleiben Sie dran, um lokale Medien und bei Bedarf zu evakuieren. •  &lt;/span&gt;   &lt;/div&gt;  
+  &lt;div style="direction: ltr; margin-bottom: 0pt; margin-left: 0.31in; margin-top: 0pt; text-indent: -0.31in; unicode-bidi: embed; word-break: normal;"&gt;  
+  &lt;span style="font-size: 18.0pt;"&gt;   &lt;span style="font-family: Arial; mso-special-format: bullet;"&gt; &lt;/span&gt;&lt;/span&gt;&lt;span style="font-family: Calibri; font-size: 18pt;"&gt;
+Remind Menschen um Sie herum, Handys und Ladegeräte und Notfallkoffer mit ihnen
+Wann nehmen sie zu evakuieren. •  &lt;/span&gt;   &lt;/div&gt;  
+  &lt;div style="direction: ltr; margin-bottom: 0pt; margin-left: 0.31in; margin-top: 0pt; text-indent: -0.31in; unicode-bidi: embed; word-break: normal;"&gt;  
+  &lt;span style="font-size: 18.0pt;"&gt;   &lt;span style="font-family: Arial; mso-special-format: bullet;"&gt; &lt;/span&gt;&lt;/span&gt;&lt;span style="font-family: Calibri; font-size: 18pt;"&gt;
+Hören auf Medienberichte zu erfahren, ob die Gemeinde Wasserversorgung sicher zu
+Getränk ist • &lt;/span&gt;   &lt;/div&gt;  
+  &lt;div style="direction: ltr; margin-bottom: 0pt; margin-left: 0.31in; margin-top: 0pt; text-indent: -0.31in; unicode-bidi: embed; word-break: normal;"&gt;  
+  &lt;span style="font-size: 18.0pt;"&gt;   &lt;span style="font-family: Arial; mso-special-format: bullet;"&gt; &lt;/span&gt;&lt;/span&gt;&lt;span style="font-family: Calibri; font-size: 18pt;"&gt;
+Hochwasser zu vermeiden, Wasser Mai durch Öl, Benzin oder rohes Abwasser verunreinigt sein. Wasser
+kann auch elektrisch aus unterirdischen oder abgestürzten macht Linien . • &lt;/span&gt;   &lt;/div&gt;  
+  &lt;div style="direction: ltr; margin-bottom: 0pt; margin-left: 0.31in; margin-top: 0pt; text-indent: -0.31in; unicode-bidi: embed; word-break: normal;"&gt;  
+  &lt;span style="font-size: 18.0pt;"&gt;   &lt;span style="font-family: Arial; mso-special-format: bullet;"&gt; &lt;/span&gt;&lt;/span&gt;&lt;span style="font-family: Calibri; font-size: 18pt;"&gt;
+Werden bewusst Bereiche wo Hochwasser sind zurückgegangen. Straßen können geschwächt und
+könnte zusammenbrechen, unter dem Gewicht der ein Auto &lt;/span&gt;   &lt;/div&gt;  
+  &lt;div style="direction: ltr; margin-bottom: 0pt; margin-left: 0.31in; margin-top: 0pt; text-indent: -0.31in; unicode-bidi: embed; word-break: normal;"&gt;  
+  &lt;span style="font-size: 18.0pt;"&gt;   &lt;span style="font-family: Arial; mso-special-format: bullet;"&gt; •&lt;/span&gt;&lt;/span&gt;&lt;span style="font-family: Calibri; font-size: 18pt;"&gt;Check
+für elektrische Schaltungen überflutet und untergetaucht Stromleitungen oder elektrische 
+Geräte. •  &lt;/span&gt;   &lt;/div&gt;  
+  &lt;div style="direction: ltr; margin-bottom: 0pt; margin-left: 0.31in; margin-top: 0pt; text-indent: -0.31in; unicode-bidi: embed; word-break: normal;"&gt;  
+  &lt;span style="font-size: 18.0pt;"&gt;   &lt;span style="font-family: Arial; mso-special-format: bullet;"&gt; &lt;/span&gt;&lt;/span&gt;&lt;span style="font-family: Calibri; font-size: 18pt;"&gt;Implementieren
+beschädigen Assessment-Prozesse. Um Sicherheit zu gewährleisten, sollte der Leistungsbewertung
+nur in Teams. durchgeführt werden • &lt;/span&gt;   &lt;/div&gt;  
+  &lt;div style="direction: ltr; margin-bottom: 0pt; margin-left: 0.31in; margin-top: 0pt; text-indent: -0.31in; unicode-bidi: embed; word-break: normal;"&gt;  
+  &lt;span style="font-size: 18.0pt;"&gt;   &lt;span style="font-family: Arial; mso-special-format: bullet;"&gt; &lt;/span&gt;&lt;/span&gt;&lt;span style="font-family: Calibri; font-size: 18pt;"&gt;
+Vergewissern Sie sich vor dem einleiten Bewertung Aktivitäten. ist der Strom abgeschaltet • &lt;/span&gt;   &lt;/div&gt;  
+  &lt;div style="direction: ltr; margin-bottom: 0pt; margin-left: 0.31in; margin-top: 0pt; text-indent: -0.31in; unicode-bidi: embed; word-break: normal;"&gt;  
+  &lt;span style="font-size: 18.0pt;"&gt;   &lt;span style="font-family: Arial; mso-special-format: bullet;"&gt; &lt;/span&gt;&lt;/span&gt;&lt;span style="font-family: Calibri; font-size: 18pt;"&gt;
+Taschenlampen verwenden, um Wände, Böden, Türen und Fenster, um Gebäude zu gewährleisten überprüfen 
+nicht einsturzgefährdet ist. Hören Sie&lt;/span&gt;&lt;/div&gt;
+&lt;div style="direction: ltr; margin-bottom: 0pt; margin-left: 0.31in; margin-top: 0pt; text-indent: -0.31in; unicode-bidi: embed; word-break: normal;"&gt;
+&lt;span style="font-size: 18.0pt;"&gt;&lt;span style="font-family: Arial; mso-special-format: bullet;"&gt;•&lt;/span&gt;&lt;/span&gt;&lt;span style="font-family: Calibri; font-size: 18pt;"&gt;für
+austretendes Gas Linien. • &lt;/span&gt;   &lt;/div&gt;  
+  &lt;div style="direction: ltr; margin-bottom: 0pt; margin-left: 0.31in; margin-top: 0pt; text-indent: -0.31in; unicode-bidi: embed; word-break: normal;"&gt;  
+  &lt;span style="font-size: 18.0pt;"&gt;   &lt;span style="font-family: Arial; mso-special-format: bullet;"&gt; &lt;/span&gt;&lt;/span&gt;&lt;span style="font-family: Calibri; font-size: 18pt;"&gt;Prüfen
+Stiftungen auf Risse und andere erhebliche Schäden zahlen 
+besonders auf Stützmauern. Machen Sie Fotos von allen Schaden. •  &lt;/span&gt;   &lt;/div&gt;  
+  &lt;div style="direction: ltr; margin-bottom: 0pt; margin-left: 0.31in; margin-top: 0pt; text-indent: -0.31in; unicode-bidi: embed; word-break: normal;"&gt;  
+  &lt;span style="font-size: 18.0pt;"&gt;   &lt;span style="font-family: Arial; mso-special-format: bullet;"&gt; &lt;/span&gt;&lt;/span&gt;&lt;span style="font-family: Calibri; font-size: 18pt;"&gt;Begin
+Bereinigung so bald wie möglich, um weitere Schäden zu verhindern, dass die Eigentum und Möglichkeiten für Mücken und andere Probleme von stehende Wasser. ,
+reduzieren &lt;/span&gt;   &lt;/div&gt;  
+  &lt;div style="direction: ltr; margin-bottom: 0pt; margin-left: 0.31in; margin-top: 0pt; text-indent: -0.31in; unicode-bidi: embed; word-break: normal;"&gt;  
+  &lt;span style="font-size: 18.0pt;"&gt;   &lt;span style="font-family: Arial; mso-special-format: bullet;"&gt; •&lt;/span&gt;&lt;/span&gt;&lt;span style="font-family: Calibri; font-size: 18pt;"&gt;Cordon
+Sie Schadstellen bis eine Bestimmung betreffend Sicherheit. erfolgt • &lt;/span&gt;   &lt;/div&gt;  
+  &lt;div style="direction: ltr; margin-bottom: 0pt; margin-left: 0.31in; margin-top: 0pt; text-indent: -0.31in; unicode-bidi: embed; word-break: normal;"&gt;  
+  &lt;span style="font-size: 18.0pt;"&gt;   &lt;span style="font-family: Arial; mso-special-format: bullet;"&gt; &lt;/span&gt;&lt;/span&gt;&lt;span style="font-family: Calibri; font-size: 18pt;"&gt;Kontakt
+Versicherung mündlich Bericht Schaden zu vermitteln, so dass ein Einsteller die Website an
+gesendet. •  &lt;/span&gt;   &lt;/div&gt;  
+  &lt;div style="direction: ltr; margin-bottom: 0pt; margin-left: 0.31in; margin-top: 0pt; text-indent: -0.31in; unicode-bidi: embed; word-break: normal;"&gt;  
+  &lt;span style="font-size: 18.0pt;"&gt;   &lt;span style="font-family: Arial; mso-special-format: bullet;"&gt; &lt;/span&gt;&lt;/span&gt;&lt;span style="font-family: Calibri; font-size: 18pt;"&gt;
+Minderung Aktivitäten, um Schäden an der Anlage zu minimieren starten und Inhalt. •  &lt;/span&gt;   &lt;/div&gt;  
+  &lt;br &gt;   &lt;/br&gt;  
+  &lt;div style="direction: ltr; margin-bottom: 0pt; margin-left: 0.31in; margin-top: 0pt; text-indent: -0.31in; unicode-bidi: embed; word-break: normal;"&gt;  
+  &lt;span style="font-size: 18.0pt;"&gt;   &lt;span style="font-family: Arial; mso-special-format: bullet;"&gt; &lt;/span&gt;&lt;/span&gt;&lt;span style="font-family: Calibri; font-size: 18pt;"&gt;
+Zu reinigen und zu desinfizieren Alles was nass geworden ist. Schlamm vom Hochwasser kann
+Abwasser und Chemikalien. enthalten. &lt;/span&gt;   &lt;/div&gt;  
+  &lt;/div&gt;  
+  &lt;/div&gt; </value>
+  </data>
+  <data name="RiverFlooded" xml:space="preserve">
+    <value>Hochwasser</value>
+  </data>
+  <data name="RiverFlooding" xml:space="preserve">
+    <value>Hochwasser</value>
+  </data>
+  <data name="Rotate" xml:space="preserve">
+    <value>Drehen</value>
+  </data>
+  <data name="SampleAlerts" xml:space="preserve">
+    <value>Probe-Warnungen</value>
+  </data>
+  <data name="SampleNotification" xml:space="preserve">
+    <value>Probe-Benachrichtigung</value>
+  </data>
+  <data name="SavedSuccessfully" xml:space="preserve">
+    <value>Der Speichervorgang war erfolgreich.</value>
+  </data>
+  <data name="SelectCity" xml:space="preserve">
+    <value>Wählen Sie eine Stadt</value>
+  </data>
+  <data name="SelectCityToProceed" xml:space="preserve">
+    <value>Bitte wählen Sie eine Stadt zu gehen.</value>
+  </data>
+  <data name="SelectTypeOfFlooding" xml:space="preserve">
+    <value>Wählen Sie den Typ der Überschwemmungen</value>
+  </data>
+  <data name="Sewage" xml:space="preserve">
+    <value>Abwasser</value>
+  </data>
+  <data name="SignOfObstruction" xml:space="preserve">
+    <value>Anzeichen von Verstopfung?</value>
+  </data>
+  <data name="SignOfObstructions" xml:space="preserve">
+    <value>Anzeichen von Verstopfung?</value>
+  </data>
+  <data name="SignUpAlertText" xml:space="preserve">
+    <value>Birmingham Community Alert ist ein High-Tech-Messaging-Service für alle Einwohner und Unternehmen in Birmingham bietet Notfall Texte oder Voicemail-Nachrichten bei einem Notfall Zwischenfall.</value>
+  </data>
+  <data name="SignUpForAlerts" xml:space="preserve">
+    <value>Melden Sie sich für Benachrichtigungen</value>
+  </data>
+  <data name="SignUpHere" xml:space="preserve">
+    <value>Melden Sie sich hier</value>
+  </data>
+  <data name="Skip" xml:space="preserve">
+    <value>Skip</value>
+  </data>
+  <data name="StatusOfReports" xml:space="preserve">
+    <value>Status der Berichte</value>
+  </data>
+  <data name="StreetFlooding" xml:space="preserve">
+    <value>Straße Überschwemmungen</value>
+  </data>
+  <data name="Submit" xml:space="preserve">
+    <value>Senden</value>
+  </data>
+  <data name="SuccessfullyDeleted" xml:space="preserve">
+    <value>Erfolgreich gelöscht.</value>
+  </data>
+  <data name="Surname" xml:space="preserve">
+    <value>Nachname</value>
+  </data>
+  <data name="TakePhoto" xml:space="preserve">
+    <value>Foto aufnehmen</value>
+  </data>
+  <data name="Tenant" xml:space="preserve">
+    <value>Ort</value>
+  </data>
+  <data name="Tenants" xml:space="preserve">
+    <value>Citys</value>
+  </data>
+  <data name="TermsAndConditions" xml:space="preserve">
+    <value>Allgemeinen Geschäftsbedingungen</value>
+  </data>
+  <data name="TermsText" xml:space="preserve">
+    <value>&lt;div class="container"&gt;&lt;div class="left-div-headline"&gt;&lt;p class="paragraph-large"&gt;Thank you for your willingness to contribute to FloodCitiSense. This document aims to provide you with adequate information on the data we receive from you, how we process it, and what we make available to the public in order to comply with the requirements of the EU General Data Protection Regulation (GDPR).&lt;/p&gt;&lt;div class="seprator-div-wrapper"&gt;&lt;div data-ix="move-up" class="separator" style="opacity: 1; transform: translateX(0px) translateY(0px) translateZ(0px); transition: opacity 200ms, transform 800ms;"&gt;&lt;/div&gt;&lt;div data-ix="move-up-2" class="separator" style="opacity: 1; transform: translateX(0px) translateY(0px) translateZ(0px); transition: opacity 200ms, transform 800ms;"&gt;&lt;/div&gt;&lt;div data-ix="move-up-3" class="separator" style="opacity: 1; transform: translateX(0px) translateY(0px) translateZ(0px); transition: opacity 200ms, transform 800ms;"&gt;&lt;/div&gt;&lt;div data-ix="move-up-4" class="separator" style="opacity: 1; transform: translateX(0px) translateY(0px) translateZ(0px); transition: opacity 200ms, transform 800ms;"&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="licensing-wrapper"&gt;&lt;div class="icon-left-text"&gt;&lt;/div&gt;&lt;h4 class="icon-tittle left black"&gt;&lt;strong&gt;Our platform&lt;/strong&gt;&lt;/h4&gt;&lt;p class="paragraph-3"&gt;The app you are using has been developed by the International Institute for Applied Systems Analysis (IIASA), Schlossplatz 1, 2361 Laxenburg, Austria as part of the ENSUF/FFG-funded FloodCitiSense project (No. 860918).&lt;br&gt;‍&lt;/p&gt;&lt;h4 class="icon-tittle left black"&gt;&lt;strong&gt;What is “personal data”?&lt;/strong&gt;&lt;/h4&gt;&lt;p class="paragraph-3"&gt;“Personal data” means any information relating to an identified or identifiable natural person, such as their name, contact information, their location at a certain time or IP address.&lt;br&gt;‍&lt;br&gt; &lt;/p&gt;&lt;h4 class="icon-tittle left black"&gt;&lt;strong&gt;Data processed by us&lt;/strong&gt;&lt;/h4&gt;&lt;p class="paragraph-3"&gt;We are a scientific institute and process personal data for scientific purposes including environmental monitoring. We process personal data:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;p class="paragraph-3"&gt;for which you have given us consent for a specific purpose (Art. 6 para 1 lit a GDPR), namely for the conduction of this scientific study;&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p class="paragraph-3"&gt;that is necessary for the performance of a task carried out in the public interest (Art. 6 para 1 lit e GDPR), namely for the conduction of this scientific study; that is necessary for the purpose of the legitimate interests pursued by us or by a third party (Art. 6 para 1 lit f GDPR), e.g. avoiding legal disputes about rights in the contributions. If possible, we seek the explicit consent to the processing of data, in particular the disclosure to third parties (Art. 6 para. 1 lit. a GDPR). Below is a list of types of data the app collects. Please note that a copy of the data might be briefly stored in the server's memory for a short period. These data are temporarily stored apart from the database, managed and deleted automatically by the server's operating system and will not be accessed by us for processing, archiving, or any other reason. It is also possible through logging errors or general requests that submitted data be stored in one of the server's log files. These files are not publicly accessible and are not used for any processing, storage or data publication other than for resolving a possible software problem. These are technical necessities over which we have no control.&lt;br&gt;‍&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;&lt;h4 class="icon-tittle left black"&gt;&lt;strong&gt;Registration/Login/Profile update&lt;/strong&gt;&lt;/h4&gt;&lt;p class="paragraph-3"&gt;We process the following data for registration, login and profile updates for a given user, all of which is stored in the FloodCitiSense database: &lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;p class="paragraph-3"&gt;User identifier&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p class="paragraph-3"&gt;First name&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p class="paragraph-3"&gt;Last name&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p class="paragraph-3"&gt;User identifier&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p class="paragraph-3"&gt;Username&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p class="paragraph-3"&gt;Password (encrypted)&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p class="paragraph-3"&gt;Email address&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p class="paragraph-3"&gt;Telephone number&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p class="paragraph-3"&gt;Status of the user (active/deactivated)&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p class="paragraph-3"&gt;Whether the email address has been confirmed&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p class="paragraph-3"&gt;Last time the user logged in&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p class="paragraph-3"&gt;Profile picture&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p class="paragraph-3"&gt;Session ID&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p class="paragraph-3"&gt;The city chosen by the user (Birmingham, Brussels or Rotterdam)&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p class="paragraph-3"&gt;Number of times the incorrect password has been entered, reset each time the correct password is entered.&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p class="paragraph-3"&gt;None of this information will be part of any publication (e.g. data products, scientific publications, etc). &lt;br&gt;‍&lt;br&gt;&lt;/p&gt;&lt;h4 class="icon-tittle left black"&gt;&lt;strong&gt;Log data&lt;/strong&gt;&lt;/h4&gt;&lt;p class="paragraph-3"&gt;Whenever you use our service, we collect Log Data, or data and information (also through third party products) on your phone to identify errors in the app. Log Data may include information such as your device Internet Protocol (“IP”) address, device name, operating system version, the configuration of the app when utilizing our Service, the time and date of your use of the service, and other statistics. This data is used for identifying problems with our software and will not be published as part of the resulting data product.&lt;br&gt;‍&lt;br&gt;&lt;/p&gt;&lt;h4 class="icon-tittle left black"&gt;&lt;strong&gt;Cookies&lt;/strong&gt;&lt;/h4&gt;&lt;p class="paragraph-3"&gt;We use first party cookies to provide essential site functionality. Cookies are small text files that are saved by your browser and temporarily stored on your device.&lt;br&gt;‍&lt;br&gt;Provided that you have consented to the use of cookies, our website uses Google Analytics, a web analysis service of Google LLC. (“Google”). Google Analytics uses cookies to help understand how the website is being used. In order to do so, information about your visit, including parts of your IP Address, may be transmitted, stored and processed on a Google server in the USA or another non-EU state.&lt;br&gt;‍&lt;br&gt;You can also prevent the placement of cookies through the settings of your browser or by downloading and installing the browser plug-in available at the following link:&lt;a href="http://tools.google.com/dlpage/gaoptout?hl=de"&gt;http://tools.google.com/dlpage/gaoptout?hl=de&lt;/a&gt;.&lt;br&gt;‍&lt;br&gt;&lt;/p&gt;&lt;h4 class="icon-tittle left black"&gt;&lt;strong&gt;Submitting your incident reports&lt;/strong&gt;&lt;/h4&gt;&lt;p class="paragraph-3"&gt;We use first party cookies to provide essential site functionality. Cookies are small text files that are saved by your browser and temporarily stored on your device.When you submit your incident report, the app accesses and processes the data you collected, and some additional information we use for assessing the quality of your contribution and for reproducing technical problems in case of an error. The following data are sent to the server and stored:&lt;br&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;p class="paragraph-3"&gt;User ID&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p class="paragraph-3"&gt;User display name&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p class="paragraph-3"&gt;User email address&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p class="paragraph-3"&gt;User position (Latitude/Longitude as well as accuracy)&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p class="paragraph-3"&gt;Device and app information: &lt;br&gt;&amp;gt; Version of FloodCitiSense app&lt;br&gt;&amp;gt; Smartphone operating system and version&lt;br&gt;&amp;gt; Device name (brand and model)&lt;br&gt;&amp;gt; Device serial number&lt;br&gt;&amp;gt; Language setting of the device&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p class="paragraph-3"&gt;Information on the incident:&lt;br&gt;&amp;gt; Incident ID&lt;br&gt;&amp;gt; The city chosen by the user (Birmingham, Brussels or Rotterdam)&lt;br&gt;&amp;gt; Type of rain&lt;br&gt;&amp;gt; Type of flooding&lt;br&gt;&amp;gt; Sign of damage&lt;br&gt;&amp;gt; Sign of obstruction&lt;br&gt;&amp;gt; Types of space flooded&lt;br&gt;&amp;gt; Flood extent&lt;br&gt;&amp;gt; Flood depth&lt;br&gt;&amp;gt; Frequency of flood&lt;br&gt;&amp;gt; Water clarity&lt;br&gt;&amp;gt; Are you impacted&lt;br&gt;&amp;gt; Date and time the report was made&lt;br&gt;&amp;gt; Date and time the report was uploaded&lt;br&gt;&amp;gt; Position (Latitude/Longitude as well as accuracy)&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p class="paragraph-3"&gt;Information per photo submitted:&lt;br&gt;&amp;gt; The submitted media file (photo)&lt;br&gt;&amp;gt; TenantId - City Id&lt;br&gt;&amp;gt; Time and date when the photo was taken&lt;br&gt;&amp;gt; Compass direction of the photo&lt;br&gt;&amp;gt; Tilt angle of the photo&lt;br&gt;&amp;gt; Position (Latitude/Longitude as well as accuracy)&lt;br&gt;‍&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;&lt;h4 class="icon-tittle left black"&gt;&lt;strong&gt;Information on contributions&lt;/strong&gt;&lt;/h4&gt;&lt;p class="paragraph-3"&gt;On the map screen, we process information on submitted reports that are within the currently displayed map view. Since this usually shows your current location, it implicitly uses your current location (latitude and longitude). This information is processed even when you are neither logged in nor registered as a user. For this purpose, we access the following data:&lt;br&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;p class="paragraph-3"&gt;User ID&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p class="paragraph-3"&gt;Location (Latitude, Longitude)&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p class="paragraph-3"&gt;Bounding coordinates for the part of the map currently shown in the app&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p class="paragraph-3"&gt;However, we do not permanently store this information.&lt;br&gt;&lt;br&gt;&lt;/p&gt;&lt;h4 class="icon-tittle left black"&gt;&lt;strong&gt;Data storage&lt;/strong&gt;&lt;/h4&gt;&lt;p class="paragraph-3"&gt;The data from the FloodCitiSense application are stored and maintained on state-of-the-art web service environments hosted on rented servers at &lt;a href="https://www.hetzner.com/?country=at"&gt;Hetzner Online GmbH&lt;/a&gt;, Industriestrasse 25, 91710 Gunzenhausen, Germany. We do not provide any means to access data for the hosting company other than the ways intended for every user. The environment is set up such that we restrict access to the database strictly to our trusted network and through APIs that let us choose exactly which data is accessible to which users. &lt;br&gt;‍&lt;br&gt;Regarding the use of cookies, please see above. Information about your visit, including parts of your IP Address, may be transmitted, stored and processed on a Google server in the USA or another non-EU state.&lt;br&gt;‍&lt;br&gt;After completion of the scientific project, all personal data are permanently anonymized so that traceability to individual users will not be possible unless users have explicitly asked us to safe and publish their personal data.&lt;br&gt;&lt;br&gt;&lt;/p&gt;&lt;h4 class="icon-tittle left black"&gt;&lt;strong&gt;Data contributions&lt;/strong&gt;&lt;/h4&gt;&lt;p class="paragraph-3"&gt;Please be aware that we rely on you to contribute data, which does not infringe on the rights of others. Make sure you follow the instructions for the campaign/project to which you contribute, and do not submit data that could violate especially personal rights, copyright or other legislation. &lt;br&gt;‍&lt;br&gt;By contributing data, you provide us with the information requested in the app/website, but we usually also collect additional data that allows us to trace technical problems and verify the quality of the contribution. Please see the details above.&lt;br&gt;‍&lt;br&gt;By contributing data, you grant IIASA a license to use this data. Please see also our Terms and Conditions, which are available from the app. &lt;br&gt;&lt;br&gt;&lt;/p&gt;&lt;h4 class="icon-tittle left black"&gt;&lt;strong&gt;Third parties&lt;/strong&gt;&lt;/h4&gt;&lt;p class="paragraph-3"&gt;Please note that we may employ the following third-party companies to facilitate our service: &lt;br&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;p class="paragraph-3"&gt;Google LLC;&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p class="paragraph-3"&gt;Hetzner Online GmbH.&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p class="paragraph-3"&gt;These companies will have access to your data in order to perform the tasks we assign to them, as described above. However, they are obliged to not disclose or use the information for any other purpose.&lt;br&gt;&lt;br&gt;Should you consent to the use of your username in our social media platforms, it will be visible in connection with the photos you submitted:&lt;br&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;p class="paragraph-3"&gt;Facebook (&lt;a href="http://www.facebook.com/"&gt;www.facebook.com/&lt;/a&gt;, operated by Facebook, Inc.,1601 Willow Road, Menlo Park, California 94025; and Facebook Ireland Ltd., 4 Grand Canal Square, Grand Canal Harbour, Dublin 2 Ireland)&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p class="paragraph-3"&gt;Twitter (&lt;a href="http://www.twitter.com/"&gt;www.twitter.com/&lt;/a&gt;, operated by Twitter International Company, One Cumberland Place, Fenian Street Dublin 2, D02 AX07 Ireland; and 1355 Market Street, Suite 900, San Francisco, CA 94103, United States)&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p class="paragraph-3"&gt;Google LLC, Facebook, Twitter have their seat in the US and comply with “Privacy Shield”. According to a decision by the European Commission this guarantees an adequate level of data protection.&lt;br&gt;‍&lt;br&gt;&lt;/p&gt;&lt;h4 class="icon-tittle left black"&gt;&lt;strong&gt;Rights of the user&lt;/strong&gt;&lt;/h4&gt;&lt;p class="paragraph-3"&gt;At any time, you have the right:&lt;br&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;p class="paragraph-3"&gt;to request information as to which of your data we process (Art. 15 GDPR), &lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p class="paragraph-3"&gt;to request the rectification or erasure of your data (Art. 16 and Art. 17 GDPR),&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p class="paragraph-3"&gt;to restrict the processing of your data (Art. 18 GDPR),&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p class="paragraph-3"&gt;to request the transmission of your data (Art. 20 GDPR);&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p class="paragraph-3"&gt;to file a complaint with a supervisory authority, in particular the Austrian data protection authority (www.dsb.gv.at) or the data protection authority at your place of residence.&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p class="paragraph-3"&gt;You can instruct us to stop processing your data at any time using the contact data below. Even if you have agreed to the processing of data in the past, you can revoke such consent at any time (Art. 21 GDPR).&lt;br&gt;&lt;br&gt;Should you have questions concerning your personal data, please contact us using the contact information below.&lt;br&gt;‍&lt;br&gt;&lt;/p&gt;&lt;h4 class="icon-tittle left black"&gt;&lt;strong&gt;Third party apps and websites&lt;/strong&gt;&lt;/h4&gt;&lt;p class="paragraph-3"&gt;Our app and/or website may contain links to other websites. If you click on a third-party link, you will be directed to that site. Please note that these external sites are not operated by us and we do not have any control, nor assume any responsibility for their content, privacy policies or practices.&lt;br&gt;We therefore strongly advise you to review the Privacy Policy of those websites.&lt;br&gt;&lt;/p&gt;&lt;h4 class="icon-tittle left black"&gt;&lt;strong&gt;Contact us&lt;/strong&gt;&lt;/h4&gt;&lt;p class="paragraph-3"&gt;If you have any questions about our Privacy Policy, do not hesitate to &lt;a href="mailto:info@floodcitisense.eu"&gt;contact us&lt;/a&gt;. &lt;br&gt;International Institute for Applied Systems Analysis (IIASA)&lt;br&gt;Schlossplatz 1, A-2361 Laxenburg, Austria Tel: + 43 2236 807 0&lt;br&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;</value>
+  </data>
+  <data name="TermsWelcome" xml:space="preserve">
+    <value>Willkommen bei FloodCitiSense!</value>
+  </data>
+  <data name="TestTranslation" xml:space="preserve">
+    <value>Testübersetzung</value>
+  </data>
+  <data name="TestTranslation2" xml:space="preserve">
+    <value>Einige neue Übersetzung</value>
+  </data>
+  <data name="Torrential" xml:space="preserve">
+    <value>Sintflutartigen</value>
+  </data>
+  <data name="TransportAlerts" xml:space="preserve">
+    <value>Transport-Warnungen</value>
+  </data>
+  <data name="TypeOfFloodText" xml:space="preserve">
+    <value>Bericht der Art der Flut, die Sie beobachten</value>
+  </data>
+  <data name="TypeOfRain" xml:space="preserve">
+    <value>Art der Regen</value>
+  </data>
+  <data name="TypeOfSpaceFlooded" xml:space="preserve">
+    <value>Art des Raumes überflutet</value>
+  </data>
+  <data name="UnderConstruction" xml:space="preserve">
+    <value>Im Bau</value>
+  </data>
+  <data name="UnderConstructionTitle" xml:space="preserve">
+    <value>Diese Seite wird gerade überarbeitet.</value>
+  </data>
+  <data name="UnhandledWebRequestException" xml:space="preserve">
+    <value>Es ist ein Fehler aufgetreten. Während die Webanforderung.</value>
+  </data>
+  <data name="Upload" xml:space="preserve">
+    <value>Upload</value>
+  </data>
+  <data name="UploadAll" xml:space="preserve">
+    <value>Alle hochladen</value>
+  </data>
+  <data name="UpToMyAnkles" xml:space="preserve">
+    <value>Bis zu meinen Knöcheln (&lt;10 cm)</value>
+  </data>
+  <data name="UpToMyKnees" xml:space="preserve">
+    <value>Bis zu meinen Knien (&lt;50 cm)</value>
+  </data>
+  <data name="UpToMyShins" xml:space="preserve">
+    <value>Bis zu meiner Schienbeine (&lt;25 cm)</value>
+  </data>
+  <data name="Username" xml:space="preserve">
+    <value>Benutzername</value>
+  </data>
+  <data name="Users" xml:space="preserve">
+    <value>Benutzer</value>
+  </data>
+  <data name="ValidateReports" xml:space="preserve">
+    <value>Berichte zu validieren</value>
+  </data>
+  <data name="ViewMap" xml:space="preserve">
+    <value>Karte anzeigen</value>
+  </data>
+  <data name="VisualizeText" xml:space="preserve">
+    <value>Berichte und Sensor-Informationen in der Kartenansicht zu visualisieren.</value>
+  </data>
+  <data name="Walkthrough" xml:space="preserve">
+    <value>Exemplarische Vorgehensweise</value>
+  </data>
+  <data name="WaterClarity" xml:space="preserve">
+    <value>Klarheit des Wassers</value>
+  </data>
+  <data name="WeatherForecasts" xml:space="preserve">
+    <value>Wettervorhersagen</value>
+  </data>
+  <data name="WeatherText" xml:space="preserve">
+    <value>Aktuelle Wettervorhersagen</value>
+  </data>
+  <data name="Welcome" xml:space="preserve">
+    <value>Willkommen</value>
+  </data>
+  <data name="WelcomeText" xml:space="preserve">
+    <value>Unterstützen Sie Ihre Gemeinschaft durch die Berichterstattung Überschwemmungen in Ihrer Nähe</value>
+  </data>
+  <data name="YesDelete" xml:space="preserve">
+    <value>Ja, löschen!</value>
+  </data>
+  <data name="GettingLocation" xml:space="preserve">
+    <value>Erste Lage</value>
+  </data>
+  <data name="LoadingCity" xml:space="preserve">
+    <value>Laden-Stadt</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>Speichern</value>
+  </data>
+  <data name="CurrentReport" xml:space="preserve">
+    <value>Aktuelle Berichte</value>
+  </data>
+  <data name="UploadedReport" xml:space="preserve">
+    <value>Hochgeladene Berichte</value>
+  </data>
+  <data name="FilterItems" xml:space="preserve">
+    <value>Filtern von Elementen:</value>
+  </data>
+  <data name="ShowAll" xml:space="preserve">
+    <value>Alle anzeigen</value>
+  </data>
+  <data name="Showlastday" xml:space="preserve">
+    <value>Letzten 24 Stunden anzeigen</value>
+  </data>
+  <data name="Showlastweek" xml:space="preserve">
+    <value>Letzten 7 Tage anzeigen</value>
+  </data>
+  <data name="Empty" xml:space="preserve">
+    <value>Hier gibt es nichts.</value>
+  </data>
+  <data name="NoReportsOnPhone" xml:space="preserve">
+    <value>Derzeit gibt es keine Berichte, die auf dem Handy gespeichert.</value>
+  </data>
+  <data name="NoUploadedReports" xml:space="preserve">
+    <value>Derzeit gibt es keine hochgeladene Berichte.</value>
+  </data>
+  <data name="EmailOrUsername" xml:space="preserve">
+    <value>E-Mail oder Benutzername</value>
+  </data>
+  <data name="Device" xml:space="preserve">
+    <value>Gerät</value>
+  </data>
+  <data name="OtherReport" xml:space="preserve">
+    <value>Anderer Bericht</value>
+  </data>
+  <data name="YourReport" xml:space="preserve">
+    <value>Ihr Bericht</value>
+  </data>
+  <data name="PrivacyPolicy" xml:space="preserve">
+    <value>Privacy Policy</value>
+  </data>
+  <data name="PrivacyText" xml:space="preserve">
+    <value>&lt;div class="container"&gt;&lt;div class="left-div-headline"&gt;&lt;p class="paragraph-large"&gt;Thank you for your willingness to contribute to FloodCitiSense. This document aims to provide you with adequate information on the data we receive from you, how we process it, and what we make available to the public in order to comply with the requirements of the EU General Data Protection Regulation (GDPR).&lt;/p&gt;&lt;div class="seprator-div-wrapper"&gt;&lt;div data-ix="move-up" class="separator" style="opacity: 1; transform: translateX(0px) translateY(0px) translateZ(0px); transition: opacity 200ms, transform 800ms;"&gt;&lt;/div&gt;&lt;div data-ix="move-up-2" class="separator" style="opacity: 1; transform: translateX(0px) translateY(0px) translateZ(0px); transition: opacity 200ms, transform 800ms;"&gt;&lt;/div&gt;&lt;div data-ix="move-up-3" class="separator" style="opacity: 1; transform: translateX(0px) translateY(0px) translateZ(0px); transition: opacity 200ms, transform 800ms;"&gt;&lt;/div&gt;&lt;div data-ix="move-up-4" class="separator" style="opacity: 1; transform: translateX(0px) translateY(0px) translateZ(0px); transition: opacity 200ms, transform 800ms;"&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="licensing-wrapper"&gt;&lt;div class="icon-left-text"&gt;&lt;/div&gt;&lt;h4 class="icon-tittle left black"&gt;&lt;strong&gt;Our platform&lt;/strong&gt;&lt;/h4&gt;&lt;p class="paragraph-3"&gt;The app you are using has been developed by the International Institute for Applied Systems Analysis (IIASA), Schlossplatz 1, 2361 Laxenburg, Austria as part of the ENSUF/FFG-funded FloodCitiSense project (No. 860918).&lt;br&gt;‍&lt;/p&gt;&lt;h4 class="icon-tittle left black"&gt;&lt;strong&gt;What is “personal data”?&lt;/strong&gt;&lt;/h4&gt;&lt;p class="paragraph-3"&gt;“Personal data” means any information relating to an identified or identifiable natural person, such as their name, contact information, their location at a certain time or IP address.&lt;br&gt;‍&lt;br&gt; &lt;/p&gt;&lt;h4 class="icon-tittle left black"&gt;&lt;strong&gt;Data processed by us&lt;/strong&gt;&lt;/h4&gt;&lt;p class="paragraph-3"&gt;We are a scientific institute and process personal data for scientific purposes including environmental monitoring. We process personal data:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;p class="paragraph-3"&gt;for which you have given us consent for a specific purpose (Art. 6 para 1 lit a GDPR), namely for the conduction of this scientific study;&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p class="paragraph-3"&gt;that is necessary for the performance of a task carried out in the public interest (Art. 6 para 1 lit e GDPR), namely for the conduction of this scientific study; that is necessary for the purpose of the legitimate interests pursued by us or by a third party (Art. 6 para 1 lit f GDPR), e.g. avoiding legal disputes about rights in the contributions. If possible, we seek the explicit consent to the processing of data, in particular the disclosure to third parties (Art. 6 para. 1 lit. a GDPR). Below is a list of types of data the app collects. Please note that a copy of the data might be briefly stored in the server's memory for a short period. These data are temporarily stored apart from the database, managed and deleted automatically by the server's operating system and will not be accessed by us for processing, archiving, or any other reason. It is also possible through logging errors or general requests that submitted data be stored in one of the server's log files. These files are not publicly accessible and are not used for any processing, storage or data publication other than for resolving a possible software problem. These are technical necessities over which we have no control.&lt;br&gt;‍&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;&lt;h4 class="icon-tittle left black"&gt;&lt;strong&gt;Registration/Login/Profile update&lt;/strong&gt;&lt;/h4&gt;&lt;p class="paragraph-3"&gt;We process the following data for registration, login and profile updates for a given user, all of which is stored in the FloodCitiSense database: &lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;p class="paragraph-3"&gt;User identifier&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p class="paragraph-3"&gt;First name&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p class="paragraph-3"&gt;Last name&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p class="paragraph-3"&gt;User identifier&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p class="paragraph-3"&gt;Username&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p class="paragraph-3"&gt;Password (encrypted)&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p class="paragraph-3"&gt;Email address&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p class="paragraph-3"&gt;Telephone number&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p class="paragraph-3"&gt;Status of the user (active/deactivated)&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p class="paragraph-3"&gt;Whether the email address has been confirmed&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p class="paragraph-3"&gt;Last time the user logged in&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p class="paragraph-3"&gt;Profile picture&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p class="paragraph-3"&gt;Session ID&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p class="paragraph-3"&gt;The city chosen by the user (Birmingham, Brussels or Rotterdam)&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p class="paragraph-3"&gt;Number of times the incorrect password has been entered, reset each time the correct password is entered.&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p class="paragraph-3"&gt;None of this information will be part of any publication (e.g. data products, scientific publications, etc). &lt;br&gt;‍&lt;br&gt;&lt;/p&gt;&lt;h4 class="icon-tittle left black"&gt;&lt;strong&gt;Log data&lt;/strong&gt;&lt;/h4&gt;&lt;p class="paragraph-3"&gt;Whenever you use our service, we collect Log Data, or data and information (also through third party products) on your phone to identify errors in the app. Log Data may include information such as your device Internet Protocol (“IP”) address, device name, operating system version, the configuration of the app when utilizing our Service, the time and date of your use of the service, and other statistics. This data is used for identifying problems with our software and will not be published as part of the resulting data product.&lt;br&gt;‍&lt;br&gt;&lt;/p&gt;&lt;h4 class="icon-tittle left black"&gt;&lt;strong&gt;Cookies&lt;/strong&gt;&lt;/h4&gt;&lt;p class="paragraph-3"&gt;We use first party cookies to provide essential site functionality. Cookies are small text files that are saved by your browser and temporarily stored on your device.&lt;br&gt;‍&lt;br&gt;Provided that you have consented to the use of cookies, our website uses Google Analytics, a web analysis service of Google LLC. (“Google”). Google Analytics uses cookies to help understand how the website is being used. In order to do so, information about your visit, including parts of your IP Address, may be transmitted, stored and processed on a Google server in the USA or another non-EU state.&lt;br&gt;‍&lt;br&gt;You can also prevent the placement of cookies through the settings of your browser or by downloading and installing the browser plug-in available at the following link:&lt;a href="http://tools.google.com/dlpage/gaoptout?hl=de"&gt;http://tools.google.com/dlpage/gaoptout?hl=de&lt;/a&gt;.&lt;br&gt;‍&lt;br&gt;&lt;/p&gt;&lt;h4 class="icon-tittle left black"&gt;&lt;strong&gt;Submitting your incident reports&lt;/strong&gt;&lt;/h4&gt;&lt;p class="paragraph-3"&gt;We use first party cookies to provide essential site functionality. Cookies are small text files that are saved by your browser and temporarily stored on your device.When you submit your incident report, the app accesses and processes the data you collected, and some additional information we use for assessing the quality of your contribution and for reproducing technical problems in case of an error. The following data are sent to the server and stored:&lt;br&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;p class="paragraph-3"&gt;User ID&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p class="paragraph-3"&gt;User display name&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p class="paragraph-3"&gt;User email address&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p class="paragraph-3"&gt;User position (Latitude/Longitude as well as accuracy)&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p class="paragraph-3"&gt;Device and app information: &lt;br&gt;&amp;gt; Version of FloodCitiSense app&lt;br&gt;&amp;gt; Smartphone operating system and version&lt;br&gt;&amp;gt; Device name (brand and model)&lt;br&gt;&amp;gt; Device serial number&lt;br&gt;&amp;gt; Language setting of the device&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p class="paragraph-3"&gt;Information on the incident:&lt;br&gt;&amp;gt; Incident ID&lt;br&gt;&amp;gt; The city chosen by the user (Birmingham, Brussels or Rotterdam)&lt;br&gt;&amp;gt; Type of rain&lt;br&gt;&amp;gt; Type of flooding&lt;br&gt;&amp;gt; Sign of damage&lt;br&gt;&amp;gt; Sign of obstruction&lt;br&gt;&amp;gt; Types of space flooded&lt;br&gt;&amp;gt; Flood extent&lt;br&gt;&amp;gt; Flood depth&lt;br&gt;&amp;gt; Frequency of flood&lt;br&gt;&amp;gt; Water clarity&lt;br&gt;&amp;gt; Are you impacted&lt;br&gt;&amp;gt; Date and time the report was made&lt;br&gt;&amp;gt; Date and time the report was uploaded&lt;br&gt;&amp;gt; Position (Latitude/Longitude as well as accuracy)&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p class="paragraph-3"&gt;Information per photo submitted:&lt;br&gt;&amp;gt; The submitted media file (photo)&lt;br&gt;&amp;gt; TenantId - City Id&lt;br&gt;&amp;gt; Time and date when the photo was taken&lt;br&gt;&amp;gt; Compass direction of the photo&lt;br&gt;&amp;gt; Tilt angle of the photo&lt;br&gt;&amp;gt; Position (Latitude/Longitude as well as accuracy)&lt;br&gt;‍&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;&lt;h4 class="icon-tittle left black"&gt;&lt;strong&gt;Information on contributions&lt;/strong&gt;&lt;/h4&gt;&lt;p class="paragraph-3"&gt;On the map screen, we process information on submitted reports that are within the currently displayed map view. Since this usually shows your current location, it implicitly uses your current location (latitude and longitude). This information is processed even when you are neither logged in nor registered as a user. For this purpose, we access the following data:&lt;br&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;p class="paragraph-3"&gt;User ID&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p class="paragraph-3"&gt;Location (Latitude, Longitude)&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p class="paragraph-3"&gt;Bounding coordinates for the part of the map currently shown in the app&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p class="paragraph-3"&gt;However, we do not permanently store this information.&lt;br&gt;&lt;br&gt;&lt;/p&gt;&lt;h4 class="icon-tittle left black"&gt;&lt;strong&gt;Data storage&lt;/strong&gt;&lt;/h4&gt;&lt;p class="paragraph-3"&gt;The data from the FloodCitiSense application are stored and maintained on state-of-the-art web service environments hosted on rented servers at &lt;a href="https://www.hetzner.com/?country=at"&gt;Hetzner Online GmbH&lt;/a&gt;, Industriestrasse 25, 91710 Gunzenhausen, Germany. We do not provide any means to access data for the hosting company other than the ways intended for every user. The environment is set up such that we restrict access to the database strictly to our trusted network and through APIs that let us choose exactly which data is accessible to which users. &lt;br&gt;‍&lt;br&gt;Regarding the use of cookies, please see above. Information about your visit, including parts of your IP Address, may be transmitted, stored and processed on a Google server in the USA or another non-EU state.&lt;br&gt;‍&lt;br&gt;After completion of the scientific project, all personal data are permanently anonymized so that traceability to individual users will not be possible unless users have explicitly asked us to safe and publish their personal data.&lt;br&gt;&lt;br&gt;&lt;/p&gt;&lt;h4 class="icon-tittle left black"&gt;&lt;strong&gt;Data contributions&lt;/strong&gt;&lt;/h4&gt;&lt;p class="paragraph-3"&gt;Please be aware that we rely on you to contribute data, which does not infringe on the rights of others. Make sure you follow the instructions for the campaign/project to which you contribute, and do not submit data that could violate especially personal rights, copyright or other legislation. &lt;br&gt;‍&lt;br&gt;By contributing data, you provide us with the information requested in the app/website, but we usually also collect additional data that allows us to trace technical problems and verify the quality of the contribution. Please see the details above.&lt;br&gt;‍&lt;br&gt;By contributing data, you grant IIASA a license to use this data. Please see also our Terms and Conditions, which are available from the app. &lt;br&gt;&lt;br&gt;&lt;/p&gt;&lt;h4 class="icon-tittle left black"&gt;&lt;strong&gt;Third parties&lt;/strong&gt;&lt;/h4&gt;&lt;p class="paragraph-3"&gt;Please note that we may employ the following third-party companies to facilitate our service: &lt;br&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;p class="paragraph-3"&gt;Google LLC;&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p class="paragraph-3"&gt;Hetzner Online GmbH.&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p class="paragraph-3"&gt;These companies will have access to your data in order to perform the tasks we assign to them, as described above. However, they are obliged to not disclose or use the information for any other purpose.&lt;br&gt;&lt;br&gt;Should you consent to the use of your username in our social media platforms, it will be visible in connection with the photos you submitted:&lt;br&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;p class="paragraph-3"&gt;Facebook (&lt;a href="http://www.facebook.com/"&gt;www.facebook.com/&lt;/a&gt;, operated by Facebook, Inc.,1601 Willow Road, Menlo Park, California 94025; and Facebook Ireland Ltd., 4 Grand Canal Square, Grand Canal Harbour, Dublin 2 Ireland)&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p class="paragraph-3"&gt;Twitter (&lt;a href="http://www.twitter.com/"&gt;www.twitter.com/&lt;/a&gt;, operated by Twitter International Company, One Cumberland Place, Fenian Street Dublin 2, D02 AX07 Ireland; and 1355 Market Street, Suite 900, San Francisco, CA 94103, United States)&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p class="paragraph-3"&gt;Google LLC, Facebook, Twitter have their seat in the US and comply with “Privacy Shield”. According to a decision by the European Commission this guarantees an adequate level of data protection.&lt;br&gt;‍&lt;br&gt;&lt;/p&gt;&lt;h4 class="icon-tittle left black"&gt;&lt;strong&gt;Rights of the user&lt;/strong&gt;&lt;/h4&gt;&lt;p class="paragraph-3"&gt;At any time, you have the right:&lt;br&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;p class="paragraph-3"&gt;to request information as to which of your data we process (Art. 15 GDPR), &lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p class="paragraph-3"&gt;to request the rectification or erasure of your data (Art. 16 and Art. 17 GDPR),&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p class="paragraph-3"&gt;to restrict the processing of your data (Art. 18 GDPR),&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p class="paragraph-3"&gt;to request the transmission of your data (Art. 20 GDPR);&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p class="paragraph-3"&gt;to file a complaint with a supervisory authority, in particular the Austrian data protection authority (www.dsb.gv.at) or the data protection authority at your place of residence.&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p class="paragraph-3"&gt;You can instruct us to stop processing your data at any time using the contact data below. Even if you have agreed to the processing of data in the past, you can revoke such consent at any time (Art. 21 GDPR).&lt;br&gt;&lt;br&gt;Should you have questions concerning your personal data, please contact us using the contact information below.&lt;br&gt;‍&lt;br&gt;&lt;/p&gt;&lt;h4 class="icon-tittle left black"&gt;&lt;strong&gt;Third party apps and websites&lt;/strong&gt;&lt;/h4&gt;&lt;p class="paragraph-3"&gt;Our app and/or website may contain links to other websites. If you click on a third-party link, you will be directed to that site. Please note that these external sites are not operated by us and we do not have any control, nor assume any responsibility for their content, privacy policies or practices.&lt;br&gt;We therefore strongly advise you to review the Privacy Policy of those websites.&lt;br&gt;&lt;/p&gt;&lt;h4 class="icon-tittle left black"&gt;&lt;strong&gt;Contact us&lt;/strong&gt;&lt;/h4&gt;&lt;p class="paragraph-3"&gt;If you have any questions about our Privacy Policy, do not hesitate to &lt;a href="mailto:info@floodcitisense.eu"&gt;contact us&lt;/a&gt;. &lt;br&gt;International Institute for Applied Systems Analysis (IIASA)&lt;br&gt;Schlossplatz 1, A-2361 Laxenburg, Austria Tel: + 43 2236 807 0&lt;br&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;</value>
+  </data>
+  <data name="PrivacyWelcome" xml:space="preserve">
+    <value>Willkommen bei Datenschutzrichtlinie</value>
+  </data>
+  <data name="FloodCitiSenseRainfallSensor" xml:space="preserve">
+    <value>Regen-Sensoren</value>
+  </data>
+  <data name="OtherReports" xml:space="preserve">
+    <value>Andere Berichte</value>
+  </data>
+  <data name="YourReports" xml:space="preserve">
+    <value>Ihre Berichte</value>
+  </data>
+  <data name="Expert" xml:space="preserve">
+    <value>Experte</value>
+  </data>
+  <data name="Some" xml:space="preserve">
+    <value>Einige</value>
+  </data>
+  <data name="ExperienceWithCitizenScience" xml:space="preserve">
+    <value>Erleben Sie mit Citizen science</value>
+  </data>
+  <data name="RequiredField" xml:space="preserve">
+    <value>Das Feld "{0}" ist erforderlich.</value>
+  </data>
+  <data name="LengthNotInRange" xml:space="preserve">
+    <value>{0} ist ungültig</value>
+  </data>
+  <data name="InvalidEmailAddress" xml:space="preserve">
+    <value>E-Mail-Adresse ist nicht gültig</value>
+  </data>
+  <data name="GardenFlooding" xml:space="preserve">
+    <value>Garten, Überschwemmungen</value>
+  </data>
+  <data name="ParksFlooding" xml:space="preserve">
+    <value>Parks, Überschwemmungen</value>
+  </data>
+  <data name="RiverLevelRising" xml:space="preserve">
+    <value>Fluss-Ebene steigen</value>
+  </data>
+  <data name="SewerBlocked" xml:space="preserve">
+    <value>Kanalisation blockiert</value>
+  </data>
+  <data name="NotAllowedToSelectAnyMore" xml:space="preserve">
+    <value>Sie dürfen nicht mehr die aktuelle Auswahl auswählen.</value>
+  </data>
+  <data name="NotAbleToFindCity" xml:space="preserve">
+    <value>Wir waren nicht in der Lage, Ihre Stadt zu bestimmen. Bitte wählen Sie Ihre Stadt wieder.</value>
+  </data>
+  <data name="ProblemVerifyingUserLoginAgain" xml:space="preserve">
+    <value>Es ist ein Problem, die Überprüfung Ihres Kontos. Melden Sie sich wieder.</value>
+  </data>
+  <data name="UploadedSuccessfully" xml:space="preserve">
+    <value>Erfolgreich hochgeladen!</value>
+  </data>
+  <data name="UploadFailed" xml:space="preserve">
+    <value>Nicht in der Lage, den Vorfall zu laden.</value>
+  </data>
+  <data name="InvalidUserNameOrPassword" xml:space="preserve">
+    <value>Benutzername oder Kennwort ungültig</value>
+  </data>
+  <data name="NotAbleToSave" xml:space="preserve">
+    <value>Fehler beim Speichern des Vorfalls</value>
+  </data>
+  <data name="LocationDisabled" xml:space="preserve">
+    <value>Lage ist deaktiviert, aktivieren Sie es und versuchen Sie es erneut.</value>
+  </data>
+  <data name="ImageUploadFailed" xml:space="preserve">
+    <value>Nicht das Bild hochladen.</value>
+  </data>
+  <data name="UploadingIncident" xml:space="preserve">
+    <value>Vorfall hochladen</value>
+  </data>
+  <data name="UploadingPicture" xml:space="preserve">
+    <value>Hochladen von Bildern...</value>
+  </data>
+  <data name="Default" xml:space="preserve">
+    <value>Standard</value>
+  </data>
+  <data name="FloodCitiSenseData" xml:space="preserve">
+    <value>FloodCitiSense Daten</value>
+  </data>
+  <data name="MapType" xml:space="preserve">
+    <value>Zuordnungstyp</value>
+  </data>
+  <data name="SatelliteImagery" xml:space="preserve">
+    <value>Satellitenbilder</value>
+  </data>
+  <data name="FilterData" xml:space="preserve">
+    <value>Filtern von Daten</value>
+  </data>
+  <data name="FilterLast3Days" xml:space="preserve">
+    <value>Letzten 3 Tage anzeigen</value>
+  </data>
+  <data name="FilterLastDay" xml:space="preserve">
+    <value>Letzten 24 Stunden anzeigen</value>
+  </data>
+  <data name="FilterShowAll" xml:space="preserve">
+    <value>Zeige alle</value>
+  </data>
+  <data name="ShowFrom" xml:space="preserve">
+    <value>Von anzeigen</value>
+  </data>
+  <data name="To" xml:space="preserve">
+    <value>bis</value>
+  </data>
+  <data name="GetAllDeviceLocation" xml:space="preserve">
+    <value>Erste Geräte</value>
+  </data>
+  <data name="GetAllIncidents" xml:space="preserve">
+    <value>Immer Vorfälle</value>
+  </data>
+  <data name="GetAllLocalLocation" xml:space="preserve">
+    <value>Gettting lokale Standorte</value>
+  </data>
+  <data name="SelectTheTypeOfRain" xml:space="preserve">
+    <value>Wählen Sie den Typ des Regens</value>
+  </data>
+  <data name="IncidentSavingWarningMessage" xml:space="preserve">
+    <value>Sie haben keinen Regen oder Hochwasser Typ eingegeben.</value>
+  </data>
+  <data name="TypeOfFlooding" xml:space="preserve">
+    <value>Art der Überschwemmungen</value>
+  </data>
+  <data name="ClickHereToLogin" xml:space="preserve">
+    <value>Klicken Sie hier zum Login.</value>
+  </data>
+  <data name="NotSpecified" xml:space="preserve">
+    <value>Nicht angegeben</value>
+  </data>
+  <data name="ShowAdvancedInfo" xml:space="preserve">
+    <value>Erweiterte Info anzeigen</value>
+  </data>
+  <data name="ShowPhotographs" xml:space="preserve">
+    <value>Fotos zeigen</value>
+  </data>
+  <data name="EditOrMore" xml:space="preserve">
+    <value>Bearbeiten / mehr</value>
+  </data>
+  <data name="More" xml:space="preserve">
+    <value>Mehr</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>Nein</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>Ja</value>
+  </data>
+  <data name="Created" xml:space="preserve">
+    <value>Erstellt</value>
+  </data>
+  <data name="You" xml:space="preserve">
+    <value>Sie</value>
+  </data>
+  <data name="IncidentsFound" xml:space="preserve">
+    <value>Vorfälle gefunden!</value>
+  </data>
+  <data name="Dates" xml:space="preserve">
+    <value>Termine</value>
+  </data>
+  <data name="Hours" xml:space="preserve">
+    <value>Stunden</value>
+  </data>
+  <data name="Daily" xml:space="preserve">
+    <value>Tägliche</value>
+  </data>
+  <data name="Hourly" xml:space="preserve">
+    <value>Pro Stunde</value>
+  </data>
+  <data name="SensorID" xml:space="preserve">
+    <value>Sensor-ID</value>
+  </data>
+  <data name="RainfallGraph" xml:space="preserve">
+    <value>Niederschlag (mm)</value>
+  </data>
+  <data name="SavingIncident" xml:space="preserve">
+    <value>Speichern von Vorfall</value>
+  </data>
+  <data name="Received" xml:space="preserve">
+    <value>Empfangen</value>
+  </data>
+  <data name="UploadMessage1" xml:space="preserve">
+    <value>Ihre Flut-Bericht wurde erfolgreich hochgeladen!</value>
+  </data>
+  <data name="UploadMessage2" xml:space="preserve">
+    <value>Bitte beachten Sie, dass diese Berichte in Echtzeit oder für Flut Antwort nicht verwendet werden. Stattdessen werden sie wertvolle Informationen im nachsintflutlichen Analyse beitragen. Wenn Sie in einer Notsituation sind, rufen Sie den Rettungsdienst.</value>
+  </data>
+  <data name="UploadMessage3" xml:space="preserve">
+    <value>Vielen Dank für Ihren Beitrag zu FloodCitiSense!</value>
+  </data>
+  <data name="GraphTitle" xml:space="preserve">
+    <value>Niederschlag (mm) von Sensor-ID:</value>
+  </data>
+  <data name="FloodReport" xml:space="preserve">
+    <value>Hochwasser-Bericht</value>
+  </data>
+  <data name="From" xml:space="preserve">
+    <value>Von</value>
+  </data>
+  <data name="ShowYesterday" xml:space="preserve">
+    <value>Gestern zeigen</value>
+  </data>
+  <data name="Show7DaysFrom" xml:space="preserve">
+    <value>7 Tage ab zeigen</value>
+  </data>
+  <data name="EmptyGraphMessage" xml:space="preserve">
+    <value>Keine Daten auf dem Server verfügbar</value>
+  </data>
+  <data name="LogIn" xml:space="preserve">
+    <value>Anmelden/registrieren</value>
+  </data>
+  <data name="None" xml:space="preserve">
+    <value>Keine</value>
+  </data>
+  <data name="NoPhotos" xml:space="preserve">
+    <value>Keine Fotos</value>
+  </data>
+  <data name="NoTypeOfFlooding" xml:space="preserve">
+    <value>Keine Art von Flodding</value>
+  </data>
+  <data name="DeleteAll" xml:space="preserve">
+    <value>Alle löschen</value>
+  </data>
+  <data name="SaveAndUpload" xml:space="preserve">
+    <value>Speichern und Hochladen</value>
+  </data>
+  <data name="ReportsToBeUploaded" xml:space="preserve">
+    <value>Zu ladende Berichte</value>
+  </data>
+  <data name="StatusAndEditingOfYourReports" xml:space="preserve">
+    <value>Status und Bearbeitung Ihrer Berichte</value>
+  </data>
+  <data name="DeleteFailed" xml:space="preserve">
+    <value>Fehler beim Löschen</value>
+  </data>
+  <data name="Loading" xml:space="preserve">
+    <value>Wird geladen...</value>
+  </data>
+  <data name="Deleting" xml:space="preserve">
+    <value>Wird gelöscht...</value>
+  </data>
+  <data name="NoItemsToDisplay" xml:space="preserve">
+    <value>Keine Elemente zum Anzeigen.</value>
+  </data>
+  <data name="TakeVideo" xml:space="preserve">
+    <value>Video aufnehmen</value>
+  </data>
+  <data name="RegistrationSuccess" xml:space="preserve">
+    <value>Die Registrierung war erfolgreich</value>
+  </data>
+  <data name="InvalidPassword" xml:space="preserve">
+    <value>Ungültiges Kennwort</value>
+  </data>
+  <data name="InvalidUserNameOrEmailAddress" xml:space="preserve">
+    <value>Ungültiger Benutzername oder E-Mail-Adresse</value>
+  </data>
+  <data name="UserEmailIsNotConfirmed" xml:space="preserve">
+    <value>Benutzer-E-MailI nicht bestätigt</value>
+  </data>
+  <data name="UserLockedOut" xml:space="preserve">
+    <value>Das Benutzerkonto ist gesperrt. Bitte versuchen Sie, sich nach einiger Zeit anzumelden.</value>
+  </data>
+  <data name="FailedLogin" xml:space="preserve">
+    <value>Anmeldefehler</value>
+  </data>
+  <data name="FilterLastWeek" xml:space="preserve">
+    <value>Show letzte Woche</value>
+  </data>
+  <data name="MailSent" xml:space="preserve">
+    <value>E-Mail gesendet</value>
+  </data>
+</root>

@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<ContentPage
+    x:Class="IIASA.FloodCitiSense.Views.Account.RegisterPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:base="clr-namespace:IIASA.FloodCitiSense.Mobile.Core.Base;assembly=IIASA.FloodCitiSense.Mobile.Core"
+    xmlns:markupExtensions="clr-namespace:IIASA.FloodCitiSense.Mobile.Core.Extensions.MarkupExtensions;assembly=IIASA.FloodCitiSense.Mobile.Core"
+    xmlns:controls="clr-namespace:Plugin.InputKit.Shared.Controls;assembly=Plugin.InputKit"
+    Title="{markupExtensions:Translate Register}"
+    base:ViewManager.AutoWireViewModel="true">
+    <ContentPage.Content>
+        <Grid BackgroundColor="White">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="50" />
+            </Grid.RowDefinitions>
+            <Grid
+                Grid.Row="0"
+                Margin="20,0,20,0"
+                VerticalOptions="StartAndExpand">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="150" />
+                    <RowDefinition Height="50" />
+                    <RowDefinition Height="50" />
+                    <RowDefinition Height="50" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="50" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <Image
+                    HeightRequest="150"
+                    HorizontalOptions="CenterAndExpand"
+                    Source="{markupExtensions:ImageSource 'AppLogo.png'}"
+                    VerticalOptions="End"
+                    WidthRequest="200" />
+                <Entry
+                    Grid.Row="1"
+                    AutomationId="UsernameEntry"
+                    Placeholder="{markupExtensions:Translate Username}"
+                    Text="{Binding Username}" />
+                <Entry
+                    Grid.Row="2"
+                    AutomationId="EmailEntry"
+                    Placeholder="{markupExtensions:Translate Email}"
+                    Text="{Binding Email}" />
+                <Entry
+                    Grid.Row="3"
+                    AutomationId="PasswordEntry"
+                    IsPassword="True"
+                    Placeholder="{markupExtensions:Translate Password}"
+                    Text="{Binding Password}" />
+                <Label Grid.Row="4" Text="{markupExtensions:Translate ExperienceWithCitizenScience}"  Margin="0,10,0,0"></Label>
+                <controls:RadioButtonGroupView Grid.Row="5" Orientation="Horizontal" SelectedItemChangedCommand="{Binding ExperienceSelectedCommand}">
+                    <controls:RadioButton TextFontSize="15" Value="0" Text="{markupExtensions:Translate None}" />
+                    <controls:RadioButton TextFontSize="15" Value="1" Text="{markupExtensions:Translate Some}" />
+                    <controls:RadioButton TextFontSize="15" Value="2"  Text="{markupExtensions:Translate Expert}" />
+                </controls:RadioButtonGroupView>
+                <Button
+                    Grid.Row="6"
+                    AutomationId="LoginButton"
+                    Command="{Binding RegisterUserCommand}"
+                    HeightRequest="50"
+                    Style="{StaticResource ActionButton}"
+                    Text="{markupExtensions:Translate Register}"
+                    VerticalOptions="Start" />
+            </Grid>
+            <StackLayout Grid.Row="1" BackgroundColor="White">
+                <Label BackgroundColor="#E3E3E3" HeightRequest="1" />
+                <Label
+                    HorizontalTextAlignment="Center" FontAttributes="Bold" FontSize="16"
+                    Text="{markupExtensions:Translate HaveAAccount}"
+                    TextColor="{StaticResource PrimaryText}"
+                    VerticalOptions="FillAndExpand"
+                    VerticalTextAlignment="Center">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding NavigateToLoginCommand}" />
+                    </Label.GestureRecognizers>
+                </Label>
+
+            </StackLayout>
+        </Grid>
+
+    </ContentPage.Content>
+</ContentPage>

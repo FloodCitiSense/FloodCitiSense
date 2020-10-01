@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="IIASA.FloodCitiSense.Views.MySettingsView"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:base="clr-namespace:IIASA.FloodCitiSense.Mobile.Core.Base;assembly=IIASA.FloodCitiSense.Mobile.Core"
+    xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+    xmlns:markupExtensions="clr-namespace:IIASA.FloodCitiSense.Mobile.Core.Extensions.MarkupExtensions;assembly=IIASA.FloodCitiSense.Mobile.Core"
+    Title="{markupExtensions:Translate MySettings}"
+    base:ViewManager.AutoWireViewModel="true"
+    ios:Page.UseSafeArea="true">
+    <ContentPage.Content>
+
+        <Grid
+            Margin="0,0,0,5"
+            Padding="5"
+            BackgroundColor="{StaticResource MasterPageBackgroundColor}"
+            ColumnSpacing="10">
+
+            <Grid.RowDefinitions>
+                <!--<RowDefinition Height="40" />-->
+                <RowDefinition Height="40" />
+                <RowDefinition Height="40" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="25" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <!--<Image
+                Grid.Row="0"
+                Grid.Column="0"
+                Source="{extensions:ImageSource 'IIASA.FloodCitiSense.UI.Assets.Images.ChangeLanguage.png'}" />
+            <Picker
+                Title="{extensions:Translate Languages}"
+                Grid.Row="0"
+                Grid.Column="1"
+                ItemDisplayBinding="{Binding DisplayName}"
+                ItemsSource="{Binding Languages}"
+                SelectedItem="{Binding SelectedLanguage}" />-->
+
+            <Image
+                Grid.Row="0"
+                Grid.Column="0"
+                Source="{markupExtensions:ImageSource 'ChangePassword.png'}" />
+            <Label
+                Grid.Row="0"
+                Grid.Column="1"
+                HorizontalOptions="StartAndExpand"
+                Text="{markupExtensions:Translate ChangePassword}"
+                VerticalOptions="Center">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding ChangePasswordCommand}" />
+                </Label.GestureRecognizers>
+            </Label>
+
+            <!--<Image
+                Grid.Row="1"
+                Grid.Column="0"
+                Source="{markupExtensions:ImageSource 'Logout.png'}" />
+            <Label
+                Grid.Row="1"
+                Grid.Column="1"
+                HorizontalOptions="StartAndExpand"
+                Text="{markupExtensions:Translate Logout}"
+                VerticalOptions="Center">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding OpenSettingsCommand}" />
+                </Label.GestureRecognizers>
+            </Label>-->
+
+            <Image
+                Grid.Row="1"
+                Grid.Column="0"
+                Source="{markupExtensions:ImageSource 'Logout.png'}" />
+            <Label
+                Grid.Row="1"
+                Grid.Column="1"
+                HorizontalOptions="StartAndExpand"
+                Text="{markupExtensions:Translate Logout}"
+                VerticalOptions="Center">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding LogoutCommand}" />
+                </Label.GestureRecognizers>
+            </Label>
+
+
+        </Grid>
+
+    </ContentPage.Content>
+</ContentPage>

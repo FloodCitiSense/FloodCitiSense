@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="IIASA.FloodCitiSense.Views.Init.AboutPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:base="clr-namespace:IIASA.FloodCitiSense.Mobile.Core.Base;assembly=IIASA.FloodCitiSense.Mobile.Core"
+    xmlns:markupExtensions="clr-namespace:IIASA.FloodCitiSense.Mobile.Core.Extensions.MarkupExtensions;assembly=IIASA.FloodCitiSense.Mobile.Core"
+    Title="{markupExtensions:Translate About}"
+    base:ViewManager.AutoWireViewModel="true">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout BackgroundColor="{StaticResource WhiteColor}" >
+                <Image Margin="15"
+                    HeightRequest="150"
+                    Source="{markupExtensions:ImageSource 'fcs.png'}"
+                    WidthRequest="150" />
+                <Label Margin="5"
+                    HorizontalTextAlignment="Center"
+                    Text="{markupExtensions:Translate AboutText1}"
+                    />
+                <Label Margin="5"
+                    HorizontalTextAlignment="Center"
+                    Text="{markupExtensions:Translate AboutText2}"
+                    />
+                <Image
+                    HeightRequest="50"
+                    Source="{markupExtensions:ImageSource 'icon.png'}"
+                    WidthRequest="50" />
+                <Label
+                    Margin="15"
+                    HorizontalOptions="Center"
+                    Text="{Binding CopyrightText}"
+                     />
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition Width="10"></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+            
+                <!--<StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" >-->
+                    <StackLayout HorizontalOptions="End" Grid.Column="0" Margin="0,0,0,15">
+                        <StackLayout.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding NavigateAsyncCommand}"
+                                                  CommandParameter="Init.TermsPage"
+                                                  NumberOfTapsRequired="1"></TapGestureRecognizer>
+                        </StackLayout.GestureRecognizers>
+                        <Label Margin="1"
+                            TextColor="Blue"
+                            
+                            HorizontalOptions="Center"
+                            Text="{markupExtensions:Translate TermsAndConditions}"
+                        />
+                    </StackLayout>
+
+                    <StackLayout HorizontalOptions="Start" Grid.Column="2" Margin="0,0,0,15">
+                        <StackLayout.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding NavigateAsyncCommand}"
+                                                  CommandParameter="Init.PrivacyPage"
+                                                  NumberOfTapsRequired="1"></TapGestureRecognizer>
+                        </StackLayout.GestureRecognizers>
+                        <Label
+                            TextColor="Blue"
+                            
+                            HorizontalOptions="Center"
+                            Text="{markupExtensions:Translate PrivacyPolicy}"
+                        />
+                    </StackLayout>
+                <!--</StackLayout>-->
+                </Grid>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

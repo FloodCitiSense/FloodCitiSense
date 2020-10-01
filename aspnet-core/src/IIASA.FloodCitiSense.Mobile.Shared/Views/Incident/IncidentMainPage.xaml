@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<ContentPage
+    x:Class="IIASA.FloodCitiSense.Views.Incident.IncidentMainPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:base="clr-namespace:IIASA.FloodCitiSense.Mobile.Core.Base;assembly=IIASA.FloodCitiSense.Mobile.Core"
+    xmlns:behaviors="clr-namespace:IIASA.FloodCitiSense.Mobile.Core.Behaviors;assembly=IIASA.FloodCitiSense.Mobile.Core"
+    xmlns:controls="clr-namespace:Plugin.InputKit.Shared.Controls;assembly=Plugin.InputKit"
+    xmlns:enums="clr-namespace:IIASA.FloodCitiSense.Datatypes;assembly=IIASA.FloodCitiSense.Application.Shared"
+    xmlns:forms="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
+    xmlns:markupExtensions="clr-namespace:IIASA.FloodCitiSense.Mobile.Core.Extensions.MarkupExtensions;assembly=IIASA.FloodCitiSense.Mobile.Core"
+    x:Name="Page"
+    Title="{markupExtensions:Translate Incident}"
+    base:ViewManager.AutoWireViewModel="true">
+    <ScrollView>
+        <StackLayout >
+            <Label
+                x:Name="CurrentDateAndTime"
+                Margin="10,10,0,0"
+                HorizontalOptions="Center"
+                Text="{Binding Date, Mode=TwoWay, Converter={StaticResource DatetimeOffsetConverter}, StringFormat=' {0:dd/MM/yy HH:mm}'}"
+                VerticalOptions="Center" />
+            <Label Style="{StaticResource MainPageLabelStyle}" Text="{markupExtensions:Translate SelectTheTypeOfRain}" />
+
+            <Grid x:Name="TypeOfRain" Margin="5">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <StackLayout
+                    Grid.Row="0"
+                    Grid.Column="0"
+                    ClassId="0"
+                    Style="{StaticResource FloodTypeLayoutStyle}">
+                    <Image Source="{markupExtensions:ImageSource 'None.png'}" Style="{StaticResource IncidentImageStyle}" />
+                    <Label Style="{StaticResource IncidentLabelStyle}" Text="{markupExtensions:Translate None}" />
+                    <StackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TypeOfRain_OnTapped" />
+                    </StackLayout.GestureRecognizers>
+                </StackLayout>
+                <StackLayout
+                    Grid.Row="0"
+                    Grid.Column="1"
+                    ClassId="1"
+                    Style="{StaticResource FloodTypeLayoutStyle}">
+                    <Image
+                        HeightRequest="60"
+                        Source="{markupExtensions:ImageSource 'Drizzle.png'}"
+                        Style="{StaticResource IncidentImageStyle}"
+                        WidthRequest="60" />
+                    <Label Style="{StaticResource IncidentLabelStyle}" Text="{markupExtensions:Translate Drizzle}" />
+                    <StackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TypeOfRain_OnTapped" />
+                    </StackLayout.GestureRecognizers>
+                </StackLayout>
+                <StackLayout
+                    Grid.Row="0"
+                    Grid.Column="2"
+                    ClassId="2"
+                    Style="{StaticResource FloodTypeLayoutStyle}">
+                    <Image Source="{markupExtensions:ImageSource 'MediumIntensity.png'}" Style="{StaticResource IncidentImageStyle}" />
+                    <Label Style="{StaticResource IncidentLabelStyle}" Text="{markupExtensions:Translate MediumIntensity}" />
+                    <StackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TypeOfRain_OnTapped" />
+                    </StackLayout.GestureRecognizers>
+                </StackLayout>
+                <StackLayout
+                    Grid.Row="1"
+                    Grid.Column="0"
+                    ClassId="3"
+                    Style="{StaticResource FloodTypeLayoutStyle}">
+                    <Image Source="{markupExtensions:ImageSource 'HeavyRainFall.png'}" Style="{StaticResource IncidentImageStyle}" />
+                    <Label Style="{StaticResource IncidentLabelStyle}" Text="{markupExtensions:Translate HeavyRainFall}" />
+                    <StackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TypeOfRain_OnTapped" />
+                    </StackLayout.GestureRecognizers>
+                </StackLayout>
+                <StackLayout
+                    Grid.Row="1"
+                    Grid.Column="1"
+                    ClassId="4"
+                    Style="{StaticResource FloodTypeLayoutStyle}">
+                    <Image Source="{markupExtensions:ImageSource 'Torrential.png'}" Style="{StaticResource IncidentImageStyle}" />
+                    <Label Style="{StaticResource IncidentLabelStyle}" Text="{markupExtensions:Translate Torrential}" />
+                    <StackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TypeOfRain_OnTapped" />
+                    </StackLayout.GestureRecognizers>
+                </StackLayout>
+            </Grid>
+
+            <Label Style="{StaticResource MainPageLabelStyle}" Text="{markupExtensions:Translate SelectTypeOfFlooding}" />
+            <Grid x:Name="FloodTypes" Margin="5">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <StackLayout
+                    Grid.Row="0"
+                    Grid.Column="0"
+                    ClassId="0"
+                    Style="{StaticResource FloodTypeLayoutStyle}">
+                    <Image Source="{markupExtensions:ImageSource 'NoFlooding.png'}" Style="{StaticResource IncidentImageStyle}" />
+                    <Label Style="{StaticResource IncidentLabelStyle}" Text="{markupExtensions:Translate NoFlooding}" />
+                    <StackLayout.GestureRecognizers>
+                        <TapGestureRecognizer
+                            Command="{Binding SelectedCommand}"
+                            CommandParameter="NoFlooding"
+                            NumberOfTapsRequired="1"
+                            Tapped="SelectType" />
+                    </StackLayout.GestureRecognizers>
+                </StackLayout>
+                <StackLayout
+                    Grid.Row="0"
+                    Grid.Column="1"
+                    ClassId="1"
+                    Style="{StaticResource FloodTypeLayoutStyle}">
+                    <Image
+                        HeightRequest="60"
+                        Source="{markupExtensions:ImageSource 'StreetFlooding.png'}"
+                        Style="{StaticResource IncidentImageStyle}"
+                        WidthRequest="60" />
+                    <Label Style="{StaticResource IncidentLabelStyle}" Text="{markupExtensions:Translate StreetFlooding}" />
+                    <StackLayout.GestureRecognizers>
+                        <TapGestureRecognizer
+                            Command="{Binding SelectedCommand}"
+                            CommandParameter="StreetFlooding"
+                            NumberOfTapsRequired="1"
+                            Tapped="SelectType" />
+                    </StackLayout.GestureRecognizers>
+                </StackLayout>
+                <StackLayout
+                    Grid.Row="0"
+                    Grid.Column="2"
+                    ClassId="2"
+                    Style="{StaticResource FloodTypeLayoutStyle}">
+                    <Image Source="{markupExtensions:ImageSource 'ParksFlooding.png'}" Style="{StaticResource IncidentImageStyle}" />
+                    <Label Style="{StaticResource IncidentLabelStyle}" Text="{markupExtensions:Translate ParksFlooding}" />
+                    <StackLayout.GestureRecognizers>
+                        <TapGestureRecognizer
+                            Command="{Binding SelectedCommand}"
+                            CommandParameter="ParksFlooding"
+                            NumberOfTapsRequired="1"
+                            Tapped="SelectType" />
+                    </StackLayout.GestureRecognizers>
+                </StackLayout>
+                <StackLayout
+                    Grid.Row="1"
+                    Grid.Column="0"
+                    ClassId="3"
+                    Style="{StaticResource FloodTypeLayoutStyle}">
+                    <Image Source="{markupExtensions:ImageSource 'HouseFlooding.png'}" Style="{StaticResource IncidentImageStyle}" />
+                    <Label Style="{StaticResource IncidentLabelStyle}" Text="{markupExtensions:Translate HouseFlooding}" />
+                    <StackLayout.GestureRecognizers>
+                        <TapGestureRecognizer
+                            Command="{Binding SelectedCommand}"
+                            CommandParameter="HouseFlooding"
+                            NumberOfTapsRequired="1"
+                            Tapped="SelectType" />
+                    </StackLayout.GestureRecognizers>
+                </StackLayout>
+                <StackLayout
+                    Grid.Row="1"
+                    Grid.Column="1"
+                    ClassId="4"
+                    Style="{StaticResource FloodTypeLayoutStyle}">
+                    <Image Source="{markupExtensions:ImageSource 'GardenFlooding.png'}" Style="{StaticResource IncidentImageStyle}" />
+                    <Label Style="{StaticResource IncidentLabelStyle}" Text="{markupExtensions:Translate GardenFlooding}" />
+                    <StackLayout.GestureRecognizers>
+                        <TapGestureRecognizer
+                            Command="{Binding SelectedCommand}"
+                            CommandParameter="GardenFlooding"
+                            NumberOfTapsRequired="1"
+                            Tapped="SelectType" />
+                    </StackLayout.GestureRecognizers>
+                </StackLayout>
+                <StackLayout
+                    Grid.Row="1"
+                    Grid.Column="2"
+                    ClassId="5"
+                    Style="{StaticResource FloodTypeLayoutStyle}">
+                    <Image Source="{markupExtensions:ImageSource 'RiverFlooding.png'}" Style="{StaticResource IncidentImageStyle}" />
+                    <Label Style="{StaticResource IncidentLabelStyle}" Text="{markupExtensions:Translate RiverFlooding}" />
+                    <StackLayout.GestureRecognizers>
+                        <TapGestureRecognizer
+                            Command="{Binding SelectedCommand}"
+                            CommandParameter="RiverFlooding"
+                            NumberOfTapsRequired="1"
+                            Tapped="SelectType" />
+                    </StackLayout.GestureRecognizers>
+                </StackLayout>
+                <StackLayout
+                    Grid.Row="2"
+                    Grid.Column="0"
+                    ClassId="6"
+                    Style="{StaticResource FloodTypeLayoutStyle}">
+                    <Image Source="{markupExtensions:ImageSource 'RiverLevelRising.png'}" Style="{StaticResource IncidentImageStyle}" />
+                    <Label Style="{StaticResource IncidentLabelStyle}" Text="{markupExtensions:Translate RiverLevelRising}" />
+                    <StackLayout.GestureRecognizers>
+                        <TapGestureRecognizer
+                            Command="{Binding SelectedCommand}"
+                            CommandParameter="RiverLevelRising"
+                            NumberOfTapsRequired="1"
+                            Tapped="SelectType" />
+                    </StackLayout.GestureRecognizers>
+                </StackLayout>
+                <StackLayout
+                    Grid.Row="2"
+                    Grid.Column="1"
+                    ClassId="7"
+                    Style="{StaticResource FloodTypeLayoutStyle}">
+                    <Image Source="{markupExtensions:ImageSource 'SewerBlocked.png'}" Style="{StaticResource IncidentImageStyle}" />
+                    <Label Style="{StaticResource IncidentLabelStyle}" Text="{markupExtensions:Translate SewerBlocked}" />
+                    <StackLayout.GestureRecognizers>
+                        <TapGestureRecognizer
+                            Command="{Binding SelectedCommand}"
+                            CommandParameter="SewerBlocked"
+                            NumberOfTapsRequired="1"
+                            Tapped="SelectType" />
+                    </StackLayout.GestureRecognizers>
+                </StackLayout>
+            </Grid>
+            <StackLayout Orientation="Vertical" Style="{StaticResource CameraLayoutStyle}">
+                <CollectionView
+                    Margin="5"
+                    EmptyView="{markupExtensions:Translate NoItemsToDisplay}"
+                    HeightRequest="200"
+                    ItemsSource="{Binding LocalImages}">
+                    <CollectionView.ItemsLayout>
+                        <GridItemsLayout Orientation="Horizontal" Span="1" />
+                    </CollectionView.ItemsLayout>
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <StackLayout HeightRequest="170">
+                                <forms:CachedImage
+                                    DownsampleToViewSize="True"
+                                    HeightRequest="20"
+                                    HorizontalOptions="End"
+                                    Source="{markupExtensions:ImageSource 'error.png'}"
+                                    VerticalOptions="Start"
+                                    WidthRequest="20">
+                                    <forms:CachedImage.GestureRecognizers>
+                                        <TapGestureRecognizer Command="{Binding Path=BindingContext.CloseCommand, Source={x:Reference Page}}" CommandParameter="{Binding .}" />
+                                    </forms:CachedImage.GestureRecognizers>
+                                </forms:CachedImage>
+                                <forms:CachedImage
+                                    DownsampleToViewSize="True"
+                                    HeightRequest="150"
+                                    Source="{Binding Path, Converter={StaticResource LocalImageToPathConverter}}"
+                                    WidthRequest="150" />
+                            </StackLayout>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+                <Image
+                    x:Name="TakePictureButton"
+                    HeightRequest="50"
+                    Source="{markupExtensions:ImageSource 'camera.png'}"
+                    Style="{StaticResource CameraImageStyle}"
+                    VerticalOptions="End"
+                    WidthRequest="50" />
+                <StackLayout.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding TakePictureCommand}" NumberOfTapsRequired="1" />
+                </StackLayout.GestureRecognizers>
+            </StackLayout>
+            <StackLayout
+                x:Name="AdvanceSection"
+                Margin="10"
+                IsVisible="False">
+                <Frame>
+                    <StackLayout HorizontalOptions="FillAndExpand" Orientation="Horizontal">
+                        <Label
+                            FontSize="Medium"
+                            HorizontalOptions="Start"
+                            Text="{markupExtensions:Translate AnySignOfDamage}"
+                            TextColor="{StaticResource PrimaryText}"
+                            VerticalOptions="Center" />
+                        <controls:CheckBox
+                            HorizontalOptions="EndAndExpand"
+                            IsChecked="{Binding AnySignOfDamage}"
+                            Type="Check" />
+                    </StackLayout>
+                </Frame>
+                <Frame>
+                    <StackLayout HorizontalOptions="FillAndExpand" Orientation="Horizontal">
+                        <Label
+                            FontSize="Medium"
+                            HorizontalOptions="Start"
+                            Text="{markupExtensions:Translate SignOfObstruction}"
+                            TextColor="{StaticResource PrimaryText}"
+                            VerticalOptions="Center" />
+                        <controls:CheckBox
+                            HorizontalOptions="EndAndExpand"
+                            IsChecked="{Binding AnySignOfObstruction}"
+                            Type="Check" />
+                    </StackLayout>
+                </Frame>
+                <Frame>
+                    <StackLayout>
+                        <Label
+                            FontSize="Medium"
+                            HorizontalOptions="Start"
+                            Text="{markupExtensions:Translate TypeOfSpaceFlooded}"
+                            TextColor="{StaticResource PrimaryText}"
+                            VerticalOptions="Center" />
+                        <controls:SelectionView
+                            ColumnSpacing="4"
+                            ItemDisplayBinding="{Binding Text}"
+                            ItemsSource="{Binding TypesOfSpaceFloodedItems}"
+                            RowSpacing="4"
+                            SelectedIndex="{Binding TypesOfSpaceFlooded}" />
+                    </StackLayout>
+                </Frame>
+                <Frame>
+                    <StackLayout>
+                        <Label
+                            FontSize="Medium"
+                            HorizontalOptions="Start"
+                            Text="{markupExtensions:Translate FloodExtent}"
+                            TextColor="{StaticResource PrimaryText}"
+                            VerticalOptions="Center" />
+
+                        <controls:SelectionView
+                            ColumnNumber="1"
+                            ColumnSpacing="4"
+                            ItemDisplayBinding="{Binding Text}"
+                            ItemsSource="{Binding FloodExtentItems}"
+                            RowSpacing="4"
+                            SelectedIndex="{Binding FloodExtent}" />
+                    </StackLayout>
+                </Frame>
+                <Frame>
+                    <StackLayout>
+                        <Label
+                            FontSize="Medium"
+                            HorizontalOptions="Start"
+                            Text="{markupExtensions:Translate FloodDepth}"
+                            TextColor="{StaticResource PrimaryText}"
+                            VerticalOptions="Center" />
+
+                        <controls:SelectionView
+                            ColumnNumber="1"
+                            ColumnSpacing="4"
+                            ItemDisplayBinding="{Binding Text}"
+                            ItemsSource="{Binding FloodDepthItems}"
+                            RowSpacing="4"
+                            SelectedIndex="{Binding FloodDepth}" />
+                    </StackLayout>
+                </Frame>
+                <Frame>
+                    <StackLayout>
+                        <Label
+                            FontSize="Medium"
+                            HorizontalOptions="Start"
+                            Text="{markupExtensions:Translate FloodFrequency}"
+                            TextColor="{StaticResource PrimaryText}"
+                            VerticalOptions="Center" />
+                        <controls:SelectionView
+                            ColumnNumber="1"
+                            ColumnSpacing="4"
+                            ItemDisplayBinding="{Binding Text}"
+                            ItemsSource="{Binding FrequencyOfFloodItems}"
+                            RowSpacing="4"
+                            SelectedIndex="{Binding FrequencyOfFlood}" />
+                    </StackLayout>
+                </Frame>
+                <Frame>
+                    <StackLayout>
+                        <Label
+                            FontSize="Medium"
+                            HorizontalOptions="Start"
+                            Text="{markupExtensions:Translate WaterClarity}"
+                            TextColor="{StaticResource PrimaryText}"
+                            VerticalOptions="Center" />
+
+                        <controls:SelectionView
+                            ColumnSpacing="4"
+                            ItemDisplayBinding="{Binding Text}"
+                            ItemsSource="{Binding WaterClarityItems}"
+                            RowSpacing="4"
+                            SelectedIndex="{Binding WaterClarity}" />
+                    </StackLayout>
+                </Frame>
+                <Frame>
+                    <StackLayout HorizontalOptions="FillAndExpand" Orientation="Horizontal">
+                        <Label
+                            FontSize="Medium"
+                            HorizontalOptions="Start"
+                            Text="{markupExtensions:Translate AreYouImpacted}"
+                            TextColor="{StaticResource PrimaryText}"
+                            VerticalOptions="Center" />
+
+                        <controls:CheckBox
+                            HorizontalOptions="EndAndExpand"
+                            IsChecked="{Binding AreYouImpacted}"
+                            Type="Check" />
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
+            <StackLayout
+                Margin="10"
+                HorizontalOptions="FillAndExpand"
+                Orientation="Vertical"
+                VerticalOptions="CenterAndExpand">
+                <Button
+                    Margin="0"
+                    Command="{Binding SubmitCommand}"
+                    Style="{StaticResource ActionButton}"
+                    Text="{markupExtensions:TranslateUppercase Save}" />
+                <Button
+                    Margin="0"
+                    Command="{Binding SaveAndUploadCommand}"
+                    Style="{StaticResource ActionButton}"
+                    Text="{markupExtensions:TranslateUppercase SaveAndUpload}" />
+                <Button
+                    x:Name="AdvanceInfo"
+                    Margin="0"
+                    Clicked="AdvanceClicked"
+                    Style="{StaticResource ActionButton}"
+                    Text="{markupExtensions:TranslateUppercase AddAdvanceInfo}" />
+            </StackLayout>
+        </StackLayout>
+    </ScrollView>
+
+    <ContentPage.Behaviors>
+        <behaviors:EventHandlerBehavior EventName="Appearing">
+            <behaviors:ActionCollection>
+                <behaviors:InvokeCommandAction Command="{Binding PageAppearingCommand}" />
+            </behaviors:ActionCollection>
+        </behaviors:EventHandlerBehavior>
+    </ContentPage.Behaviors>
+</ContentPage>

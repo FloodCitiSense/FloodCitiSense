@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<MasterDetailPage
+    x:Class="IIASA.FloodCitiSense.Views.MasterPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:abstractions="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin"
+    xmlns:base="clr-namespace:IIASA.FloodCitiSense.Mobile.Core.Base;assembly=IIASA.FloodCitiSense.Mobile.Core"
+    xmlns:behaviors="clr-namespace:IIASA.FloodCitiSense.Mobile.Core.Behaviors;assembly=IIASA.FloodCitiSense.Mobile.Core"
+    xmlns:controls="clr-namespace:IIASA.FloodCitiSense.Mobile.Core.Controls;assembly=IIASA.FloodCitiSense.Mobile.Core"
+    xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+    xmlns:markupExtensions="clr-namespace:IIASA.FloodCitiSense.Mobile.Core.Extensions.MarkupExtensions;assembly=IIASA.FloodCitiSense.Mobile.Core"
+    xmlns:views="clr-namespace:IIASA.FloodCitiSense.Views;assembly=IIASA.FloodCitiSense.Mobile.Shared"
+    Title="FloodCitiSense"
+    base:ViewManager.AutoWireViewModel="true"
+    ios:Page.UseSafeArea="true"
+    IsPresented="{Binding ShowMasterPage, Mode=TwoWay}">
+    <MasterDetailPage.Master>
+        <ContentPage
+            Title="FloodCitiSense"
+            BackgroundColor="{StaticResource MasterPageBackgroundColor}"
+            Icon="hamburger.png">
+
+            <StackLayout Orientation="Vertical" Spacing="0">
+
+
+                <!--  NAME SURNAME & PROFILE PICTURE  -->
+
+                <Grid VerticalOptions="FillAndExpand">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="110" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+
+                    <BoxView Grid.Row="0" Color="{StaticResource PrimaryColor}" />
+
+                    <Label
+                        Grid.Row="1"
+                        Margin="0,-100,0,0"
+                        FontSize="20"
+                        HorizontalOptions="CenterAndExpand"
+                        HorizontalTextAlignment="Center"
+                        Text="{Binding UserNameAndSurname}"
+                        TextColor="White" />
+
+
+                    <abstractions:CircleImage
+                        Grid.Row="2"
+                        Grid.RowSpan="2"
+                        Margin="0,-80,0,0"
+                        Aspect="AspectFill"
+                        BorderColor="{StaticResource NavigationMenuTopColor}"
+                        BorderThickness="7"
+                        FillColor="White"
+                        HeightRequest="130"
+                        HorizontalOptions="CenterAndExpand"
+                        Source="{Binding Photo}"
+                        WidthRequest="130">
+                        <abstractions:CircleImage.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding ShowProfilePhotoCommand}" NumberOfTapsRequired="1" />
+                        </abstractions:CircleImage.GestureRecognizers>
+                    </abstractions:CircleImage>
+
+                    <ImageButton
+                        Grid.Row="3"
+                        Margin="70,-15,0,0"
+                        Command="{Binding ChangeProfilePhotoCommand}"
+                        HeightRequest="25"
+                        HorizontalOptions="Center"
+                        Source="{markupExtensions:ImageSource 'camera.png'}"
+                        WidthRequest="25" />
+
+                    <!--<iconize:IconButton
+                        Grid.Row="3"
+                        Margin="70,-15,0,0"
+                        BackgroundColor="#e29384"
+                        BorderRadius="20"
+                        Command="{Binding ChangeProfilePhotoCommand}"
+                        FontSize="15"
+                        HeightRequest="38"
+                        HorizontalOptions="Center"
+                        Text="fas-camera"
+                        TextColor="White"
+                        WidthRequest="38" />-->
+
+
+                </Grid>
+
+
+                <!--  NAVIGATION MENU  -->
+
+                <ListView
+                    Margin="0,10,0,0"
+                    ItemsSource="{Binding MenuItems}"
+                    SelectedItem="{Binding SelectedMenuItem, Mode=TwoWay}"
+                    SeparatorVisibility="None">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+
+                                <StackLayout>
+                                    <Grid Padding="5,10" BackgroundColor="{Binding IsSelected, Converter={StaticResource BackgroundColorConverter}, ConverterParameter={StaticResource SelectedNavigationMenuBackgroundColor}}">
+
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="30" />
+                                            <ColumnDefinition Width="*" />
+                                        </Grid.ColumnDefinitions>
+
+                                        <Image Source="{Binding Icon, Converter={StaticResource ImageSourceConverter}}" />
+
+                                        <Label
+                                            Grid.Column="1"
+                                            Text="{Binding Title}"
+                                            VerticalOptions="FillAndExpand" />
+                                    </Grid>
+
+                                    <controls:Divider Margin="0,-6,0,0" BackgroundColor="{StaticResource SelectedNavigationMenuBackgroundColor}" />
+
+                                </StackLayout>
+
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+
+                <controls:Divider />
+
+
+                <!--  APP VERSION  -->
+
+                <Label
+                    Style="{StaticResource SmallInfoLabel}"
+                    Text="{Binding ApplicationInfo}"
+                    VerticalOptions="EndAndExpand" />
+
+            </StackLayout>
+        </ContentPage>
+    </MasterDetailPage.Master>
+
+    <MasterDetailPage.Detail>
+        <views:MainPage />
+    </MasterDetailPage.Detail>
+
+    <MasterDetailPage.Behaviors>
+        <behaviors:EventHandlerBehavior EventName="Appearing">
+            <behaviors:ActionCollection>
+                <behaviors:InvokeCommandAction Command="{Binding PageAppearingCommand}" />
+            </behaviors:ActionCollection>
+        </behaviors:EventHandlerBehavior>
+    </MasterDetailPage.Behaviors>
+</MasterDetailPage>

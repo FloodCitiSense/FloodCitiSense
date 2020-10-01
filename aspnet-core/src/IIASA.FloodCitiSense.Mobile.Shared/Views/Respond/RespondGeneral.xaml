@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="IIASA.FloodCitiSense.Views.Respond.RespondGeneral"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:base="clr-namespace:IIASA.FloodCitiSense.Mobile.Core.Base;assembly=IIASA.FloodCitiSense.Mobile.Core"
+    xmlns:markupExtensions="clr-namespace:IIASA.FloodCitiSense.Mobile.Core.Extensions.MarkupExtensions;assembly=IIASA.FloodCitiSense.Mobile.Core"
+    Title="{markupExtensions:Translate Respond}"
+    base:ViewManager.AutoWireViewModel="true">
+    <ContentPage.Content>
+        <ScrollView Margin="15">
+            <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                <StackLayout Style="{StaticResource PrepareGrayLayoutStyle}">
+                    <Label Style="{StaticResource PrepareLabel}" Text="{markupExtensions:Translate Respond1}" />
+                </StackLayout>
+                <StackLayout Style="{StaticResource PrepareLayoutStyle}">
+                    <Image Source="{markupExtensions:ImageSource 'charger.png'}" Style="{StaticResource PrepareEndImageStyle}" />
+                    <Label Style="{StaticResource PrepareLabel}" Text="{markupExtensions:Translate Respond2}" />
+                </StackLayout>
+                <StackLayout Style="{StaticResource PrepareLayoutStyle}">
+                    <Label Style="{StaticResource PrepareLabel}" Text="{markupExtensions:Translate Respond3}" />
+                    <Image Source="{markupExtensions:ImageSource 'water.png'}" Style="{StaticResource PrepareEndImageStyle}" />
+                </StackLayout>
+                <StackLayout Style="{StaticResource PrepareLayoutStyle}">
+                    <Image Source="{markupExtensions:ImageSource 'wate.png'}" Style="{StaticResource PrepareEndImageStyle}" />
+                    <Label Style="{StaticResource PrepareLabel}" Text="{markupExtensions:Translate Respond4}" />
+                </StackLayout>
+                <StackLayout Style="{StaticResource PrepareGrayLayoutStyle}">
+                    <Label Style="{StaticResource PrepareLabel}" Text="{markupExtensions:Translate Respond5}" />
+                </StackLayout>
+                <StackLayout Style="{StaticResource PrepareLayoutStyle}">
+                    <Image Source="{markupExtensions:ImageSource 'car.png'}" Style="{StaticResource PrepareStartImageStyle}" />
+                    <Label Style="{StaticResource PrepareLabel}" Text="{markupExtensions:Translate Respond6}" />
+                </StackLayout>
+                <StackLayout Style="{StaticResource PrepareLayoutStyle}">
+                    <Label Style="{StaticResource PrepareLabel}" Text="{markupExtensions:Translate Respond7}" />
+                    <Image Source="{markupExtensions:ImageSource 'flood.png'}" Style="{StaticResource PrepareEndImageStyle}" />
+                </StackLayout>
+                <StackLayout Style="{StaticResource PrepareLayoutStyle}">
+                    <Image Source="{markupExtensions:ImageSource 'flashlight.png'}" Style="{StaticResource PrepareStartImageStyle}" />
+                    <Label Style="{StaticResource PrepareLabel}" Text="{markupExtensions:Translate Respond8}" />
+                </StackLayout>
+                <StackLayout Style="{StaticResource PrepareGrayLayoutStyle}">
+                    <Label Style="{StaticResource PrepareLabel}" Text="{markupExtensions:Translate Respond9}" />
+                </StackLayout>
+                <StackLayout Style="{StaticResource PrepareLayoutStyle}">
+                    <Image Source="{markupExtensions:ImageSource 'broken-house.png'}" Style="{StaticResource PrepareStartImageStyle}" />
+                    <Label Style="{StaticResource PrepareLabel}" Text="{markupExtensions:Translate Respond10}" />
+                </StackLayout>
+                <StackLayout Style="{StaticResource PrepareLayoutStyle}">
+                    <Label Style="{StaticResource PrepareLabel}" Text="{markupExtensions:Translate Respond11}" />
+                    <Image Source="{markupExtensions:ImageSource 'mosquito.png'}" Style="{StaticResource PrepareEndImageStyle}" />
+                </StackLayout>
+                <StackLayout Style="{StaticResource PrepareLayoutStyle}">
+                    <Image Source="{markupExtensions:ImageSource 'crime-scene.png'}" Style="{StaticResource PrepareEndImageStyle}" />
+                    <Label Style="{StaticResource PrepareLabel}" Text="{markupExtensions:Translate Respond12}" />
+                </StackLayout>
+                <StackLayout Style="{StaticResource PrepareLayoutStyle}">
+                    <Label Style="{StaticResource PrepareLabel}" Text="{markupExtensions:Translate Respond13}" />
+                    <Image Source="{markupExtensions:ImageSource 'sewage.png'}" Style="{StaticResource PrepareEndImageStyle}" />
+                </StackLayout>
+                <StackLayout Style="{StaticResource PrepareGrayLayoutStyle}">
+                    <Label Style="{StaticResource PrepareLabel}" Text="{markupExtensions:Translate Respond14}" />
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

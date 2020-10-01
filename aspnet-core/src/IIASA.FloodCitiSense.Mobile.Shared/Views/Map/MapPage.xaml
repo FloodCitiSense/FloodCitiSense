@@ -1,0 +1,599 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<ContentPage
+    x:Class="IIASA.FloodCitiSense.Views.Map.MapPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:base="clr-namespace:IIASA.FloodCitiSense.Mobile.Core.Base;assembly=IIASA.FloodCitiSense.Mobile.Core"
+    xmlns:behaviors="clr-namespace:IIASA.FloodCitiSense.Mobile.Core.Behaviors;assembly=IIASA.FloodCitiSense.Mobile.Core"
+    xmlns:bindings="clr-namespace:Xamarin.Forms.GoogleMaps.Bindings;assembly=Xamarin.Forms.GoogleMaps.Bindings"
+    xmlns:controls="clr-namespace:Plugin.InputKit.Shared.Controls;assembly=Plugin.InputKit"
+    xmlns:controls1="clr-namespace:IIASA.FloodCitiSense.Mobile.Core.Controls;assembly=IIASA.FloodCitiSense.Mobile.Core"
+    xmlns:forms="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
+    xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+    xmlns:maps="clr-namespace:Xamarin.Forms.GoogleMaps;assembly=Xamarin.Forms.GoogleMaps"
+    xmlns:markupExtensions="clr-namespace:IIASA.FloodCitiSense.Mobile.Core.Extensions.MarkupExtensions;assembly=IIASA.FloodCitiSense.Mobile.Core"
+    xmlns:oxy="clr-namespace:OxyPlot.Xamarin.Forms;assembly=OxyPlot.Xamarin.Forms"
+    xmlns:renderedViews="clr-namespace:Sharpnado.Presentation.Forms.RenderedViews;assembly=Sharpnado.Presentation.Forms"
+    xmlns:ui="clr-namespace:XF.Material.Forms.UI;assembly=XF.Material"
+    Title="{markupExtensions:Translate Map}"
+    base:ViewManager.AutoWireViewModel="true"
+    ios:Page.UseSafeArea="true">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem
+            Command="{Binding RefreshCommand}"
+            Icon="refresh.png"
+            Order="Primary"
+            Priority="0" />
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <Grid RowSpacing="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <maps:Map
+                x:Name="map"
+                Grid.Row="0"
+                CameraPosition="{Binding CurrentCameraPosition}"
+                MyLocationEnabled="True"
+                VerticalOptions="FillAndExpand">
+                <maps:Map.Behaviors>
+                    <bindings:UpdateCameraPositionBehavior CameraUpdate="{Binding CameraUpdateBehavior}" />
+                    <bindings:MoveToRegionBehavior Request="{Binding Request}" />
+                    <bindings:MapClickedToCommandBehavior Command="{Binding MapClickedCommand}" />
+                    <bindings:BindingPinsBehavior Value="{Binding Pins}" />
+                    <bindings:PinClickedToCommandBehavior Command="{Binding PinClickedCommand}" />
+                    <bindings:SelectedPinChangedToCommandBehavior Command="{Binding SelectedPinChangedCommand}" />
+                    <bindings:InfoWindowClickedToCommandBehavior Command="{Binding InfoWindowClickedCommand}" />
+                    <bindings:InfoWindowLongClickedToCommandBehavior Command="{Binding InfoWindowLongClickedCommand}" />
+                    <bindings:PinDragStartToCommandBehavior Command="{Binding PinDragStartCommand}" />
+                    <bindings:PinDraggingToCommandBehavior Command="{Binding PinDraggingCommand}" />
+                    <bindings:PinDragEndToCommandBehavior Command="{Binding PinDragEndCommand}" />
+                    <bindings:MoveCameraBehavior Request="{Binding MoveCameraRequest}" />
+                </maps:Map.Behaviors>
+            </maps:Map>
+            <Image
+                x:Name="Layers"
+                Grid.Row="0"
+                Margin="0,55,10,0"
+                HeightRequest="40"
+                VerticalOptions="Start"
+                HorizontalOptions="End"
+                Source="{markupExtensions:ImageSource 'layers.png'}"
+                WidthRequest="40">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer NumberOfTapsRequired="1" Tapped="LayersClicked" />
+                </Image.GestureRecognizers>
+            </Image>
+            <Image
+                x:Name="Legends"
+                Grid.Row="0"
+                Margin="0,100,10,0"
+                HeightRequest="40"
+                HorizontalOptions="End"
+                VerticalOptions="Start"
+                Source="{markupExtensions:ImageSource 'legend.png'}"
+                WidthRequest="40">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer NumberOfTapsRequired="1" Tapped="LegendClicked" />
+                </Image.GestureRecognizers>
+            </Image>
+            <Image
+                x:Name="Filters"
+                Grid.Row="0"
+                Margin="0,145,10,0"
+                HeightRequest="40"
+                HorizontalOptions="End"
+                VerticalOptions="Start"
+                Source="{markupExtensions:ImageSource 'filter_updated.png'}"
+                WidthRequest="40">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer NumberOfTapsRequired="1" Tapped="FilterClicked" />
+                </Image.GestureRecognizers>
+            </Image>
+
+            <StackLayout
+                x:Name="LayerView"
+                Grid.Row="0"
+                HorizontalOptions="CenterAndExpand"
+                IsVisible="{Binding IsLayerViewVisible}"
+                Orientation="Vertical" 
+                VerticalOptions="CenterAndExpand">
+                <Frame BackgroundColor="DarkGray" Opacity="0.9">
+                    <StackLayout Margin="-8" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" >
+                        <Label Text="X" FontAttributes="Bold" FontSize="18"  HorizontalOptions="End" Margin="0,-6,0,0" VerticalOptions="Start">
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer NumberOfTapsRequired="1" Tapped="LayersClicked" />
+                            </Label.GestureRecognizers>
+                        </Label>
+                        <StackLayout>
+                            <Label
+                                FontSize="18"
+                                HorizontalOptions="StartAndExpand"
+                                Text="{markupExtensions:Translate MapType}"
+                                TextColor="White" />
+                            <controls1:Divider />
+                            <StackLayout Orientation="Horizontal">
+                                <Image
+                                    Margin="5"
+                                    BackgroundColor="Black"
+                                    HeightRequest="30"
+                                    HorizontalOptions="Start"
+                                    Source="{markupExtensions:ImageSource 'default_map.png'}"
+                                    VerticalOptions="Center"
+                                    WidthRequest="30" />
+                                <Label
+                                    HorizontalOptions="StartAndExpand"
+                                    Text="{markupExtensions:Translate Default}"
+                                    TextColor="White"
+                                    VerticalOptions="Center" />
+                                <controls:RadioButton
+                                    x:Name="Default"
+                                    Clicked="Default_OnClicked"
+                                    HorizontalOptions="End"
+                                    IsChecked="True" />
+                            </StackLayout>
+                            <StackLayout Orientation="Horizontal">
+                                <Image
+                                    Margin="5"
+                                    BackgroundColor="Black"
+                                    HeightRequest="30"
+                                    HorizontalOptions="Start"
+                                    Source="{markupExtensions:ImageSource 'satellite_imagery.png'}"
+                                    VerticalOptions="Center"
+                                    WidthRequest="30" />
+                                <Label
+                                    HorizontalOptions="StartAndExpand"
+                                    Text="{markupExtensions:Translate SatelliteImagery}"
+                                    TextColor="White"
+                                    VerticalOptions="Center" />
+                                <controls:RadioButton
+                                    x:Name="Satellite"
+                                    Clicked="Satellite_OnClicked"
+                                    HorizontalOptions="End" />
+                            </StackLayout>
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
+            <StackLayout
+                x:Name="LegendView"
+                Grid.Row="0"
+                HorizontalOptions="Center"
+                IsVisible="{Binding IsLegendViewVisible}"
+                Orientation="Vertical"
+                VerticalOptions="Center">
+                <Frame BackgroundColor="DarkGray" Opacity="0.9">
+                    <StackLayout Margin="-8" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" >
+                        <Label Text="X" FontAttributes="Bold" FontSize="18"  HorizontalOptions="End" Margin="0,-6,0,0" VerticalOptions="Start">
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer NumberOfTapsRequired="1" Tapped="LegendClicked" />
+                            </Label.GestureRecognizers>
+                        </Label>
+                        <StackLayout>
+                            <Label
+                                FontSize="18"
+                                HorizontalOptions="StartAndExpand"
+                                Text="{markupExtensions:Translate FloodCitiSenseData}"
+                                TextColor="White" />
+                            <controls1:Divider />
+                            <StackLayout HorizontalOptions="FillAndExpand" Orientation="Horizontal">
+                                <Image
+                                    Margin="5"
+                                    HeightRequest="30"
+                                    HorizontalOptions="Start"
+                                    Source="{markupExtensions:ImageSource 'yellow-location.png'}"
+                                    VerticalOptions="Center"
+                                    WidthRequest="30" />
+                                <Label
+                                    HorizontalOptions="StartAndExpand"
+                                    Text="{markupExtensions:Translate YourReports}"
+                                    TextColor="White"
+                                    VerticalOptions="Center" />
+                                <controls:CheckBox
+                                    CheckChangedCommand="{Binding DataCommand}"
+                                    HorizontalOptions="End"
+                                    IsChecked="{Binding IsYourReport}"
+                                    Type="Check" />
+                            </StackLayout>
+                            <StackLayout Orientation="Horizontal">
+                                <Image
+                                    Margin="5"
+                                    HeightRequest="30"
+                                    HorizontalOptions="Start"
+                                    Source="{markupExtensions:ImageSource 'red-location.png'}"
+                                    VerticalOptions="Center"
+                                    WidthRequest="30" />
+                                <Label
+                                    HorizontalOptions="StartAndExpand"
+                                    Text="{markupExtensions:Translate OtherReports}"
+                                    TextColor="White"
+                                    VerticalOptions="Center" />
+                                <controls:CheckBox
+                                    CheckChangedCommand="{Binding DataCommand}"
+                                    HorizontalOptions="End"
+                                    IsChecked="{Binding IsOtherReport}"
+                                    Type="Check" />
+                            </StackLayout>
+                            <StackLayout Orientation="Horizontal">
+                                <Image
+                                    Margin="5"
+                                    HeightRequest="30"
+                                    HorizontalOptions="Start"
+                                    Source="{markupExtensions:ImageSource 'blue-location.png'}"
+                                    VerticalOptions="Center"
+                                    WidthRequest="30" />
+                                <Label
+                                    HorizontalOptions="StartAndExpand"
+                                    Text="{markupExtensions:Translate FloodCitiSenseRainfallSensor}"
+                                    TextColor="White"
+                                    VerticalOptions="Center" />
+                                <controls:CheckBox
+                                    CheckChangedCommand="{Binding DataCommand}"
+                                    HorizontalOptions="End"
+                                    IsChecked="{Binding IsSensor}"
+                                    Type="Check" />
+                            </StackLayout>
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+                </StackLayout>
+            <StackLayout
+                x:Name="FilterView"
+                Grid.Row="0"
+                HorizontalOptions="Center"
+                IsVisible="{Binding IsFilterViewVisible}"
+                Orientation="Vertical"
+                VerticalOptions="Center">
+                <Frame BackgroundColor="DarkGray" Opacity="0.9">
+                    <StackLayout Margin="-8" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" >
+                        <Label Text="X" FontAttributes="Bold" FontSize="18"  HorizontalOptions="End" Margin="0,-6,0,0" VerticalOptions="Start">
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer NumberOfTapsRequired="1" Tapped="FilterClicked" />
+                            </Label.GestureRecognizers>
+                        </Label>
+                        <StackLayout>
+                        <Label
+                            FontSize="20"
+                            HorizontalOptions="StartAndExpand"
+                            Text="{markupExtensions:Translate FilterData}"
+                            TextColor="White" />
+                        <controls1:Divider />
+                        <StackLayout Orientation="Horizontal">
+                            <Label
+                                HorizontalOptions="StartAndExpand"
+                                Text="{markupExtensions:Translate FilterShowAll}"
+                                TextColor="White"
+                                VerticalOptions="Center" />
+                            <controls:RadioButton
+                                x:Name="IsShowAll"
+                                ClickCommand="{Binding FilterSelected}"
+                                Clicked="RadioButton_OnClicked"
+                                CommandParameter="IsShowAll"
+                                IsChecked="{Binding IsShowAll}"
+                                TextColor="White" />
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal">
+                            <Label
+                                HorizontalOptions="StartAndExpand"
+                                Text="{markupExtensions:Translate FilterLastDay}"
+                                TextColor="White"
+                                VerticalOptions="Center" />
+                            <controls:RadioButton
+                                x:Name="IsLastDay"
+                                ClickCommand="{Binding FilterSelected}"
+                                Clicked="RadioButton_OnClicked"
+                                CommandParameter="IsLastDay"
+                                HorizontalOptions="End"
+                                IsChecked="{Binding IsLastDay}"
+                                TextColor="White" />
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal">
+                            <Label
+                                HorizontalOptions="StartAndExpand"
+                                Text="{markupExtensions:Translate Showlastweek}"
+                                TextColor="White"
+                                VerticalOptions="Center" />
+                            <controls:RadioButton
+                                x:Name="IsLastWeek"
+                                ClickCommand="{Binding FilterSelected}"
+                                Clicked="RadioButton_OnClicked"
+                                CommandParameter="IsLastWeek"
+                                IsChecked="{Binding IsLastWeek}"
+                                TextColor="White" />
+                        </StackLayout>
+                        <StackLayout HorizontalOptions="FillAndExpand" Orientation="Horizontal">
+                            <Label
+                                HorizontalOptions="Start"
+                                Text="{markupExtensions:Translate ShowFrom}"
+                                TextColor="White"
+                                VerticalOptions="Center" />
+                            <ImageButton
+                                Command="{Binding FromCommand}"
+                                HeightRequest="25"
+                                Source="{markupExtensions:ImageSource 'calendar.png'}"
+                                WidthRequest="25" />
+                            <Label
+                                Text="{markupExtensions:Translate To}"
+                                TextColor="White"
+                                VerticalOptions="Center" />
+                            <ImageButton
+                                Command="{Binding ToCommand}"
+                                HeightRequest="25"
+                                Source="{markupExtensions:ImageSource 'calendar.png'}"
+                                WidthRequest="25" />
+                            <controls:RadioButton
+                                x:Name="IsDateFilter"
+                                ClickCommand="{Binding FilterSelected}"
+                                Clicked="RadioButton_OnClicked"
+                                CommandParameter="IsDateFilter"
+                                HorizontalOptions="EndAndExpand"
+                                IsChecked="{Binding IsDateFilter}"
+                                TextColor="White" />
+                        </StackLayout>
+                        <StackLayout  Orientation="Horizontal">
+                            <Label Text="{markupExtensions:Translate From}" TextColor="White" />
+                            <Label Text="{Binding FromDate, StringFormat='\{0:dd/MM/yyyy}'}" TextColor="White" />
+                            <Label Text="{markupExtensions:Translate To}" TextColor="White" />
+                            <Label Text="{Binding ToDate, StringFormat='\{0:dd/MM/yyyy}'}" TextColor="White" />
+                        </StackLayout>
+                    </StackLayout>
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
+
+            <!--  DETAIL VIEW  -->
+
+            <StackLayout
+                x:Name="DetailView"
+                Grid.Row="0"
+                Padding="15"
+                BackgroundColor="White"
+                HorizontalOptions="Center"
+                IsVisible="{Binding IsDetailViewVisible}"
+                Orientation="Vertical"
+                VerticalOptions="Center">
+                <StackLayout
+                    HeightRequest="25"
+                    HorizontalOptions="End"
+                    WidthRequest="25">
+                    <StackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding CloseDetailsCommand}" />
+                    </StackLayout.GestureRecognizers>
+                    <forms:CachedImage
+                        DownsampleToViewSize="True"
+                        HeightRequest="15"
+                        HorizontalOptions="End"
+                        Source="{markupExtensions:ImageSource 'delete.png'}"
+                        WidthRequest="15" />
+                </StackLayout>
+                <StackLayout>
+                    <StackLayout Orientation="Horizontal" VerticalOptions="Center">
+                        <Label
+                            FontAttributes="Bold"
+                            Text="{markupExtensions:Translate Created}"
+                            TextColor="{StaticResource PrimaryText}"
+                            VerticalOptions="StartAndExpand"
+                            VerticalTextAlignment="Center" />
+                        <Label
+                            Text="{Binding CreatedTime, StringFormat='\{0:dd/MM/yyyy hh:mm}'}"
+                            TextColor="{StaticResource PrimaryText}"
+                            VerticalOptions="EndAndExpand"
+                            VerticalTextAlignment="Center" />
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal" VerticalOptions="Center">
+                        <Label
+                            FontAttributes="Bold"
+                            Text="{markupExtensions:Translate Username}"
+                            TextColor="{StaticResource PrimaryText}"
+                            VerticalOptions="StartAndExpand"
+                            VerticalTextAlignment="Center" />
+                        <Label
+                            Text="{Binding Username}"
+                            TextColor="{StaticResource PrimaryText}"
+                            VerticalOptions="EndAndExpand"
+                            VerticalTextAlignment="Center" />
+                    </StackLayout>
+                </StackLayout>
+                <controls1:Divider />
+                <Label
+                    HorizontalOptions="StartAndExpand"
+                    Style="{StaticResource MapLabelBoldStyle}"
+                    Text="{Binding RainType}" />
+                <StackLayout Orientation="Vertical">
+                    <Label
+                        HorizontalOptions="Start"
+                        Style="{StaticResource MapLabelBoldStyle}"
+                        Text="{markupExtensions:Translate TypeOfFlooding}" />
+                    <renderedViews:HorizontalListView
+                        Margin="-16,8"
+                        CollectionPadding="0,8"
+                        HeightRequest="120"
+                        ItemHeight="120"
+                        ItemSpacing="8"
+                        ItemWidth="144"
+                        ItemsSource="{Binding TypeOfFlooding}"
+                        SnapStyle="Center">
+                        <renderedViews:HorizontalListView.ItemTemplate>
+                            <DataTemplate>
+                                <ViewCell>
+                                    <Grid ColumnSpacing="0" RowSpacing="0">
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="2*" />
+                                            <RowDefinition Height="Auto" />
+                                        </Grid.RowDefinitions>
+                                        <forms:CachedImage
+                                            Grid.Row="0"
+                                            Margin="5"
+                                            DownsampleToViewSize="True"
+                                            HeightRequest="50"
+                                            Source="{Binding ImageSource}"
+                                            WidthRequest="50" />
+                                        <Label
+                                            Grid.Row="1"
+                                            HorizontalOptions="Center"
+                                            LineBreakMode="WordWrap"
+                                            Style="{StaticResource MainPageLabelStyle}"
+                                            Text="{Binding Tooltip}" />
+                                    </Grid>
+                                </ViewCell>
+                            </DataTemplate>
+                        </renderedViews:HorizontalListView.ItemTemplate>
+                    </renderedViews:HorizontalListView>
+                </StackLayout>
+                <Button
+                    Command="{Binding NavigateToDetailsPage}"
+                    HorizontalOptions="Center"
+                    Text="{Binding MoreText}"
+                    WidthRequest="120" />
+                <StackLayout />
+            </StackLayout>
+
+            <!--  CHART VIEW  -->
+
+            <StackLayout
+                x:Name="ChartView"
+                Grid.Row="0"
+                Padding="10"
+                BackgroundColor="White"
+                HorizontalOptions="FillAndExpand"
+                IsVisible="{Binding IsChartViewVisible}"
+                Orientation="Vertical"
+                VerticalOptions="Center">
+
+                <StackLayout
+                    HeightRequest="35"
+                    HorizontalOptions="End"
+                    WidthRequest="35">
+                    <StackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding CloseChartCommand}" />
+                    </StackLayout.GestureRecognizers>
+                    <forms:CachedImage
+                        DownsampleToViewSize="True"
+                        HeightRequest="15"
+                        HorizontalOptions="End"
+                        Source="{markupExtensions:ImageSource 'delete.png'}"
+                        WidthRequest="15" />
+                </StackLayout>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="180" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <StackLayout
+                        Grid.Row="0"
+                        HorizontalOptions="Start"
+                        Orientation="Horizontal">
+                        <Label
+                            FontAttributes="Bold"
+                            Style="{StaticResource MainHeaderStyle}"
+                            Text="{markupExtensions:Translate GraphTitle}" />
+                        <Label
+                            FontAttributes="Bold"
+                            Style="{StaticResource MainHeaderStyle}"
+                            Text="{Binding SensorId}" />
+                    </StackLayout>
+                    <AbsoluteLayout
+                        Grid.Row="1"
+                        HorizontalOptions="Center"
+                        VerticalOptions="Center">
+                        <Label IsVisible="{Binding ShowEmptyGraphMessage}" Text="{markupExtensions:Translate EmptyGraphMessage}" />
+                    </AbsoluteLayout>
+                    <oxy:PlotView
+                        Grid.Row="1"
+                        HorizontalOptions="FillAndExpand"
+                        Model="{Binding ChartModel}"
+                        VerticalOptions="FillAndExpand" />
+                    <Grid Grid.Row="2">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="220" />
+                            <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
+                        <StackLayout
+                            Grid.Row="0"
+                            Grid.Column="0"
+                            Margin="0,0,0,5"
+                            HorizontalOptions="FillAndExpand"
+                            Orientation="Vertical"
+                            Spacing="2">
+
+                            <ui:MaterialRadioButton
+                                FontFamily="{StaticResource MediumFontFamily}"
+                                HorizontalOptions="EndAndExpand"
+                                IsSelected="{Binding IsGraphOneDayFilter}"
+                                Text="{markupExtensions:Translate ShowYesterday}" />
+                            <ui:MaterialRadioButton
+                                FontFamily="{StaticResource MediumFontFamily}"
+                                HorizontalOptions="EndAndExpand"
+                                IsSelected="{Binding IsGraph3DaysFilter}"
+                                Text="{markupExtensions:Translate FilterLast3Days}" />
+                            <ui:MaterialRadioButton
+                                FontFamily="{StaticResource MediumFontFamily}"
+                                HorizontalOptions="EndAndExpand"
+                                IsSelected="{Binding IsGrapLasthWeekFilter}"
+                                Text="{markupExtensions:Translate Showlastweek}" />
+
+
+                            <StackLayout
+                                HorizontalOptions="FillAndExpand"
+                                Orientation="Horizontal"
+                                Spacing="2">
+                                <ui:MaterialRadioButton
+                                    x:Name="IsGraphDateFilter"
+                                    FontFamily="{StaticResource MediumFontFamily}"
+                                    HorizontalOptions="EndAndExpand"
+                                    IsSelected="{Binding IsGraphDateFilter}"
+                                    Text="{markupExtensions:Translate Show7DaysFrom}" />
+
+                                <ImageButton
+                                    Command="{Binding GraphFromCommand}"
+                                    HeightRequest="25"
+                                    IsEnabled="{Binding IsGraphDatePickerEnabled}"
+                                    Source="{markupExtensions:ImageSource 'calendar.png'}"
+                                    WidthRequest="25" />
+
+                            </StackLayout>
+                        </StackLayout>
+                        <Frame
+                            Grid.Row="0"
+                            Grid.Column="1"
+                            Margin="0"
+                            Padding="0"
+                            BorderColor="Black"
+                            HorizontalOptions="Center"
+                            VerticalOptions="Center">
+                            <StackLayout
+                                Margin="0"
+                                Padding="0"
+                                HorizontalOptions="Center"
+                                VerticalOptions="Center">
+                                <ui:MaterialRadioButton
+                                    IsEnabled="{Binding IsHourlyEnabled}"
+                                    IsSelected="{Binding IsHourlyChecked}"
+                                    SelectedChangeCommand="{Binding HourlyCommand}"
+                                    Text="{markupExtensions:Translate Hourly}" />
+                                <ui:MaterialRadioButton
+                                    IsSelected="{Binding IsDailyChecked}"
+                                    SelectedChangeCommand="{Binding DailyCommand}"
+                                    Text="{markupExtensions:Translate Daily}" />
+                            </StackLayout>
+                        </Frame>
+                    </Grid>
+                </Grid>
+            </StackLayout>
+
+        </Grid>
+    </ContentPage.Content>
+
+    <ContentPage.Behaviors>
+        <behaviors:EventHandlerBehavior EventName="Appearing">
+            <behaviors:ActionCollection>
+                <behaviors:InvokeCommandAction Command="{Binding PageAppearingCommand}" />
+            </behaviors:ActionCollection>
+        </behaviors:EventHandlerBehavior>
+    </ContentPage.Behaviors>
+</ContentPage>

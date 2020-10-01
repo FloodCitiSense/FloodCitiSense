@@ -1,0 +1,13 @@
+version: '3.4'
+
+services:
+  iiasa.floodcitisense.web.host:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    ports:
+      - "22742:80"
+
+networks:
+  default:
+    external:
+      name: nat

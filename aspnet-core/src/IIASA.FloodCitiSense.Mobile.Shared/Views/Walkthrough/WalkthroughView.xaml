@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="IIASA.FloodCitiSense.Views.Walkthrough.WalkthroughView"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:abstractions="clr-namespace:CarouselView.FormsPlugin.Abstractions;assembly=CarouselView.FormsPlugin.Abstractions"
+    xmlns:base="clr-namespace:IIASA.FloodCitiSense.Mobile.Core.Base;assembly=IIASA.FloodCitiSense.Mobile.Core"
+    xmlns:markupExtensions="clr-namespace:IIASA.FloodCitiSense.Mobile.Core.Extensions.MarkupExtensions;assembly=IIASA.FloodCitiSense.Mobile.Core"
+    Title="{markupExtensions:Translate Walkthrough}"
+    base:ViewManager.AutoWireViewModel="true"
+    NavigationPage.HasNavigationBar="False">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+
+            <Style x:Key="SkipStyle" TargetType="Label">
+                <Setter Property="FontSize" Value="14" />
+                <Setter Property="TextColor" Value="{StaticResource TextColor}" />
+            </Style>
+
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <Grid Margin="0" Padding="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <abstractions:CarouselViewControl
+                x:Name="Carousel"
+                Grid.Row="0"
+                Grid.RowSpan="2"
+                CurrentPageIndicatorTintColor="LightGray"
+                HorizontalOptions="FillAndExpand"
+                IndicatorsTintColor="DarkSlateBlue"
+                ShowArrows="True"
+                ArrowsTintColor="LightSeaGreen"
+                ArrowsBackgroundColor="LightGray"
+                ArrowsTransparency="50"
+                Orientation="Horizontal"
+                Position="0"
+                PositionSelected="OnCarouselPositionSelected"
+                ShowIndicators="True"
+                VerticalOptions="FillAndExpand" />
+            <Button
+                x:Name="GetStarted"
+                Grid.Row="0"
+                Command="{Binding GetStartedCommand}"
+                HorizontalOptions="FillAndExpand"
+                IsVisible="False"
+                Style="{StaticResource ActionButton}"
+                Text="{markupExtensions:Translate GetStarted}"
+                VerticalOptions="EndAndExpand" />
+            <Button
+                x:Name="Skip"
+                Grid.Row="1"
+                BackgroundColor="Transparent"
+                Command="{Binding GetStartedCommand}"
+                HorizontalOptions="End"
+                Text="{markupExtensions:Translate Skip}"
+                TextColor="{StaticResource TextColor}"
+                VerticalOptions="End" />
+            <!--<Grid
+                Grid.Row="1"
+                Padding="12"
+                AutomationId="skip"
+                HorizontalOptions="End"
+                VerticalOptions="Start">
+                <Label
+                    x:Name="Skip"
+                    Style="{StaticResource SkipStyle}"
+                    Text="{markupExtensions:Translate Skip}">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding GetStartedCommand}" />
+                    </Label.GestureRecognizers>
+                </Label>
+            </Grid>-->
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

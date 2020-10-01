@@ -1,0 +1,44 @@
+{
+"propertyTemplates":[
+		{
+			"placeholder" : "{{Property_Looped_Template_Here}}",
+			"condition" : "{{Property_Listed_Here}} == true",
+			"templates" : [
+					{
+					"type" : "enum",
+					"content" : "            <div class=\"m-stack__item m-stack__item--center m-stack__item--middle\">
+                <h6>@L(\"{{Property_Name_Here}}\") :</h6>
+                @L(\"Enum_{{Property_Type_Here}}_\" + (int)Model.{{Entity_Name_Here}}.{{Property_Name_Here}})
+            </div>
+            <div class=\"m-separator m-separator--dashed\"></div>
+"
+					},
+					{
+					"type" : "default",
+					"content" : "            <div class=\"m-stack__item m-stack__item--center m-stack__item--middle\">
+                <h6>@L(\"{{Property_Name_Here}}\") :</h6>
+                @Model.{{Entity_Name_Here}}.{{Property_Name_Here}}
+            </div>
+            <div class=\"m-separator m-separator--dashed\"></div>
+"
+					}
+				]
+		}
+	],
+"navigationPropertyTemplates":[
+		{
+			"placeholder" : "{{NP_Looped_Template_Here}}",
+			"templates" : [
+					{
+					"relation" : "single",
+					"content" : "            <div class=\"m-stack__item m-stack__item--center m-stack__item--middle\">
+                <h6>(@L(\"{{NP_Foreign_Entity_Name_Here}}\")) @L(\"{{NP_Display_Property_Name_Here}}\") :</h6>
+                @Model.{{NP_Foreign_Entity_Name_Here}}{{NP_Display_Property_Name_Here}}{{NP_Duplication_Number_Here}}
+            </div>
+            <div class=\"m-separator m-separator--dashed\"></div>
+"
+					}
+				]
+		}
+	]
+}

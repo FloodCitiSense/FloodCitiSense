@@ -1,0 +1,14 @@
+{
+  "remoteServiceBaseUrl": "https://api.floodcitisense.eu",
+  "appBaseUrl": "https://app.floodcitisense.eu",
+  "localeMappings": [
+    {
+      "from": "pt-BR",
+      "to": "pt"
+    },
+    {
+      "from": "zh-CN",
+      "to": "zh"
+    }
+  ]
+}

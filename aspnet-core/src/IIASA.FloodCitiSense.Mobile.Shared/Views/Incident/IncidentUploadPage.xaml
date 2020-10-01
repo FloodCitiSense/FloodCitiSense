@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="IIASA.FloodCitiSense.Views.Incident.IncidentUploadPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:base="clr-namespace:IIASA.FloodCitiSense.Mobile.Core.Base;assembly=IIASA.FloodCitiSense.Mobile.Core"
+    xmlns:behaviors="clr-namespace:IIASA.FloodCitiSense.Mobile.Core.Behaviors;assembly=IIASA.FloodCitiSense.Mobile.Core"
+    xmlns:controls="clr-namespace:IIASA.FloodCitiSense.Mobile.Core.Controls;assembly=IIASA.FloodCitiSense.Mobile.Core"
+    xmlns:converters="clr-namespace:IIASA.FloodCitiSense.Mobile.Core.Converters;assembly=IIASA.FloodCitiSense.Mobile.Core"
+    xmlns:markupExtensions="clr-namespace:IIASA.FloodCitiSense.Mobile.Core.Extensions.MarkupExtensions;assembly=IIASA.FloodCitiSense.Mobile.Core"
+    x:Name="Reports"
+    Title="{markupExtensions:Translate UploadedReport}"
+    base:ViewManager.AutoWireViewModel="true">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem
+            Command="{Binding DeleteAllCommand}"
+            Order="Primary"
+            Priority="0"
+            Text="{markupExtensions:Translate DeleteAll}" />
+        <ToolbarItem
+            Command="{Binding RefreshCommand}"
+            IconImageSource="refresh.png"
+            Order="Primary"
+            Priority="0" />
+    </ContentPage.ToolbarItems>
+    <ContentView.Resources>
+        <ResourceDictionary>
+            <converters:InverseBooleanConverter x:Key="Inverter" />
+        </ResourceDictionary>
+    </ContentView.Resources>
+    <StackLayout Margin="10">
+        <StackLayout Padding="10" Orientation="Horizontal">
+            <Label Text="{markupExtensions:Translate FilterItems}" VerticalOptions="Center" />
+            <Picker
+                x:Name="Filter"
+                HorizontalOptions="FillAndExpand"
+                ItemDisplayBinding="{Binding Text}"
+                ItemsSource="{Binding FilterOptions}"
+                SelectedItem="{Binding SelectedFilter}"
+                VerticalOptions="Center" />
+        </StackLayout>
+        <StackLayout
+            HorizontalOptions="FillAndExpand"
+            IsVisible="{Binding IsEmpty}"
+            VerticalOptions="CenterAndExpand">
+            <Image
+                HeightRequest="100"
+                Source="{markupExtensions:ImageSource 'cart-empty.png'}"
+                WidthRequest="100" />
+            <Label
+                FontSize="Medium"
+                HorizontalOptions="CenterAndExpand"
+                HorizontalTextAlignment="Center"
+                Text="{markupExtensions:Translate NoUploadedReports}"
+                VerticalOptions="CenterAndExpand" />
+        </StackLayout>
+        <ListView
+            Margin="0,10,0,0"
+            HasUnevenRows="True"
+            HorizontalOptions="FillAndExpand"
+            IsVisible="{Binding IsEmpty, Converter={StaticResource InverseBooleanConverter}}"
+            ItemsSource="{Binding Items}"
+            SeparatorVisibility="None"
+            VerticalOptions="FillAndExpand">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout>
+                            <Grid Padding="5,10">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="120" />
+                                </Grid.ColumnDefinitions>
+                                <StackLayout Grid.Column="0" Orientation="Horizontal">
+                                    <Label
+                                        HorizontalOptions="Start"
+                                        Text="{Binding Date, Converter={StaticResource DatetimeOffsetConverter}, StringFormat='{0:dd/MM/yy HH:mm}'}"
+                                        VerticalOptions="Center" />
+                                    <Label
+                                        HorizontalOptions="CenterAndExpand"
+                                        Text="{Binding Status}"
+                                        VerticalOptions="Center" />
+                                    <!--<StackLayout.GestureRecognizers>
+                                            <TapGestureRecognizer Command="{Binding Path=BindingContext.SelectedCommand, Source={x:Reference Reports}}" CommandParameter="{Binding .}" />
+                                        </StackLayout.GestureRecognizers>-->
+                                </StackLayout>
+                                <StackLayout Grid.Column="1" Orientation="Horizontal">
+                                    <Image
+                                        HeightRequest="40"
+                                        HorizontalOptions="StartAndExpand"
+                                        Source="{markupExtensions:ImageSource 'view.png'}"
+                                        WidthRequest="40">
+                                        <Image.GestureRecognizers>
+                                            <TapGestureRecognizer Command="{Binding Path=BindingContext.SelectedCommand, Source={x:Reference Reports}}" CommandParameter="{Binding .}" />
+                                        </Image.GestureRecognizers>
+                                    </Image>
+                                    <Image
+                                        HeightRequest="40"
+                                        IsVisible="{Binding IsUploaded}"
+                                        Source="{markupExtensions:ImageSource 'rubbish-bin.png'}"
+                                        VerticalOptions="EndAndExpand"
+                                        WidthRequest="40">
+                                        <Image.GestureRecognizers>
+                                            <TapGestureRecognizer Command="{Binding Path=BindingContext.DeleteCommand, Source={x:Reference Reports}}" CommandParameter="{Binding .}" />
+                                        </Image.GestureRecognizers>
+                                    </Image>
+                                </StackLayout>
+                            </Grid>
+                            <controls:Divider Margin="0,-6,0,0" BackgroundColor="{StaticResource SelectedNavigationMenuBackgroundColor}" />
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+    <ContentPage.Behaviors>
+        <behaviors:EventHandlerBehavior EventName="Appearing">
+            <behaviors:ActionCollection>
+                <behaviors:InvokeCommandAction Command="{Binding PageAppearingCommand}" />
+            </behaviors:ActionCollection>
+        </behaviors:EventHandlerBehavior>
+    </ContentPage.Behaviors>
+</ContentPage>

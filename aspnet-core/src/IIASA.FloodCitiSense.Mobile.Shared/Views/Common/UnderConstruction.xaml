@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="IIASA.FloodCitiSense.Views.Common.UnderConstruction"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:base="clr-namespace:IIASA.FloodCitiSense.Mobile.Core.Base;assembly=IIASA.FloodCitiSense.Mobile.Core"
+    xmlns:forms="clr-namespace:Lottie.Forms;assembly=Lottie.Forms"
+    xmlns:markupExtensions="clr-namespace:IIASA.FloodCitiSense.Mobile.Core.Extensions.MarkupExtensions;assembly=IIASA.FloodCitiSense.Mobile.Core"
+    xmlns:xamanimation="clr-namespace:Xamanimation;assembly=Xamanimation"
+    Title="{markupExtensions:Translate UnderConstruction}"
+    base:ViewManager.AutoWireViewModel="true">
+
+    <ContentView.Resources>
+        <ResourceDictionary>
+
+            <xamanimation:ColorAnimation
+                x:Key="BackgroundColorAnimation"
+                Target="{x:Reference MainPanel}"
+                ToColor="{StaticResource SoExcitedColor}"
+                Duration="250" />
+
+            <xamanimation:StoryBoard x:Key="InfoPanelAnimation" Target="{x:Reference InfoPanel}">
+                <xamanimation:FadeToAnimation Opacity="1" Duration="50" />
+                <xamanimation:TranslateToAnimation
+                    Easing="CubicIn"
+                    TranslateY="0"
+                    Duration="100" />
+            </xamanimation:StoryBoard>
+
+        </ResourceDictionary>
+    </ContentView.Resources>
+
+    <Grid x:Name="MainPanel">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2.5*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <forms:AnimationView
+            x:Name="LottieAnimation"
+            Grid.Row="0"
+            Animation="construction_site.json"
+            AutoPlay="true"
+            HorizontalOptions="FillAndExpand"
+            Loop="True"
+            Scale="1"
+            Speed="1"
+            VerticalOptions="FillAndExpand" />
+        <StackLayout
+            x:Name="InfoPanel"
+            Grid.Row="1"
+            Padding="0,-24,0,0"
+            Opacity="0"
+            TranslationY="250"
+            VerticalOptions="Start">
+            <Label Style="{StaticResource TutorialTitle}" Text="{markupExtensions:Translate UnderConstructionTitle}" />
+            <!--<Label Style="{StaticResource TutorialInfo}" Text="{markupExtensions:Translate UnderConstructionMessage}" />-->
+        </StackLayout>
+    </Grid>
+</ContentPage>
